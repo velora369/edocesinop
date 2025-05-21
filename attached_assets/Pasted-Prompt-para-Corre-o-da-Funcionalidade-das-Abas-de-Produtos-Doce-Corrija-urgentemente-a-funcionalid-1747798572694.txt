@@ -1,0 +1,348 @@
+Prompt para Correção da Funcionalidade das Abas de Produtos ÉDoce
+Corrija urgentemente a funcionalidade das abas de categorias de produtos (Taças, Potes, Bolos) na landing page da ÉDoce, seguindo estas instruções técnicas detalhadas:
+Problema Atual
+As abas de categorias (Taças, Potes, Bolos) estão visualmente implementadas, mas não funcionam quando clicadas - o conteúdo não é exibido/alternado entre as categorias.
+Solução Técnica Detalhada
+1. Implementação do Sistema de Abas Funcional
+javascript
+// Substitua o código atual de abas por esta implementação funcional
+document.addEventListener('DOMContentLoaded', function() {
+  // Selecionar todos os botões de abas e conteúdos
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+  
+  // Função para mostrar uma aba específica
+  function showTab(tabId) {
+    // Esconder todos os conteúdos de abas
+    tabContents.forEach(content => {
+      content.style.display = 'none';
+    });
+    
+    // Remover classe ativa de todos os botões
+    tabButtons.forEach(button => {
+      button.classList.remove('active');
+    });
+    
+    // Mostrar o conteúdo da aba selecionada
+    document.getElementById(tabId).style.display = 'block';
+    
+    // Adicionar classe ativa ao botão clicado
+    document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
+  }
+  
+  // Adicionar event listeners para cada botão
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const tabId = this.getAttribute('data-tab');
+      showTab(tabId);
+    });
+  });
+  
+  // Mostrar a primeira aba por padrão (Taças)
+  if (tabButtons.length > 0) {
+    const firstTabId = tabButtons[0].getAttribute('data-tab');
+    showTab(firstTabId);
+  }
+});
+2. Estrutura HTML Correta para as Abas
+html
+<!-- Substitua a estrutura atual das abas por esta -->
+<div class="product-tabs">
+  <!-- Botões das abas -->
+  <div class="tab-buttons">
+    <button class="tab-button" data-tab="tacas-tab">Taças</button>
+    <button class="tab-button" data-tab="potes-tab">Potes</button>
+    <button class="tab-button" data-tab="bolos-tab">Bolos</button>
+  </div>
+  
+  <!-- Conteúdo das abas -->
+  <div class="tab-contents">
+    <!-- Conteúdo da aba Taças -->
+    <div id="tacas-tab" class="tab-content">
+      <h3>Nossas Taças</h3>
+      <div class="products-grid">
+        <!-- Produto 1: La Crema Tradicional -->
+        <div class="product-card">
+          <img src="[URL_DA_IMAGEM]" alt="La Crema Tradicional">
+          <h4>La Crema Tradicional</h4>
+          <p>Nossa receita original que conquistou o paladar dos clientes. Um clássico irresistível.</p>
+          <div class="product-sizes">
+            <a href="https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Tradicional%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90." class="size-button">
+              Taça M (1,4L) - R$ 149,90
+            </a>
+            <a href="https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Tradicional%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90." class="size-button">
+              Taça G (2,4L) - R$ 249,90
+            </a>
+          </div>
+        </div>
+        
+        <!-- Produto 2: La Crema Ninho com Nutella -->
+        <div class="product-card">
+          <img src="[URL_DA_IMAGEM]" alt="La Crema Ninho com Nutella">
+          <h4>La Crema Ninho com Nutella</h4>
+          <p>A combinação perfeita do cremoso leite Ninho com a irresistível Nutella, uma explosão de sabores.</p>
+          <div class="product-sizes">
+            <a href="https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Ninho%20com%20Nutella%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90." class="size-button">
+              Taça M (1,4L) - R$ 149,90
+            </a>
+            <a href="https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Ninho%20com%20Nutella%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90." class="size-button">
+              Taça G (2,4L) - R$ 249,90
+            </a>
+          </div>
+        </div>
+        
+        <!-- Adicione os outros produtos de Taças aqui seguindo o mesmo padrão -->
+      </div>
+    </div>
+    
+    <!-- Conteúdo da aba Potes -->
+    <div id="potes-tab" class="tab-content">
+      <h3>Nossos Potes</h3>
+      <div class="products-grid">
+        <!-- Produto 1: Torta Alemã -->
+        <div class="product-card">
+          <img src="[URL_DA_IMAGEM]" alt="Torta Alemã">
+          <h4>Torta Alemã</h4>
+          <p>Camadas de biscoito e creme amanteigado, uma receita tradicional que nunca sai de moda.</p>
+          <div class="product-sizes">
+            <a href="https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20Alemã%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90." class="size-button">
+              Pote M (500ml) - R$ 44,90
+            </a>
+            <a href="https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20Alemã%20no%20Pote%20G%20(1L )%20por%20R$%2099,90." class="size-button">
+              Pote G (1L) - R$ 99,90
+            </a>
+          </div>
+        </div>
+        
+        <!-- Adicione os outros produtos de Potes aqui seguindo o mesmo padrão -->
+      </div>
+    </div>
+    
+    <!-- Conteúdo da aba Bolos -->
+    <div id="bolos-tab" class="tab-content">
+      <h3>Bolos Artesanais ÉDoce</h3>
+      <p>Trabalhamos somente com massas tipo pão de ló</p>
+      <p>Nossos bolos são cobrados por tamanho, sabor e decoração. No momento do pedido, enviar data de entrega e foto de referência.</p>
+      <p>Pedidos apenas pelo WhatsApp: (66) 99985-2299</p>
+      
+      <div class="bolos-gallery">
+        <!-- Adicione 3-5 imagens de bolos aqui -->
+        <img src="[URL_DA_IMAGEM_BOLO_1]" alt="Bolo Decorado">
+        <img src="[URL_DA_IMAGEM_BOLO_2]" alt="Bolo Decorado">
+        <img src="[URL_DA_IMAGEM_BOLO_3]" alt="Bolo Decorado">
+      </div>
+      
+      <h4>Sabores Disponíveis</h4>
+      <ul class="sabores-list">
+        <li>La Crema tradicional</li>
+        <li>La Crema Ninho com Nutella</li>
+        <li>La Crema Prestígio</li>
+        <li>BanaCrema</li>
+        <li>MaracuNinho</li>
+        <li>Bolo do Amor</li>
+        <li>Pudim de Leite Condensado</li>
+      </ul>
+      
+      <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20bolo%20personalizado.%20Tenho%20interesse%20no%20sabor%20[PREENCHER]%20para%20o%20dia%20[PREENCHER]." class="cta-button">
+        Solicitar orçamento para bolo personalizado
+      </a>
+    </div>
+  </div>
+</div>
+3. CSS para Estilizar as Abas Corretamente
+css
+/* Adicione ou substitua o CSS das abas por este */
+.product-tabs {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #F03D87;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 12px 24px;
+  background: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px 8px 0 0;
+  margin-right: 5px;
+}
+
+.tab-button:hover {
+  background: #44CFC6;
+  color: white;
+}
+
+.tab-button.active {
+  background: #F03D87;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr ));
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h4 {
+  color: #4B2E1F;
+  margin: 15px 15px 10px;
+}
+
+.product-card p {
+  color: #666;
+  margin: 0 15px 15px;
+  font-size: 14px;
+}
+
+.product-sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.size-button {
+  display: block;
+  padding: 10px;
+  background: #00A9A5;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.size-button:hover {
+  background: #F03D87;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #F03D87;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #00A9A5;
+}
+
+/* Estilos específicos para a seção de bolos */
+.bolos-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.bolos-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.sabores-list {
+  columns: 2;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tab-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .bolos-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .sabores-list {
+    columns: 1;
+  }
+}
+4. Verificação e Depuração
+Adicione este código para verificar se há erros na implementação das abas:
+javascript
+// Adicione este código ao final do arquivo JavaScript
+console.log('Inicializando sistema de abas...');
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM carregado, verificando elementos de abas...');
+  
+  const tabButtons = document.querySelectorAll('.tab-button');
+  console.log('Botões de abas encontrados:', tabButtons.length);
+  
+  const tabContents = document.querySelectorAll('.tab-content');
+  console.log('Conteúdos de abas encontrados:', tabContents.length);
+  
+  if (tabButtons.length === 0 || tabContents.length === 0) {
+    console.error('ERRO: Elementos de abas não encontrados!');
+  }
+});
+Instruções Adicionais
+Certifique-se de que o JavaScript está sendo carregado corretamente
+Verifique se o script está sendo incluído após o HTML das abas
+Confirme que não há erros de JavaScript no console do navegador
+Verifique a estrutura do DOM
+Confirme que os IDs dos conteúdos das abas correspondem aos valores de data-tab nos botões
+Garanta que não há IDs duplicados na página
+Teste a funcionalidade em diferentes navegadores
+Chrome, Firefox, Safari e Edge
+Teste também em dispositivos móveis
+Garanta que todos os links de WhatsApp estão funcionando
+Cada produto deve ter links específicos para cada tamanho
+As mensagens pré-preenchidas devem incluir o nome do produto e o tamanho selecionado
+Implementação Prioritária
+Esta correção é de alta prioridade, pois afeta diretamente a funcionalidade principal do site. Implemente estas mudanças imediatamente para garantir que os usuários possam navegar entre as categorias de produtos e fazer pedidos via WhatsApp.
