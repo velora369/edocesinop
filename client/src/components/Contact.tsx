@@ -104,17 +104,17 @@ export default function Contact() {
             
             <Button
               asChild
-              variant="outline"
               size="lg"
-              className="bg-white text-secondary hover:bg-gray-100 font-montserrat font-semibold rounded-full transition"
+              className="bg-white border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-montserrat font-semibold rounded-full transition-all duration-300 shadow-md"
             >
               <a 
                 href="https://www.instagram.com/edocesinop" 
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center"
               >
                 <i className="fab fa-instagram text-xl mr-2"></i>
-                Seguir no Instagram
+                <span>Seguir no Instagram</span>
               </a>
             </Button>
           </motion.div>

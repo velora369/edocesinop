@@ -55,9 +55,8 @@ export default function Testimonials() {
           <Button 
             onClick={goToPrev}
             disabled={currentIndex === 0}
-            variant="outline"
             size="icon"
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-primary rounded-full p-2 shadow-md hover:bg-gray-50 focus:outline-none disabled:opacity-50"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-primary border-2 border-primary rounded-full p-2 shadow-md hover:bg-primary hover:text-white focus:outline-none disabled:opacity-50 disabled:bg-gray-100 disabled:text-gray-400 disabled:border-gray-200 transition-all duration-300"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -116,7 +115,7 @@ export default function Testimonials() {
             href="https://www.instagram.com/edocesinop" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center text-secondary hover:text-primary transition font-medium"
+            className="inline-flex items-center px-6 py-2 rounded-full bg-white border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300 font-medium shadow-md"
           >
             <i className="fab fa-instagram mr-2 text-lg"></i>
             Ver mais no Instagram
