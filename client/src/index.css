@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 25 15% 21%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 25 15% 21%;
+  --card: 0 0% 100%;
+  --card-foreground: 25 15% 21%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  
+  /* Custom ÉDoce Colors */
+  --petrol: 179 100% 33%; /* #00A9A5 */
+  --bubblegum: 336 87% 57%; /* #F03D87 */
+  --chocolate: 25 42% 21%; /* #4B2E1F */
+  --cream: 0 0% 100%; /* #FFFFFF */
+  --cyan-light: 176 57% 54%; /* #44CFC6 */
+  
+  --primary: 179 100% 33%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 336 87% 57%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 176 57% 54%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 179 100% 33%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 179 100% 33%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 336 87% 57%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 176 57% 54%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground scroll-smooth;
+  }
+
+  /* Custom font classes */
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .font-opensans {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .font-dancing {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+@layer components {
+  .btn-whatsapp {
+    @apply fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg transition-transform hover:scale-105;
+  }
+
+  .section-title {
+    @apply font-montserrat font-bold text-3xl md:text-4xl mb-6 text-chocolate;
+  }
+
+  .section-highlight {
+    @apply text-secondary;
+  }
+
+  .product-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--secondary));
+}

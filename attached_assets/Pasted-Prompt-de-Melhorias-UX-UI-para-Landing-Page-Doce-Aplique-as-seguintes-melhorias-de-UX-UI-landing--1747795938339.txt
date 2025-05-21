@@ -1,0 +1,65 @@
+Prompt de Melhorias UX/UI para Landing Page ÉDoce
+Aplique as seguintes melhorias de UX/UI à landing page da confeitaria ÉDoce, mantendo o foco em uma experiência deliciosa e atraente para os clientes:
+1. Navegação e Experiência de Usuário (UX)
+Implemente navegação ultra fluida com transições suaves entre as seções de produtos (Taças, Potes, Bolos)
+Crie menu sticky no topo que permanece visível durante a rolagem, facilitando pedidos a qualquer momento
+Adicione âncoras internas para navegação direta entre categorias de produtos
+Minimize cliques para pedidos: cliente deve conseguir solicitar qualquer produto em no máximo 2 cliques
+2. Interface de Usuário (UI) Doce e Acolhedora
+Layout limpo e elegante que evoca a sensação de uma confeitaria artesanal premium
+Use espaços em branco de forma estratégica para destacar as imagens dos doces
+Aplique elementos visuais arredondados (como as formas de bolos e taças) e sombras suaves
+Adicione texturas sutis que remetam a ingredientes (como açúcar, chocolate ou chantilly)
+3. Ícones 3D Temáticos de Confeitaria
+Desenvolva ícones 3D realistas de doces para cada categoria (taça, pote, bolo, etc.)
+Crie pequenas animações nos ícones ao passar o mouse (ex: taça girando suavemente, chantilly "derretendo")
+Estilo sugerido: glassmorphism para taças e potes, com efeito translúcido que remete a sobremesas
+Paleta de cores dos ícones deve seguir as cores oficiais da ÉDoce: Azul-petróleo (#00A9A5), Rosa-chiclete (#F03D87), Marrom-chocolate (#4B2E1F), Branco (#FFFFFF), Ciano-claro (#44CFC6)
+4. Elementos Visuais Personalizados
+Crie pequenos elementos decorativos que remetam a confeitaria (gotinhas de chocolate, granulados, morangos)
+Adicione "selos" personalizados para destacar o produto carro-chefe (La Crema)
+Desenvolva indicadores visuais de tamanho (P, M, G) com estilo consistente
+Todos os elementos visuais devem usar as cores da marca ÉDoce
+5. Responsividade e Performance
+Design 100% responsivo, priorizando a experiência mobile (maioria dos clientes acessa pelo celular)
+Otimize todas as imagens de produtos para carregamento rápido sem perder qualidade visual
+Reorganize elementos em telas menores para manter fácil acesso aos botões de pedido via WhatsApp
+Garanta que os cards de produtos fiquem visualmente atrativos mesmo em telas pequenas
+6. Paleta de Cores e Identidade Visual
+Aplique a paleta oficial da ÉDoce em todos os elementos:
+Azul-petróleo (#00A9A5) para elementos principais e cabeçalhos
+Rosa-chiclete (#F03D87) para CTAs e destaques
+Marrom-chocolate (#4B2E1F) para textos e detalhes
+Branco (#FFFFFF) para fundos e espaços de respiro
+Ciano-claro (#44CFC6) para elementos secundários e acentos
+Crie variações sutis dessas cores para estados de hover e animações
+7. Tipografia Apetitosa e Legível
+Fonte principal elegante e contemporânea para títulos, evocando confeitaria artesanal
+Fonte secundária altamente legível para descrições de produtos e preços
+Contraste forte entre títulos (mais expressivos) e textos descritivos (mais funcionais)
+Tamanhos de fonte otimizados para leitura em dispositivos móveis
+8. Animações e Interações Deliciosas
+Adicione animações suaves de entrada para os cards de produtos (fade in, slide up)
+Crie efeito de hover nos produtos que destaque sutilmente o item (leve aumento de escala, suave brilho)
+Implemente transições suaves entre as abas de categorias (Taças, Potes, Bolos)
+Adicione microinterações nos botões de "Solicitar" (WhatsApp) para incentivar cliques
+9. Estrutura e Organização das Seções
+Hero Section com imagem impactante de um dos produtos carro-chefe (La Crema) + CTA principal
+Seção de destaque para o La Crema como carro-chefe da casa
+Cards de produtos organizados por categoria com imagens apetitosas e descrições envolventes
+Seção de tamanhos e preços com visualização clara das opções (Taça M/G, Pote M/G)
+Depoimentos com visual de "cartão de receita" ou "nota de confeitaria"
+Seção de datas especiais com visual festivo e sazonal
+Rodapé elegante com informações de contato, horário de atendimento e link para Instagram
+10. Estilo Visual Geral
+O site deve transmitir artesanalidade, qualidade premium e sabor irresistível
+Atmosfera visual que evoca uma confeitaria moderna e acolhedora
+Foco nas imagens dos produtos, garantindo que pareçam deliciosos e apetitosos
+Elementos visuais que criem desejo e incentivem pedidos imediatos
+Notas Finais
+Evitar poluição visual que distraia das imagens dos produtos
+Garantir que os botões de WhatsApp sejam sempre facilmente acessíveis
+Utilizar SVGs ou assets vetoriais para ícones e elementos decorativos
+Otimizar para SEO básico com títulos adequados e alt texts em imagens
+Garantir que o site carregue rapidamente em conexões móveis
+Manter o foco na conversão: facilitar ao máximo o processo de pedido via WhatsApp
