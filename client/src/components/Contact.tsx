@@ -19,8 +19,11 @@ export default function Contact() {
       text: "Encomendas com pelo menos 24h de antecedência",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
-          <circle cx="12" cy="12" r="3"></circle>
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+          <line x1="12" y1="22" x2="12" y2="18"></line>
+          <line x1="5" y1="12" x2="2" y2="12"></line>
+          <line x1="22" y1="12" x2="19" y2="12"></line>
         </svg>
       ),
       ariaLabel: "Prazo de Encomendas"

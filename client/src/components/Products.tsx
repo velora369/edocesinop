@@ -228,11 +228,11 @@ export default function Products() {
                   <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="mt-8">
                     <Button 
                       asChild
-                      className="mt-8 bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-8 py-6 shadow-md"
+                      className="mt-8 bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-4 sm:px-8 py-4 sm:py-6 shadow-md w-full sm:w-auto"
                     >
-                      <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20bolo%20personalizado.%20Tenho%20interesse%20no%20sabor%20[PREENCHER]%20para%20o%20dia%20[PREENCHER]." className="flex items-center">
+                      <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20bolo%20personalizado.%20Tenho%20interesse%20no%20sabor%20[PREENCHER]%20para%20o%20dia%20[PREENCHER]." className="flex items-center justify-center">
                         <i className="fab fa-whatsapp mr-2 text-xl"></i>
-                        <span>Solicitar orçamento para bolo personalizado</span>
+                        <span className="text-sm sm:text-base">Solicitar orçamento</span>
                       </a>
                     </Button>
                   </motion.div>
