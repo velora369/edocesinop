@@ -1,6 +1,22 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
+// Create a context for the tabs state
+type TabsContextValue = {
+  value: string;
+  onValueChange: (value: string) => void;
+};
+
+const TabsContext = React.createContext<TabsContextValue | undefined>(undefined);
+
+function useTabsContext() {
+  const context = React.useContext(TabsContext);
+  if (!context) {
+    throw new Error("Tabs components must be used within a TabsEdoce provider");
+  }
+  return context;
+}
+
 interface TabsEdoceProps extends React.HTMLAttributes<HTMLDivElement> {
   value: string;
   onValueChange: (value: string) => void;
@@ -15,24 +31,25 @@ interface TabsEdoceContentProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const TabsEdoce = React.forwardRef<HTMLDivElement, TabsEdoceProps>(
-  ({ className, value, onValueChange, ...props }, ref) => {
+  ({ className, value, onValueChange, children, ...props }, ref) => {
+    // Create a context value
+    const context = React.useMemo(
+      () => ({ value, onValueChange }),
+      [value, onValueChange]
+    );
+
     return (
-      <div 
-        ref={ref} 
-        className={cn("", className)} 
-        data-value={value}
-        data-state={value}
-        // The onValueChange prop is handled internally and not passed to the DOM
-        {...props}
-      >
-        {/* Actual tabs are handled via context and triggers */}
-        {React.Children.map(props.children, (child) => {
-          if (React.isValidElement(child)) {
-            return React.cloneElement(child, { value, onValueChange } as any);
-          }
-          return child;
-        })}
-      </div>
+      <TabsContext.Provider value={context}>
+        <div 
+          ref={ref} 
+          className={cn("", className)} 
+          data-value={value}
+          data-state={value}
+          {...props}
+        >
+          {children}
+        </div>
+      </TabsContext.Provider>
     );
   }
 );
@@ -40,13 +57,17 @@ TabsEdoce.displayName = "TabsEdoce";
 
 const TabsEdoceTrigger = React.forwardRef<HTMLButtonElement, TabsEdoceTriggerProps>(
   ({ className, value, ...props }, ref) => {
-    // This is coming from the parent TabsEdoce component via cloneElement
-    const { value: selectedValue, onValueChange } = (props as any);
+    // Use the context hook to get the current tab state
+    const { value: selectedValue, onValueChange } = useTabsContext();
     const isActive = selectedValue === value;
 
     return (
       <button
         ref={ref}
+        role="tab"
+        type="button"
+        aria-selected={isActive}
+        data-state={isActive ? "active" : "inactive"}
         className={cn(
           "tab-btn font-montserrat inline-block p-4 rounded-t-lg border-b-2 transition-colors",
           isActive
@@ -54,7 +75,7 @@ const TabsEdoceTrigger = React.forwardRef<HTMLButtonElement, TabsEdoceTriggerPro
             : "border-transparent hover:text-primary hover:border-primary",
           className
         )}
-        onClick={() => onValueChange?.(value)}
+        onClick={() => onValueChange(value)}
         {...props}
       />
     );
@@ -64,8 +85,8 @@ TabsEdoceTrigger.displayName = "TabsEdoceTrigger";
 
 const TabsEdoceContent = React.forwardRef<HTMLDivElement, TabsEdoceContentProps>(
   ({ className, value, ...props }, ref) => {
-    // This is coming from the parent TabsEdoce component via cloneElement
-    const { value: selectedValue } = (props as any);
+    // Use the context hook to get the current tab state
+    const { value: selectedValue } = useTabsContext();
     const isActive = selectedValue === value;
 
     if (!isActive) return null;
@@ -73,7 +94,9 @@ const TabsEdoceContent = React.forwardRef<HTMLDivElement, TabsEdoceContentProps>
     return (
       <div
         ref={ref}
-        className={cn("tab-content", isActive ? "block" : "hidden", className)}
+        role="tabpanel"
+        data-state={isActive ? "active" : "inactive"}
+        className={cn("tab-content", className)}
         {...props}
       />
     );
