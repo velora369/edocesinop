@@ -22,6 +22,7 @@ const TabsEdoce = React.forwardRef<HTMLDivElement, TabsEdoceProps>(
         className={cn("", className)} 
         data-value={value}
         data-state={value}
+        // The onValueChange prop is handled internally and not passed to the DOM
         {...props}
       >
         {/* Actual tabs are handled via context and triggers */}
