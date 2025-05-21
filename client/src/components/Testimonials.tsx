@@ -142,21 +142,21 @@ export default function Testimonials() {
                   "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/depoimento2.webp",
                   "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/depoimento3.webp"
                 ].map((image, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
+                  <CarouselItem key={index} className="basis-full md:basis-1/2">
+                    <div className="p-2">
                       <motion.div 
                         whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
                         transition={{ duration: 0.2 }}
-                        className="overflow-hidden rounded-xl shadow-md group"
+                        className="overflow-hidden rounded-xl shadow-md group bg-white p-2"
                       >
-                        <div className="relative aspect-square overflow-hidden">
+                        <div className="relative overflow-hidden">
                           <img
                             src={image}
                             alt={`Depoimento de cliente ${index + 1}`}
-                            className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                            className="w-full object-contain max-h-[350px] transition-transform duration-500 group-hover:scale-102"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                            <span className="text-white font-medium">Ver depoimento</span>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                            <span className="text-white font-medium px-4 py-2 bg-primary/70 rounded-full">Ver depoimento</span>
                           </div>
                         </div>
                       </motion.div>
