@@ -16,9 +16,25 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-  // Close mobile menu when clicking on a link
-  const handleLinkClick = () => {
+  // Close mobile menu when clicking on a link and handle smooth scrolling
+  const handleMobileNavigation = (href: string) => {
     setMobileMenuOpen(false);
+    
+    if (href === '#') return;
+    
+    // Small delay to ensure the menu closes first
+    setTimeout(() => {
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+        const targetPosition = (targetElement as HTMLElement).offsetTop - headerHeight;
+        
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
   };
 
   const headerClasses = `fixed w-full top-0 z-50 transition-all duration-300 ${
@@ -115,7 +131,10 @@ export default function Header() {
                   key={item.href}
                   href={item.href} 
                   className="font-montserrat font-medium hover:text-primary transition-all duration-300 flex items-center p-2 rounded-lg hover:bg-gray-50"
-                  onClick={handleLinkClick}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleMobileNavigation(item.href);
+                  }}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
