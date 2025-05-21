@@ -161,7 +161,7 @@ export const potesProducts: ProductType[] = [
     id: 7,
     name: "Torta de Bombons",
     description: "Uma explosão de chocolate com pedaços de bombons, para os verdadeiros chocólatras.",
-    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/de-bombons.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20de%20Bombons%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
