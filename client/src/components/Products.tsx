@@ -76,13 +76,13 @@ export default function Products() {
                     label: "Taça M (1,4L)",
                     price: "149,90",
                     link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.",
-                    icon: "fas fa-wine-glass"
+                    icon: "fas fa-ice-cream"
                   },
                   {
                     label: "Taça G (2,4L)",
                     price: "249,90",
                     link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.",
-                    icon: "fas fa-wine-glass-alt"
+                    icon: "fas fa-ice-cream"
                   },
                   {
                     label: "Pote M (500ml)",
@@ -133,7 +133,7 @@ export default function Products() {
             <div className="mb-8 border-b border-gray-200 flex justify-center">
               <div className="inline-flex rounded-lg bg-gray-100 p-1 shadow-md">
                 {[
-                  { value: "tacas", label: "Taças", icon: "fas fa-wine-glass" },
+                  { value: "tacas", label: "Taças", icon: "fas fa-ice-cream" },
                   { value: "potes", label: "Potes", icon: "fas fa-box" },
                   { value: "bolos", label: "Bolos", icon: "fas fa-birthday-cake" }
                 ].map((tab) => (
