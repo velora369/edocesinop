@@ -5,18 +5,38 @@ export default function Contact() {
   const contactInfo = [
     {
       id: 1,
-      icon: "far fa-clock",
-      text: "Atendemos todos os dias, das 9h às 18h"
+      text: "Atendemos todos os dias, das 9h às 18h",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+      ),
+      ariaLabel: "Horário de Atendimento"
     },
     {
       id: 2,
-      icon: "far fa-calendar-alt",
-      text: "Encomendas com pelo menos 24h de antecedência"
+      text: "Encomendas com pelo menos 24h de antecedência",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+      ),
+      ariaLabel: "Prazo de Encomendas"
     },
     {
       id: 3,
-      icon: "fas fa-truck",
-      text: "Consulte opções de entrega"
+      text: "Consulte opções de entrega",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="1" y="3" width="15" height="13"></rect>
+          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+          <circle cx="5.5" cy="18.5" r="2.5"></circle>
+          <circle cx="18.5" cy="18.5" r="2.5"></circle>
+        </svg>
+      ),
+      ariaLabel: "Opções de Entrega"
     }
   ];
 
@@ -52,8 +72,11 @@ export default function Contact() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
                 >
-                  <div className="w-16 h-16 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mb-4">
-                    <i className={`${item.icon} text-2xl text-primary`}></i>
+                  <div 
+                    className="w-20 h-20 rounded-full bg-accent flex items-center justify-center mb-4 transition-transform duration-300 hover:scale-110"
+                    aria-label={item.ariaLabel}
+                  >
+                    {item.icon}
                   </div>
                   <p className="font-medium text-center">{item.text}</p>
                 </motion.div>
