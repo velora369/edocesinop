@@ -1,0 +1,155 @@
+Prompt para Replit: Landing Page ÉDoce
+Crie uma landing page moderna para a confeitaria "ÉDoce" usando React com as seguintes especificações:
+Configuração Técnica
+Utilize React com componentes modernos e responsivos
+Implemente design mobile-first
+Integre botões de WhatsApp para pedidos diretos
+Use a paleta de cores: Azul-petróleo (#00A9A5), Rosa-chiclete (#F03D87), Marrom-chocolate (#4B2E1F), Branco (#FFFFFF), Ciano-claro (#44CFC6)
+Estrutura e Conteúdo
+1. Header/Navegação
+Logo "ÉDoce" (texto estilizado com fonte elegante)
+Menu simples com links para as seções da página
+Botão de WhatsApp fixo no canto superior direito com link: https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido
+2. Hero Section/Headline
+Título: "Doces momentos merecem ÉDoce"
+Subtítulo: "Confeitaria artesanal com ingredientes selecionados a dedo para tornar seus momentos especiais inesquecíveis"
+Imagem de fundo de um bolo atraente (use uma imagem de alta qualidade de um bolo decorado )
+Botão CTA: "Fazer Pedido Agora" (link para WhatsApp)
+3. Quem Somos
+Título: "Sobre a ÉDoce"
+Texto: "A ÉDoce nasceu da paixão por transformar ingredientes de qualidade em experiências sensoriais únicas. Cada doce é preparado artesanalmente, com ingredientes cuidadosamente selecionados para garantir sabor incomparável e momentos de pura felicidade. Nossa confeitaria se destaca pela dedicação aos detalhes e pelo compromisso com a excelência em cada criação."
+Destaque: "Ingredientes premium selecionados a dedo para sabores que encantam todos os paladares"
+Imagem ilustrativa de confeitaria (use uma imagem de alta qualidade)
+4. Nossos Produtos
+Implemente um sistema de abas/tabs para as categorias: Taças | Potes | Bolos
+Destaque Especial - Carro-Chefe
+Banner destacado: "La Crema - O carro-chefe da casa!"
+Descrição: "Nosso doce mais amado pelos clientes! Uma combinação perfeita de texturas e sabores que conquistou o paladar de todos."
+Imagem do La Crema
+Botões de tamanho com preço:
+Taça M (1,4L) - R$ 149,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G (2,4L) - R$ 249,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+Pote M (500ml) - R$ 44,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G (1L) - R$ 99,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Taças
+Introdução: "Nossas taças são verdadeiras obras de arte, perfeitas para momentos especiais ou para se deliciar em casa."
+Informações de tamanho:
+Taça M (1,4 litros) - R$ 149,90
+Taça G (2,4 litros) - R$ 249,90
+Cards de produtos:
+La Crema Tradicional
+Descrição: "Nossa receita original que conquistou o paladar dos clientes. Um clássico irresistível."
+Botões:
+Taça M - R$ 149,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Tradicional%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G - R$ 249,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Tradicional%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+La Crema Ninho com Nutella
+Descrição: "A combinação perfeita do cremoso leite Ninho com a irresistível Nutella, uma explosão de sabores."
+Botões:
+Taça M - R$ 149,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Ninho%20com%20Nutella%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G - R$ 249,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Ninho%20com%20Nutella%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+La Crema Prestígio
+Descrição: "A união do chocolate com coco, criando uma experiência tropical e sofisticada."
+Botões:
+Taça M - R$ 149,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Prestígio%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G - R$ 249,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Prestígio%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+BanaCrema
+Descrição: "A doçura da banana combinada com nosso creme especial, uma sobremesa reconfortante e deliciosa."
+Botões:
+Taça M - R$ 149,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20BanaCrema%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G - R$ 249,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20BanaCrema%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+MaracuNinho
+Descrição: "A acidez do maracujá equilibrada com a doçura do leite Ninho, uma combinação refrescante e surpreendente."
+Botões:
+Taça M - R$ 149,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20MaracuNinho%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G - R$ 249,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20MaracuNinho%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+Potes
+Introdução: "Nossos potes são perfeitos para quem quer ter sempre em casa uma sobremesa especial."
+Informações de tamanho:
+Pote M (500 ml) - R$ 44,90
+Pote G (1 litro) - R$ 99,90
+Cards de produtos:
+Torta Alemã
+Descrição: "Camadas de biscoito e creme amanteigado, uma receita tradicional que nunca sai de moda."
+Botões:
+Pote M - R$ 44,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20Alemã%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G - R$ 99,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20Alemã%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Torta de Bombons
+Descrição: "Uma explosão de chocolate com pedaços de bombons, para os verdadeiros chocólatras."
+Botões:
+Pote M - R$ 44,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20de%20Bombons%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G - R$ 99,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20de%20Bombons%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Tiramisù
+Descrição: "O clássico italiano com café, queijo mascarpone e cacau, uma sobremesa sofisticada e irresistível."
+Botões:
+Pote M - R$ 44,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Tiramisù%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G - R$ 99,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Tiramisù%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Banoffee
+Descrição: "A combinação perfeita de banana, doce de leite e chantilly, uma sobremesa que derrete na boca."
+Botões:
+Pote M - R$ 44,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Banoffee%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G - R$ 99,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Banoffee%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Cassata de Morango
+Descrição: "Sorvete artesanal com pedaços de morango, uma sobremesa refrescante para os dias quentes."
+Botões:
+Pote M - R$ 44,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Morango%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G - R$ 99,90 (link: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Morango%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Bolos
+Introdução: "Nossos bolos são feitos com massa tipo pão de ló e decorados artesanalmente para cada ocasião."
+Informações importantes:
+"Pedidos apenas pelo WhatsApp: (66) 99985-2299"
+"Trabalhamos somente com massas tipo pão de ló"
+"Sabores diversos"
+"Nossos bolos são cobrados por tamanho, sabor e decoração"
+"No momento do pedido, enviar data de entrega e foto de referência"
+Botão principal: "Solicitar orçamento para bolo personalizado" (link: https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20bolo%20personalizado.%20Tenho%20interesse%20no%20sabor%20[PREENCHER]%20para%20o%20dia%20[PREENCHER]. )
+Galeria com 3-5 fotos de bolos decorados
+5. Datas Especiais
+Título: "Cardápios Especiais para Momentos Únicos"
+Texto: "Celebre as datas mais importantes do ano com nossas criações especiais, desenvolvidas para tornar cada comemoração ainda mais memorável."
+Cards para datas comemorativas:
+Natal
+Texto: "Panetones artesanais, tortas natalinas e bolos temáticos que trazem o verdadeiro espírito do Natal para sua mesa."
+Botão: "Consultar" (link: https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Natal. )
+Páscoa
+Texto: "Ovos de colher recheados, colombas pascal e outras delícias que transformam a Páscoa em uma celebração inesquecível."
+Botão: "Consultar" (link: https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Páscoa. )
+Dia dos Namorados
+Texto: "Doces especiais para dois, com opções românticas e irresistíveis para surpreender quem você ama."
+Botão: "Consultar" (link: https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20para%20o%20Dia%20dos%20Namorados. )
+6. Depoimentos
+Título: "O que nossos clientes dizem"
+Introdução: "A satisfação dos nossos clientes é o ingrediente mais importante das nossas receitas. Confira alguns depoimentos de quem já experimentou nossas delícias:"
+Carrossel de depoimentos:
+"O La Crema da ÉDoce é simplesmente divino! Sempre peço a versão com Nutella e nunca me decepciono. É o melhor doce da cidade!" - Maria C.
+"Encomendei a Torta Alemã para um jantar especial e foi um sucesso absoluto. Sabor incrível e apresentação impecável!" - João P.
+"A qualidade dos ingredientes faz toda diferença! Nunca provei sobremesas tão perfeitas quanto as da ÉDoce." - Ana L.
+Link: "Ver mais no Instagram" (link para: https://www.instagram.com/edocesinop )
+7. Contato
+Título: "Faça seu pedido e adoce seu dia"
+Texto: "Estamos prontos para tornar seus momentos ainda mais especiais com nossas criações. Entre em contato e faça seu pedido!"
+Informações:
+"Atendemos todos os dias, das 9h às 18h"
+"Encomendas com pelo menos 24h de antecedência"
+"Consulte opções de entrega"
+Botão CTA Principal: "Fazer Pedido via WhatsApp" (link: https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido. )
+Botão CTA Secundário: "Seguir no Instagram" (link: https://www.instagram.com/edocesinop )
+8. Footer
+Logo "ÉDoce"
+Slogan: "ÉDoce - Adoçando momentos especiais"
+Links para seções da página
+Links para redes sociais (Instagram)
+Informações de contato: WhatsApp +55 66 99985-2299
+Horário de atendimento: Todos os dias, 9h às 18h
+Copyright: "© 2025 ÉDoce Confeitaria Artesanal. Todos os direitos reservados."
+Elementos Adicionais
+Botão flutuante de WhatsApp em todas as páginas
+Animações sutis de scroll e hover para melhorar a experiência do usuário
+Carregamento otimizado de imagens para melhor performance
+Design responsivo que se adapta a todos os tamanhos de tela
+Observações Importantes
+Design moderno e clean usando as cores da marca (azul-petróleo, rosa-chiclete, marrom-chocolate, branco e ciano-claro)
+Destaque especial para o La Crema como carro-chefe da casa
+Foco em destacar as imagens dos produtos
+Experiência de usuário intuitiva
+Facilidade para entrar em contato via WhatsApp
+Destaque para a qualidade dos ingredientes como diferencial
