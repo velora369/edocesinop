@@ -11,6 +11,11 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
+  // Ensure page always loads at the top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Smooth scroll for anchor links
   useEffect(() => {
     const handleAnchorClick = (e: MouseEvent) => {
