@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import { AnimatePresence } from "framer-motion";
+import ColorInvertProvider from "@/components/ColorInvertProvider";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ColorInvertProvider />
         <Toaster />
         <Router />
       </TooltipProvider>

@@ -1,0 +1,52 @@
+/* Classe base para elementos com inversão de cor */
+.color-invert {
+  transition: all 0.3s ease;
+}
+
+/* Estado ativo (quando clicado) */
+.color-invert:active {
+  background-color: var(--text-color, #ffffff) !important;
+  color: var(--bg-color, #ff6b9d) !important;
+  border-color: var(--bg-color, #ff6b9d) !important;
+}
+
+/* Opcional: Estado hover para feedback visual */
+.color-invert:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
+
+/* Estado "clicked" para feedback visual */
+.clicked {
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
+
+/* Ajustes para botões de tamanho (M e G) */
+.size-button.color-invert:active {
+  background-color: #ffffff !important;
+  color: var(--bg-color, #ff6b9d) !important;
+  border: 1px solid var(--bg-color, #ff6b9d) !important;
+}
+
+/* Ajustes para cards de produtos */
+.product-card.color-invert:active {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para botões de ação */
+.action-button.color-invert:active {
+  background-color: white !important;
+  color: #ff6b9d !important;
+  border: 1px solid #ff6b9d !important;
+}
+
+/* Ajuste para ícones quando o botão é clicado */
+.action-button.color-invert:active i {
+  color: #ff6b9d !important;
+}

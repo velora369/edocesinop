@@ -1,0 +1,157 @@
+Prompt para o Agente IA do Replit: Implementação de Inversão de Cores nos Cards ao Clicar
+
+Olá, Agente do Replit! Preciso da sua ajuda para implementar um efeito de inversão de cores nos cards e botões do site da confeitaria ÉDoce quando o usuário clicar neles. O objetivo é melhorar o contraste e a experiência visual.
+Problema Atual
+
+Atualmente, quando um usuário clica em um card ou botão (como os botões "Fazer Pedido via WhatsApp" e "Seguir no Instagram"), o elemento fica ainda mais destacado na mesma cor, o que não proporciona um bom contraste visual e pode prejudicar a experiência do usuário.
+Solução Desejada
+
+Implementar um efeito de inversão de cores ao clicar em qualquer card ou botão do site. Por exemplo:
+Se o botão é rosa com texto branco, ao clicar ele deve ficar branco com texto rosa
+Se o card tem fundo colorido, ao clicar deve inverter para fundo branco com texto/borda na cor original
+Instruções de Implementação
+
+1. Identificar Todos os Cards e Botões
+
+Primeiro, identifique todos os elementos clicáveis do site que precisam deste comportamento:
+Botões de ação (como "Fazer Pedido")
+Cards de produtos
+Botões de tamanho (M e G)
+Links de navegação
+Botões de redes sociais
+2. Implementar a Lógica de Inversão de Cores
+
+Adicione o seguinte código CSS ao arquivo de estilos do site:
+css
+/* Classe base para elementos com inversão de cor */
+.color-invert {
+  transition: all 0.3s ease;
+}
+
+/* Estado ativo (quando clicado) */
+.color-invert:active {
+  background-color: var(--text-color, #ffffff) !important;
+  color: var(--bg-color, #ff6b9d) !important;
+  border-color: var(--bg-color, #ff6b9d) !important;
+}
+
+/* Opcional: Estado hover para feedback visual */
+.color-invert:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+3. Adicionar JavaScript para Gerenciar as Variáveis CSS
+
+Adicione o seguinte script ao final do arquivo HTML, antes do fechamento da tag </body>:
+javascript
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleciona todos os elementos que precisam do efeito de inversão
+  const invertElements = document.querySelectorAll('.btn, .product-card, .size-button, .nav-link, .social-link');
+  
+  invertElements.forEach(element => {
+    // Adiciona a classe para inversão de cor
+    element.classList.add('color-invert');
+    
+    // Captura as cores originais
+    const computedStyle = window.getComputedStyle(element);
+    const bgColor = computedStyle.backgroundColor;
+    const textColor = computedStyle.color;
+    
+    // Define as variáveis CSS personalizadas para cada elemento
+    element.style.setProperty('--bg-color', bgColor);
+    element.style.setProperty('--text-color', textColor);
+    
+    // Adiciona evento de clique para feedback visual
+    element.addEventListener('click', function() {
+      // Adiciona classe temporária para efeito visual
+      this.classList.add('clicked');
+      
+      // Remove a classe após a animação
+      setTimeout(() => {
+        this.classList.remove('clicked');
+      }, 300);
+    });
+  });
+});
+4. Adicionar Estilos para o Estado "Clicked"
+
+css
+.clicked {
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
+5. Ajustes para Casos Específicos
+
+Para Botões de Tamanho (M e G)
+
+css
+.size-button.color-invert:active {
+  background-color: #ffffff !important;
+  color: var(--bg-color, #ff6b9d) !important;
+  border: 1px solid var(--bg-color, #ff6b9d) !important;
+}
+Para Cards de Produtos
+
+css
+.product-card.color-invert:active {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+Considerações Importantes
+
+Acessibilidade: Certifique-se de que o contraste entre texto e fundo seja adequado em ambos os estados (normal e invertido). Recomenda-se uma relação de contraste de pelo menos 4.5:1.
+Consistência: Aplique este comportamento de forma consistente em todo o site para manter a experiência do usuário coerente.
+Feedback Visual: O efeito deve ser instantâneo para fornecer feedback imediato ao usuário.
+Compatibilidade: Teste em diferentes navegadores para garantir que o efeito funcione corretamente em todos eles.
+Dispositivos Móveis: Certifique-se de que o efeito funcione bem em dispositivos touch, onde o evento :active tem comportamento diferente.
+Exemplo de Implementação para Botões Específicos
+
+Para os botões "Fazer Pedido via WhatsApp" e "Seguir no Instagram" mostrados na imagem:
+css
+/* Estilo original */
+.action-button {
+  background-color: #ff6b9d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-decoration: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Inversão de cores ao clicar */
+.action-button.color-invert:active {
+  background-color: white !important;
+  color: #ff6b9d !important;
+  border: 1px solid #ff6b9d !important;
+}
+
+/* Ícones dentro dos botões */
+.action-button i {
+  margin-right: 8px;
+}
+
+/* Ajuste para ícones quando o botão é clicado */
+.action-button.color-invert:active i {
+  color: #ff6b9d !important;
+}
+Teste e Verificação
+
+Após implementar estas alterações, por favor teste clicando em diferentes elementos do site para garantir que:
+As cores invertem corretamente ao clicar
+O contraste permanece adequado em todos os estados
+A transição é suave e agradável
+O comportamento é consistente em todo o site
+Funciona em dispositivos móveis e diferentes navegadores
+Se algum elemento específico não estiver respondendo corretamente, pode ser necessário ajustar os seletores CSS ou adicionar classes específicas para aquele elemento.
+Obrigado pela sua ajuda na implementação desta melhoria visual para o site da confeitaria ÉDoce!
