@@ -32,11 +32,18 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <motion.a 
           href="#" 
-          className="font-playfair font-bold text-3xl text-primary"
+          className="relative"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
           whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          whileTap={{ scale: 0.95 }}
         >
-          É<span className="text-secondary">Doce</span>
+          <img 
+            src="/src/assets/logo.png" 
+            alt="Logo ÉDoce Confeitaria Artesanal" 
+            className="h-[60px] md:h-[60px] sm:h-[45px] object-contain filter drop-shadow-md transition-all duration-300"
+          />
         </motion.a>
         
         <nav className="hidden md:flex items-center space-x-6">

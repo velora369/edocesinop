@@ -1,13 +1,28 @@
+import { motion } from "framer-motion";
+
 export default function Footer() {
   return (
     <footer className="bg-chocolate text-white py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <div className="mb-6 md:mb-0">
-            <a href="#" className="font-playfair font-bold text-3xl text-white">
-              É<span className="text-secondary">Doce</span>
-            </a>
-            <p className="mt-2 text-gray-300">Adoçando momentos especiais</p>
+          <div className="mb-6 md:mb-0 flex flex-col items-center md:items-start">
+            <motion.a 
+              href="#" 
+              className="block mb-3"
+              whileHover={{ scale: 1.05, filter: "brightness(1.1)" }}
+              whileTap={{ scale: 0.95 }}
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            >
+              <img 
+                src="/src/assets/logo.png" 
+                alt="Logo ÉDoce Confeitaria Artesanal" 
+                className="h-[80px] object-contain filter drop-shadow-lg"
+              />
+            </motion.a>
+            <p className="mt-1 text-gray-300 font-dancing text-xl">Adoçando momentos especiais</p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-8">
