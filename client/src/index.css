@@ -21,6 +21,12 @@
   --cream: 0 0% 100%; /* #FFFFFF */
   --cyan-light: 176 57% 54%; /* #44CFC6 */
   
+  /* Color variations for hover effects */
+  --petrol-light: 179 100% 40%;
+  --bubblegum-light: 336 87% 65%;
+  --chocolate-light: 25 42% 28%;
+  --cyan-light-bright: 176 57% 65%;
+  
   --primary: 179 100% 33%;
   --primary-foreground: 0 0% 100%;
   --secondary: 336 87% 57%;
@@ -30,7 +36,7 @@
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
   --ring: 179 100% 33%;
-  --radius: 0.5rem;
+  --radius: 1rem; /* Increased for more rounded elements */
 }
 
 .dark {
@@ -89,14 +95,73 @@
 
   .section-title {
     @apply font-montserrat font-bold text-3xl md:text-4xl mb-6 text-chocolate;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: hsl(var(--secondary));
+    border-radius: 3px;
   }
 
   .section-highlight {
     @apply text-secondary;
   }
 
+  /* Enhanced product card with glassmorphism effect */
   .product-card {
-    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+    @apply bg-white/90 backdrop-blur-sm rounded-lg shadow-md overflow-hidden transition-all duration-300;
+    transform: translateY(0);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .product-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Fancy confectionery-themed decorations */
+  .chocolate-drip {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #4B2E1F;
+    border-radius: 15px 15px 5px 5px;
+    z-index: 5;
+  }
+  
+  .chocolate-drip::before,
+  .chocolate-drip::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 15px;
+    height: 25px;
+    background-color: #4B2E1F;
+    border-radius: 10px 10px 5px 5px;
+  }
+  
+  .chocolate-drip::before {
+    left: -10px;
+  }
+  
+  .chocolate-drip::after {
+    right: -10px;
+  }
+  
+  /* Highlight badge for featured products */
+  .featured-badge {
+    @apply absolute top-4 right-4 bg-secondary text-white font-bold py-1 px-3 rounded-full text-xs shadow-md z-10;
+    transform: rotate(5deg);
   }
 }
 

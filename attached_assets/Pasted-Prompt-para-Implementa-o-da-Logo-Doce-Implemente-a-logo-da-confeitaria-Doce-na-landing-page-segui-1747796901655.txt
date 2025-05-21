@@ -1,0 +1,40 @@
+Prompt para Implementação da Logo ÉDoce
+Implemente a logo da confeitaria ÉDoce na landing page seguindo estas especificações detalhadas:
+Fonte da Logo
+URL da logo: https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/logo.png
+Baixe e otimize esta imagem para uso no site, mantendo a qualidade visual
+Certifique-se de que a logo seja salva com fundo transparente para integração perfeita
+Implementação no Cabeçalho
+Posicione a logo no canto esquerdo do cabeçalho, com tamanho proporcional (altura entre 50-60px )
+Adicione um efeito sutil de elevação (shadow) para destacar a logo do fundo
+A logo deve ser clicável, redirecionando para a página inicial
+Em dispositivos móveis, a logo deve se ajustar automaticamente (altura entre 40-45px)
+Implemente uma animação suave de entrada quando a página carrega (fade-in ou slide-down sutil)
+Ao rolar a página, a logo deve permanecer visível no cabeçalho fixo (sticky header)
+Implementação no Footer
+Posicione a logo centralizada na parte superior do footer
+Tamanho ligeiramente maior que no cabeçalho (altura entre 70-80px)
+Adicione o slogan "Adoçando momentos especiais" logo abaixo da logo, em fonte elegante
+A logo no footer também deve ser clicável, redirecionando para o topo da página
+Implemente um efeito de hover sutil (leve aumento de brilho ou escala)
+Adaptações Responsivas
+Em telas muito pequenas (abaixo de 320px), ajuste o tamanho da logo para manter a legibilidade
+Garanta que a logo nunca fique distorcida em nenhum tamanho de tela
+Mantenha espaçamento adequado ao redor da logo em todos os dispositivos
+Detalhes Estéticos
+Preserve as cores originais da logo: Rosa-chiclete (#F03D87), Marrom-chocolate (#4B2E1F), Azul-petróleo (#00A9A5)
+O efeito de "gotejamento" na parte inferior da logo deve ser mantido intacto
+A logo deve contrastar adequadamente com o fundo em todas as seções
+Considerações Técnicas
+Implemente a logo como imagem SVG se possível, para melhor qualidade em todos os dispositivos
+Caso use PNG, certifique-se de que a resolução seja suficiente para telas de alta densidade (2x ou 3x)
+Adicione atributos alt apropriados para acessibilidade: alt="Logo ÉDoce Confeitaria Artesanal"
+Otimize o carregamento da logo para não impactar a performance do site
+Animações e Interações
+No carregamento inicial da página: fade-in suave da logo (duração: 0.5s)
+Ao passar o mouse sobre a logo no footer: leve aumento de escala (105%) com transição suave
+Ao clicar na logo: efeito sutil de "click" (redução momentânea de escala para 95%)
+Integração com a Identidade Visual
+A logo deve ser o elemento central da identidade visual do site
+Todos os outros elementos de design devem complementar e harmonizar com a estética da logo
+As cores dos botões CTA e elementos de destaque devem derivar das cores presentes na logo

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ProductType } from "@/data/products";
 
@@ -7,58 +8,124 @@ type ProductCardProps = {
 };
 
 export default function ProductCard({ product, type }: ProductCardProps) {
+  // Check if it's the featured La Crema product
+  const isFeatured = product.name.includes("La Crema");
+  
   return (
-    <div className="product-card">
-      <img 
-        src={product.image} 
-        alt={product.name} 
-        className="w-full h-56 object-cover"
-      />
-      <div className="p-6">
-        <h3 className="font-montserrat font-semibold text-xl mb-2">{product.name}</h3>
-        <p className="text-gray-600 mb-4">{product.description}</p>
-        <div className="flex flex-col space-y-2">
+    <motion.div 
+      className="product-card relative"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      {/* Chocolate drip decoration - only for featured products */}
+      {isFeatured && <div className="chocolate-drip"></div>}
+      
+      {/* Featured badge */}
+      {isFeatured && (
+        <span className="featured-badge">
+          Especial
+        </span>
+      )}
+      
+      <div className="relative overflow-hidden">
+        <motion.img 
+          src={product.image} 
+          alt={product.name} 
+          className="w-full h-56 object-cover transition-transform"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.4 }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60"></div>
+      </div>
+      
+      <div className="p-6 relative">
+        <h3 className="font-montserrat font-semibold text-xl mb-2 text-chocolate">{product.name}</h3>
+        <p className="text-gray-600 mb-6">{product.description}</p>
+        
+        <div className="flex flex-col space-y-3">
           {type === 'taca' ? (
             <>
-              <Button 
-                asChild
-                className="bg-primary hover:bg-opacity-90 text-white"
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-sm text-gray-500 font-medium">Escolha o tamanho:</span>
+              </div>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
-                <a href={product.tamaM.link}>
-                  Taça M - R$ {product.tamaM.price}
-                </a>
-              </Button>
-              <Button 
-                asChild
-                className="bg-secondary hover:bg-opacity-90 text-white"
+                <Button 
+                  asChild
+                  className="w-full bg-primary hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden"
+                >
+                  <a href={product.tamaM.link} className="flex justify-between items-center">
+                    <span>Taça M (1,4L)</span>
+                    <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
+                      R$ {product.tamaM.price}
+                    </span>
+                  </a>
+                </Button>
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
-                <a href={product.tamaG.link}>
-                  Taça G - R$ {product.tamaG.price}
-                </a>
-              </Button>
+                <Button 
+                  asChild
+                  className="w-full bg-secondary hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden"
+                >
+                  <a href={product.tamaG.link} className="flex justify-between items-center">
+                    <span>Taça G (2,4L)</span>
+                    <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
+                      R$ {product.tamaG.price}
+                    </span>
+                  </a>
+                </Button>
+              </motion.div>
             </>
           ) : (
             <>
-              <Button 
-                asChild
-                className="bg-primary hover:bg-opacity-90 text-white"
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-sm text-gray-500 font-medium">Escolha o tamanho:</span>
+              </div>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
-                <a href={product.poteM.link}>
-                  Pote M - R$ {product.poteM.price}
-                </a>
-              </Button>
-              <Button 
-                asChild
-                className="bg-secondary hover:bg-opacity-90 text-white"
+                <Button 
+                  asChild
+                  className="w-full bg-primary hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden"
+                >
+                  <a href={product.poteM.link} className="flex justify-between items-center">
+                    <span>Pote M (500ml)</span>
+                    <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
+                      R$ {product.poteM.price}
+                    </span>
+                  </a>
+                </Button>
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
-                <a href={product.poteG.link}>
-                  Pote G - R$ {product.poteG.price}
-                </a>
-              </Button>
+                <Button 
+                  asChild
+                  className="w-full bg-secondary hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden"
+                >
+                  <a href={product.poteG.link} className="flex justify-between items-center">
+                    <span>Pote G (1L)</span>
+                    <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
+                      R$ {product.poteG.price}
+                    </span>
+                  </a>
+                </Button>
+              </motion.div>
             </>
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
