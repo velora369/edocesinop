@@ -19,13 +19,13 @@ export default function Contact() {
       text: "Encomendas com pelo menos 24h de antecedência",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-          <path d="M8 14h2v2H8z"></path>
-          <path d="M12 14h2v2h-2z"></path>
-          <path d="M16 14h2v2h-2z"></path>
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="#72CEC3"></rect>
+          <line x1="16" y1="2" x2="16" y2="6" stroke="#FFFFFF" strokeWidth="2"></line>
+          <line x1="8" y1="2" x2="8" y2="6" stroke="#FFFFFF" strokeWidth="2"></line>
+          <line x1="3" y1="10" x2="21" y2="10" stroke="#FFFFFF" strokeWidth="1.5"></line>
+          <rect x="8" y="14" width="2" height="2" fill="#FFFFFF" rx="0.5"></rect>
+          <rect x="12" y="14" width="2" height="2" fill="#FFFFFF" rx="0.5"></rect>
+          <rect x="16" y="14" width="2" height="2" fill="#FFFFFF" rx="0.5"></rect>
         </svg>
       ),
       ariaLabel: "Prazo de Encomendas"
