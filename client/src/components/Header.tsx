@@ -39,11 +39,13 @@ export default function Header() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <img 
-            src="/src/assets/logo.png" 
-            alt="Logo ÉDoce Confeitaria Artesanal" 
-            className="h-[60px] md:h-[60px] sm:h-[45px] object-contain filter drop-shadow-md transition-all duration-300"
-          />
+          <div className="logo-container w-[60px] h-[60px] md:w-[60px] md:h-[60px] sm:w-[45px] sm:h-[45px] rounded-full overflow-hidden border-2 border-[#F03D87] shadow-lg flex items-center justify-center bg-[#00A9A5]">
+            <img 
+              src="/src/assets/logo.png" 
+              alt="Logo ÉDoce Confeitaria Artesanal" 
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
         </motion.a>
         
         <nav className="hidden md:flex items-center space-x-6">

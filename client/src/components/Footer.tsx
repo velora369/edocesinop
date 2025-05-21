@@ -9,18 +9,21 @@ export default function Footer() {
             <motion.a 
               href="#" 
               className="block mb-3"
-              whileHover={{ scale: 1.05, filter: "brightness(1.1)" }}
+              whileHover={{ rotate: 10 }}
               whileTap={{ scale: 0.95 }}
               onClick={(e) => {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <img 
-                src="/src/assets/logo.png" 
-                alt="Logo ÉDoce Confeitaria Artesanal" 
-                className="h-[80px] object-contain filter drop-shadow-lg"
-              />
+              <div className="footer-logo-container w-[80px] h-[80px] md:w-[80px] md:h-[80px] sm:w-[60px] sm:h-[60px] rounded-full overflow-hidden border-2 border-[#F03D87] shadow-lg flex items-center justify-center bg-[#00A9A5] mx-auto md:mx-0">
+                <img 
+                  src="/src/assets/logo.png" 
+                  alt="Logo ÉDoce Confeitaria Artesanal" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
             </motion.a>
             <p className="mt-1 text-gray-300 font-dancing text-xl">Adoçando momentos especiais</p>
           </div>
