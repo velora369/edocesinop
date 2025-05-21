@@ -66,7 +66,7 @@ export default function Products() {
                   ))}
                 </div>
                 <p className="mb-6 text-white text-lg leading-relaxed">
-                  Nosso doce mais amado pelos clientes! Uma combinação perfeita de texturas e sabores que conquistou o paladar de todos. Experimente esta sensação única de prazer em cada colherada.
+                  Nosso doce mais amado pelos clientes! A verdadeira obra-prima da confeitaria com combinação perfeita de texturas e sabores que conquistou o paladar de todos. Experimente esta sensação única de prazer em cada colherada.
                 </p>
               </motion.div>
               
