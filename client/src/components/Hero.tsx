@@ -16,7 +16,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-playfair text-4xl md:text-6xl text-white mb-4 leading-tight">
-            Você não pode comprar felicidade, mas pode comprar <span className="font-dancing text-secondary">ÉDoce</span>, que é quase a mesma coisa!
+            Você não pode comprar felicidade, mas pode comprar <span className="font-dancing"><span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#F03D87]">ce</span></span>, que é quase a mesma coisa!
           </h1>
           <p className="font-montserrat text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
             Confeitaria artesanal com ingredientes selecionados a dedo para tornar seus momentos especiais inesquecíveis
