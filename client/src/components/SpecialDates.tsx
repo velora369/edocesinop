@@ -68,7 +68,7 @@ export default function SpecialDates() {
                   className="bg-primary hover:bg-opacity-90 text-white py-2 px-6 rounded-full transition"
                 >
                   <a href={item.link}>
-                    Consultar
+                    Verificar disponibilidade
                   </a>
                 </Button>
               </div>
