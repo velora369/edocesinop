@@ -244,52 +244,101 @@ export default function Products() {
               
               {/* Gallery with captions */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                {[
-                  { 
-                    src: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500", 
-                    alt: "Bolo decorado ÉDoce", 
-                    caption: "Bolo de Aniversário Temático" 
-                  },
-                  { 
-                    src: "https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500", 
-                    alt: "Bolo de chocolate ÉDoce", 
-                    caption: "Bolo La Crema Chocolate" 
-                  },
-                  { 
-                    src: "https://pixabay.com/get/g28576a03b4d0b3957e0a340ebd5aebe5dc53b0c62f96154dcaeaf1d24acb077d73c301cb278fb20299fcc2c06300b4a51f9cdb9759da4443338626bb9ad98264_1280.jpg", 
-                    alt: "Bolo de aniversário ÉDoce", 
-                    caption: "Bolo de Festa Infantil" 
-                  },
-                  { 
-                    src: "https://pixabay.com/get/g26256ea36184fc7006302cbe5915d20a080b444ca34dff0f9adace48e7d6fcf3f107596748c4726aad384a80ef469611535ff652f7709c5f520afefa709d1e9d_1280.jpg", 
-                    alt: "Bolo de casamento ÉDoce", 
-                    caption: "Bolo de Casamento Elegante" 
-                  },
-                  { 
-                    src: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500", 
-                    alt: "Bolo temático ÉDoce", 
-                    caption: "Bolo Temático Personalizado" 
-                  }
-                ].map((image, index) => (
-                  <motion.div 
-                    key={index}
-                    className="relative overflow-hidden group rounded-xl shadow-md"
-                    whileHover={{ y: -5 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1, duration: 0.5 }}
-                  >
-                    <img 
-                      src={image.src} 
-                      alt={image.alt} 
-                      className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <p className="text-white font-montserrat font-medium text-center">{image.caption}</p>
-                    </div>
-                  </motion.div>
-                ))}
+                {/* Bolo de Kit Kat com Carrossel */}
+                <motion.div 
+                  className="relative overflow-hidden group rounded-xl shadow-md"
+                  whileHover={{ y: -5 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1, duration: 0.5 }}
+                >
+                  <div className="relative w-full h-64">
+                    {[
+                      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-kitkat.webp",
+                      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/kit-kat-bolo.webp"
+                    ].map((src, i) => (
+                      <motion.img 
+                        key={i}
+                        src={src} 
+                        alt="Bolo de Kit Kat ÉDoce"
+                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        initial={{ opacity: i === 0 ? 1 : 0 }}
+                        animate={{ 
+                          opacity: [0, 1, 1, 0], 
+                          zIndex: i === 0 ? [1, 1, 0, 0] : [0, 0, 1, 1] 
+                        }}
+                        transition={{ 
+                          duration: 6, 
+                          times: [0, 0.3, 0.7, 1],
+                          repeat: Infinity, 
+                          repeatDelay: 2,
+                          delay: i === 0 ? 0 : 3 
+                        }}
+                      />
+                    ))}
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-white font-montserrat font-medium text-center">Bolo de Kit Kat</p>
+                  </div>
+                </motion.div>
+
+                {/* Bolo para Festa Infantil */}
+                <motion.div 
+                  className="relative overflow-hidden group rounded-xl shadow-md"
+                  whileHover={{ y: -5 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                >
+                  <img 
+                    src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-naruto-.webp" 
+                    alt="Bolo para Festa Infantil ÉDoce" 
+                    className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-white font-montserrat font-medium text-center">Bolo para Festa Infantil</p>
+                  </div>
+                </motion.div>
+
+                {/* Espatulados em Chantininho */}
+                <motion.div 
+                  className="relative overflow-hidden group rounded-xl shadow-md"
+                  whileHover={{ y: -5 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                >
+                  <img 
+                    src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-3.webp" 
+                    alt="Espatulados em Chantininho ÉDoce" 
+                    className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-white font-montserrat font-medium text-center">Espatulados em Chantininho</p>
+                  </div>
+                </motion.div>
+
+                {/* Minimalista texturizado */}
+                <motion.div 
+                  className="relative overflow-hidden group rounded-xl shadow-md"
+                  whileHover={{ y: -5 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                >
+                  <img 
+                    src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-2.webp" 
+                    alt="Minimalista texturizado ÉDoce" 
+                    className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-white font-montserrat font-medium text-center">Minimalista Texturizado</p>
+                  </div>
+                </motion.div>
               </div>
             </TabsEdoceContent>
           </TabsEdoce>
