@@ -28,15 +28,7 @@ export const testimonials: TestimonialType[] = [
     rating: 5,
     isGoogle: true
   },
-  {
-    id: 3,
-    name: "Ana Luíza Mendes",
-    initials: "AL",
-    content: "Descobri a ÉDoce através de uma amiga e não consigo mais parar de pedir! A qualidade dos produtos é impressionante. O La Crema de pistache é divino, e os potes são generosos. Sempre recebo elogios quando levo para reuniões de família. O cuidado no preparo é visível em cada detalhe!",
-    description: "Cliente desde 2020",
-    rating: 5,
-    isGoogle: true
-  },
+
   {
     id: 4,
     name: "Roberto Almeida",
