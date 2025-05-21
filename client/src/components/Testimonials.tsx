@@ -101,9 +101,8 @@ export default function Testimonials() {
           <Button 
             onClick={goToNext}
             disabled={currentIndex === testimonials.length - 1}
-            variant="outline"
             size="icon"
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-primary rounded-full p-2 shadow-md hover:bg-gray-50 focus:outline-none disabled:opacity-50"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-primary border-2 border-primary rounded-full p-2 shadow-md hover:bg-primary hover:text-white focus:outline-none disabled:opacity-50 disabled:bg-gray-100 disabled:text-gray-400 disabled:border-gray-200 transition-all duration-300"
             aria-label="Next testimonial"
           >
             <ChevronRight className="h-5 w-5" />

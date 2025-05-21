@@ -32,10 +32,10 @@ export default function Footer() {
             <div>
               <h4 className="font-montserrat font-semibold mb-3 text-secondary">Links Rápidos</h4>
               <ul className="space-y-2">
-                <li><a href="#quem-somos" className="hover:text-secondary transition">Quem Somos</a></li>
-                <li><a href="#produtos" className="hover:text-secondary transition">Produtos</a></li>
-                <li><a href="#datas-especiais" className="hover:text-secondary transition">Datas Especiais</a></li>
-                <li><a href="#depoimentos" className="hover:text-secondary transition">Depoimentos</a></li>
+                <li><a href="#quem-somos" className="hover:text-secondary hover:bg-secondary/20 transition-all duration-300 block px-2 py-1 rounded-md">Quem Somos</a></li>
+                <li><a href="#produtos" className="hover:text-secondary hover:bg-secondary/20 transition-all duration-300 block px-2 py-1 rounded-md">Produtos</a></li>
+                <li><a href="#datas-especiais" className="hover:text-secondary hover:bg-secondary/20 transition-all duration-300 block px-2 py-1 rounded-md">Datas Especiais</a></li>
+                <li><a href="#depoimentos" className="hover:text-secondary hover:bg-secondary/20 transition-all duration-300 block px-2 py-1 rounded-md">Depoimentos</a></li>
               </ul>
             </div>
             
@@ -43,7 +43,7 @@ export default function Footer() {
               <h4 className="font-montserrat font-semibold mb-3 text-secondary">Contato</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="https://wa.me/5566999852299" className="flex items-center hover:text-secondary transition">
+                  <a href="https://wa.me/5566999852299" className="flex items-center hover:text-secondary transition-all duration-300 hover:bg-secondary/20 px-2 py-1 rounded-md">
                     <i className="fab fa-whatsapp mr-2"></i>
                     +55 66 99985-2299
                   </a>
@@ -53,7 +53,7 @@ export default function Footer() {
                     href="https://www.instagram.com/edocesinop" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center hover:text-secondary transition"
+                    className="flex items-center hover:text-secondary transition-all duration-300 hover:bg-secondary/20 px-2 py-1 rounded-md"
                   >
                     <i className="fab fa-instagram mr-2"></i>
                     @edocesinop
