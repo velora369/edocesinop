@@ -16,7 +16,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-playfair text-4xl md:text-6xl text-white mb-4 leading-tight">
-            Doces momentos merecem <span className="font-dancing text-secondary">ÉDoce</span>
+            Você não pode comprar felicidade, mas pode comprar <span className="font-dancing text-secondary">ÉDoce</span>, que é quase a mesma coisa!
           </h1>
           <p className="font-montserrat text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
             Confeitaria artesanal com ingredientes selecionados a dedo para tornar seus momentos especiais inesquecíveis
