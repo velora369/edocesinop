@@ -354,5 +354,27 @@ export const potesProducts: ProductType[] = [
       price: "99,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Abacaxi%20no%20Pote%20G%20(1L )%20por%20R$%2099,90."
     }
+  },
+  {
+    id: 16,
+    name: "Niza",
+    description: "A combinação perfeita entre o sabor sofisticado do pistache e o irresistível chocolate. Nosso Niza apresenta camadas cremosas de pistache envolvidas por uma cobertura generosa de chocolate ao leite, finalizadas com pedaços crocantes de pistache e uma cereja no topo. Uma experiência sensorial que conquista desde a primeira colherada, unindo texturas e sabores em perfeita harmonia.",
+    image: "https://images.unsplash.com/photo-1559622214-f8a9850965bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    tamaM: {
+      price: "149,90",
+      link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Niza%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
+    },
+    tamaG: {
+      price: "249,90",
+      link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Niza%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90."
+    },
+    poteM: {
+      price: "44,90",
+      link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Niza%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90."
+    },
+    poteG: {
+      price: "99,90",
+      link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Niza%20no%20Pote%20G%20(1L )%20por%20R$%2099,90."
+    }
   }
 ];
