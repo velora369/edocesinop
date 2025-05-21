@@ -4,7 +4,7 @@ import { ProductType } from "@/data/products";
 
 type ProductCardProps = {
   product: ProductType;
-  type: 'taca' | 'pote';
+  type: 'taca' | 'pote' | 'bolo';
 };
 
 export default function ProductCard({ product, type }: ProductCardProps) {

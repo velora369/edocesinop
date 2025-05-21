@@ -140,7 +140,7 @@ export default function Products() {
                   <TabsEdoceTrigger 
                     key={tab.value}
                     value={tab.value} 
-                    className="flex items-center gap-2 px-6 py-3 transition-all duration-300"
+                    className="flex items-center gap-2 px-6 py-3 transition-all duration-300 rounded-lg"
                   >
                     <i className={`${tab.icon} text-lg`}></i>
                     <span>{tab.label}</span>
@@ -193,78 +193,123 @@ export default function Products() {
             
             {/* Bolos Tab Content */}
             <TabsEdoceContent value="bolos">
-              <div className="text-center mb-12">
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="text-center mb-12"
+              >
+                <h3 className="font-dancing text-3xl text-primary mb-3">Bolos Artesanais ÉDoce</h3>
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossos bolos são feitos com massa tipo pão de ló e decorados artesanalmente para cada ocasião.
                 </p>
                 
-                <div className="bg-white rounded-lg shadow-md p-6 md:p-8 max-w-3xl mx-auto mb-8">
-                  <h3 className="font-montserrat font-semibold text-xl mb-4 text-primary">Informações importantes</h3>
-                  <ul className="space-y-3 text-left">
+                <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-3xl mx-auto mb-12 border border-gray-100">
+                  <h3 className="font-montserrat font-semibold text-xl mb-6 text-primary">Informações importantes</h3>
+                  <ul className="space-y-4 text-left">
                     <li className="flex items-start">
-                      <i className="fas fa-check-circle text-secondary mt-1 mr-2"></i>
-                      <span>Pedidos apenas pelo WhatsApp: (66) 99985-2299</span>
+                      <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
+                      <span className="text-gray-700">Trabalhamos somente com massas tipo pão de ló</span>
                     </li>
                     <li className="flex items-start">
-                      <i className="fas fa-check-circle text-secondary mt-1 mr-2"></i>
-                      <span>Trabalhamos somente com massas tipo pão de ló</span>
+                      <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
+                      <span className="text-gray-700">Nossos bolos são cobrados por tamanho, sabor e decoração</span>
                     </li>
                     <li className="flex items-start">
-                      <i className="fas fa-check-circle text-secondary mt-1 mr-2"></i>
-                      <span>Sabores diversos</span>
+                      <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
+                      <span className="text-gray-700">No momento do pedido, enviar data de entrega e foto de referência</span>
                     </li>
                     <li className="flex items-start">
-                      <i className="fas fa-check-circle text-secondary mt-1 mr-2"></i>
-                      <span>Nossos bolos são cobrados por tamanho, sabor e decoração</span>
-                    </li>
-                    <li className="flex items-start">
-                      <i className="fas fa-check-circle text-secondary mt-1 mr-2"></i>
-                      <span>No momento do pedido, enviar data de entrega e foto de referência</span>
+                      <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
+                      <span className="text-gray-700">Pedidos apenas pelo WhatsApp: (66) 99985-2299</span>
                     </li>
                   </ul>
                   
-                  <Button 
-                    asChild
-                    className="mt-8 bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full"
-                  >
-                    <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20bolo%20personalizado.%20Tenho%20interesse%20no%20sabor%20[PREENCHER]%20para%20o%20dia%20[PREENCHER].">
-                      Solicitar orçamento para bolo personalizado
-                    </a>
-                  </Button>
+                  <div className="mt-8 bg-gray-50 p-6 rounded-lg border border-gray-100">
+                    <h4 className="font-montserrat font-medium text-lg mb-4 text-chocolate">Sabores Disponíveis</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-left">
+                      {[
+                        "La Crema tradicional",
+                        "La Crema Ninho com Nutella",
+                        "La Crema Prestígio",
+                        "BanaCrema",
+                        "MaracuNinho",
+                        "Bolo do Amor",
+                        "Pudim de Leite Condensado"
+                      ].map((sabor, index) => (
+                        <div key={index} className="flex items-center">
+                          <i className="fas fa-birthday-cake text-secondary mr-2"></i>
+                          <span>{sabor}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+                    <Button 
+                      asChild
+                      className="mt-8 bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-8 py-6 shadow-md"
+                    >
+                      <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20bolo%20personalizado.%20Tenho%20interesse%20no%20sabor%20[PREENCHER]%20para%20o%20dia%20[PREENCHER]." className="flex items-center">
+                        <i className="fab fa-whatsapp mr-2 text-xl"></i>
+                        <span>Solicitar orçamento para bolo personalizado</span>
+                      </a>
+                    </Button>
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
               
-              {/* Gallery */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500" 
-                  alt="Bolo decorado ÉDoce" 
-                  className="rounded-lg shadow-md w-full h-64 object-cover"
-                />
-                
-                <img 
-                  src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500" 
-                  alt="Bolo de chocolate ÉDoce" 
-                  className="rounded-lg shadow-md w-full h-64 object-cover"
-                />
-                
-                <img 
-                  src="https://pixabay.com/get/g28576a03b4d0b3957e0a340ebd5aebe5dc53b0c62f96154dcaeaf1d24acb077d73c301cb278fb20299fcc2c06300b4a51f9cdb9759da4443338626bb9ad98264_1280.jpg" 
-                  alt="Bolo de aniversário ÉDoce" 
-                  className="rounded-lg shadow-md w-full h-64 object-cover"
-                />
-                
-                <img 
-                  src="https://pixabay.com/get/g26256ea36184fc7006302cbe5915d20a080b444ca34dff0f9adace48e7d6fcf3f107596748c4726aad384a80ef469611535ff652f7709c5f520afefa709d1e9d_1280.jpg" 
-                  alt="Bolo de casamento ÉDoce" 
-                  className="rounded-lg shadow-md w-full h-64 object-cover"
-                />
-                
-                <img 
-                  src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500" 
-                  alt="Bolo temático ÉDoce" 
-                  className="rounded-lg shadow-md w-full h-64 object-cover"
-                />
+              {/* Gallery Heading */}
+              <h3 className="font-dancing text-3xl text-center mb-6">Galeria de Bolos</h3>
+              
+              {/* Gallery with captions */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                {[
+                  { 
+                    src: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500", 
+                    alt: "Bolo decorado ÉDoce", 
+                    caption: "Bolo de Aniversário Temático" 
+                  },
+                  { 
+                    src: "https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500", 
+                    alt: "Bolo de chocolate ÉDoce", 
+                    caption: "Bolo La Crema Chocolate" 
+                  },
+                  { 
+                    src: "https://pixabay.com/get/g28576a03b4d0b3957e0a340ebd5aebe5dc53b0c62f96154dcaeaf1d24acb077d73c301cb278fb20299fcc2c06300b4a51f9cdb9759da4443338626bb9ad98264_1280.jpg", 
+                    alt: "Bolo de aniversário ÉDoce", 
+                    caption: "Bolo de Festa Infantil" 
+                  },
+                  { 
+                    src: "https://pixabay.com/get/g26256ea36184fc7006302cbe5915d20a080b444ca34dff0f9adace48e7d6fcf3f107596748c4726aad384a80ef469611535ff652f7709c5f520afefa709d1e9d_1280.jpg", 
+                    alt: "Bolo de casamento ÉDoce", 
+                    caption: "Bolo de Casamento Elegante" 
+                  },
+                  { 
+                    src: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=500", 
+                    alt: "Bolo temático ÉDoce", 
+                    caption: "Bolo Temático Personalizado" 
+                  }
+                ].map((image, index) => (
+                  <motion.div 
+                    key={index}
+                    className="relative overflow-hidden group rounded-xl shadow-md"
+                    whileHover={{ y: -5 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                  >
+                    <img 
+                      src={image.src} 
+                      alt={image.alt} 
+                      className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-4">
+                      <p className="text-white font-montserrat font-medium text-center">{image.caption}</p>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </TabsEdoceContent>
           </TabsEdoce>

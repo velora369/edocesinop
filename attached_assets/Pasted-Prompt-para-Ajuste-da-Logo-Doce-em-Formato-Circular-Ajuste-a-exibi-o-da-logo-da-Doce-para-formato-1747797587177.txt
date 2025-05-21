@@ -1,0 +1,79 @@
+Prompt para Ajuste da Logo ÉDoce em Formato Circular
+Ajuste a exibição da logo da ÉDoce para formato circular em toda a landing page, seguindo estas especificações detalhadas:
+Ajustes Necessários
+Transformar a Logo em Formato Circular
+Aplique border-radius: 50% ao container da logo tanto no cabeçalho quanto no footer
+Mantenha a imagem original da logo: https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/logo.png
+Certifique-se de que o recorte circular preserve a parte central da logo (o texto "Doce" e o elemento gráfico acima )
+Adicione um sutil efeito de sombra circular para destacar a logo: box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+Dimensões e Proporções
+No cabeçalho: diâmetro de 60px em desktop e 45px em mobile
+No footer: diâmetro de 80px em desktop e 60px em mobile
+Mantenha a proporção 1:1 (altura = largura) para garantir o formato perfeitamente circular
+Ajuste o object-fit: cover e object-position: center para garantir que a logo fique centralizada no círculo
+Estilo do Container
+Adicione uma borda fina (1-2px) ao redor do círculo usando a cor rosa-chiclete (#F03D87)
+Mantenha o fundo azul-petróleo (#00A9A5) original da logo
+Certifique-se de que o efeito de "gotejamento" na parte inferior da logo seja preservado dentro do círculo
+Implementação Técnica
+Utilize CSS para aplicar o formato circular:
+css
+.logo-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #F03D87;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Versão para o footer */
+.footer .logo-container {
+  width: 80px;
+  height: 80px;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+  .logo-container {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .footer .logo-container {
+    width: 60px;
+    height: 60px;
+  }
+}
+Animações e Interações
+Adicione uma sutil animação de rotação ao passar o mouse sobre a logo no footer (não aplicar no cabeçalho):
+css
+.footer .logo-container:hover {
+  transform: rotate(10deg);
+  transition: transform 0.3s ease;
+}
+Mantenha a funcionalidade de clique na logo (redirecionamento para a página inicial)
+Considerações Importantes
+Manter Paleta de Cores Original
+Não altere as cores originais da logo
+Utilize apenas as cores da paleta oficial: Azul-petróleo (#00A9A5), Rosa-chiclete (#F03D87), Marrom-chocolate (#4B2E1F), Branco (#FFFFFF), Ciano-claro (#44CFC6)
+Garantir Compatibilidade
+Teste o formato circular em todos os navegadores principais (Chrome, Firefox, Safari)
+Verifique a aparência em dispositivos móveis e desktop
+Certifique-se de que a logo circular se integre harmoniosamente ao design geral do site
+Otimização
+Mantenha o código CSS limpo e eficiente
+Evite duplicação de estilos
+Utilize classes específicas para evitar conflitos com outros elementos
+Exemplo Visual
+Transforme a exibição atual da logo (formato quadrado) para um formato circular elegante, mantendo a identidade visual da marca e garantindo que o elemento gráfico e o texto "Doce" permaneçam claramente visíveis e centralizados no círculo.

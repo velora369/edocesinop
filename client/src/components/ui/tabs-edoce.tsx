@@ -39,7 +39,7 @@ TabsEdoce.displayName = "TabsEdoce";
 
 const TabsEdoceTrigger = React.forwardRef<HTMLButtonElement, TabsEdoceTriggerProps>(
   ({ className, value, ...props }, ref) => {
-    // This is coming from the parent TabsEdoce component
+    // This is coming from the parent TabsEdoce component via cloneElement
     const { value: selectedValue, onValueChange } = (props as any);
     const isActive = selectedValue === value;
 
@@ -63,7 +63,7 @@ TabsEdoceTrigger.displayName = "TabsEdoceTrigger";
 
 const TabsEdoceContent = React.forwardRef<HTMLDivElement, TabsEdoceContentProps>(
   ({ className, value, ...props }, ref) => {
-    // This is coming from the parent TabsEdoce component
+    // This is coming from the parent TabsEdoce component via cloneElement
     const { value: selectedValue } = (props as any);
     const isActive = selectedValue === value;
 

@@ -1,0 +1,121 @@
+Prompt para Categorização de Produtos ÉDoce no Replit
+Implemente a funcionalidade de categorização de produtos para a landing page da ÉDoce, garantindo que ao clicar nos botões de categoria (Taças, Potes, Bolos), o conteúdo correspondente seja exibido corretamente:
+Categoria: Taças
+Ao clicar no botão "Taças", exiba os seguintes produtos:
+La Crema Tradicional
+Imagem: [Imagem de taça com sobremesa cremosa]
+Descrição: "Nossa receita original que conquistou o paladar dos clientes. Um clássico irresistível."
+Opções:
+Taça M (1,4L) - R$ 149,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Tradicional%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G (2,4L) - R$ 249,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Tradicional%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+La Crema Ninho com Nutella
+Imagem: [Imagem de taça com sobremesa de leite ninho e nutella]
+Descrição: "A combinação perfeita do cremoso leite Ninho com a irresistível Nutella, uma explosão de sabores."
+Opções:
+Taça M (1,4L) - R$ 149,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Ninho%20com%20Nutella%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G (2,4L) - R$ 249,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Ninho%20com%20Nutella%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+La Crema Prestígio
+Imagem: [Imagem de taça com sobremesa de chocolate e coco]
+Descrição: "A união do chocolate com coco, criando uma experiência tropical e sofisticada."
+Opções:
+Taça M (1,4L) - R$ 149,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Prestígio%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G (2,4L) - R$ 249,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Prestígio%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+BanaCrema
+Imagem: [Imagem de taça com sobremesa de banana]
+Descrição: "A doçura da banana combinada com nosso creme especial, uma sobremesa reconfortante e deliciosa."
+Opções:
+Taça M (1,4L) - R$ 149,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20BanaCrema%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G (2,4L) - R$ 249,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20BanaCrema%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+MaracuNinho
+Imagem: [Imagem de taça com sobremesa de maracujá e leite ninho]
+Descrição: "A acidez do maracujá equilibrada com a doçura do leite Ninho, uma combinação refrescante e surpreendente."
+Opções:
+Taça M (1,4L) - R$ 149,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20MaracuNinho%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.)
+Taça G (2,4L) - R$ 249,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20MaracuNinho%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.)
+Categoria: Potes
+Ao clicar no botão "Potes", exiba os seguintes produtos:
+Torta Alemã
+Imagem: [Imagem de pote com torta alemã]
+Descrição: "Camadas de biscoito e creme amanteigado, uma receita tradicional que nunca sai de moda."
+Opções:
+Pote M (500ml) - R$ 44,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20Alemã%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G (1L) - R$ 99,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20Alemã%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Torta de Bombons
+Imagem: [Imagem de pote com torta de bombons]
+Descrição: "Uma explosão de chocolate com pedaços de bombons, para os verdadeiros chocólatras."
+Opções:
+Pote M (500ml) - R$ 44,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20de%20Bombons%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G (1L) - R$ 99,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20de%20Bombons%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Tiramisù
+Imagem: [Imagem de pote com tiramisù]
+Descrição: "O clássico italiano com café, queijo mascarpone e cacau, uma sobremesa sofisticada e irresistível."
+Opções:
+Pote M (500ml) - R$ 44,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Tiramisù%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G (1L) - R$ 99,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Tiramisù%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Banoffee
+Imagem: [Imagem de pote com banoffee]
+Descrição: "A combinação perfeita de banana, doce de leite e chantilly, uma sobremesa que derrete na boca."
+Opções:
+Pote M (500ml) - R$ 44,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Banoffee%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G (1L) - R$ 99,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Banoffee%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Cassata de Morango
+Imagem: [Imagem de pote com cassata de morango]
+Descrição: "Sorvete artesanal com pedaços de morango, uma sobremesa refrescante para os dias quentes."
+Opções:
+Pote M (500ml) - R$ 44,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Morango%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G (1L) - R$ 99,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Morango%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Cassata de Uva
+Imagem: [Imagem de pote com cassata de uva]
+Descrição: "Sorvete cremoso com pedaços de uva, uma opção refrescante e diferenciada."
+Opções:
+Pote M (500ml) - R$ 44,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Uva%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G (1L) - R$ 99,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Uva%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Cassata de Abacaxi
+Imagem: [Imagem de pote com cassata de abacaxi]
+Descrição: "Sorvete tropical com pedaços de abacaxi caramelizado, uma explosão de sabor."
+Opções:
+Pote M (500ml) - R$ 44,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Abacaxi%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.)
+Pote G (1L) - R$ 99,90 (link WhatsApp: https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Abacaxi%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.)
+Categoria: Bolos
+Ao clicar no botão "Bolos", exiba as seguintes informações:
+Informações Gerais sobre Bolos
+Título: "Bolos Artesanais ÉDoce"
+Subtítulo: "Trabalhamos somente com massas tipo pão de ló"
+Descrição: "Nossos bolos são cobrados por tamanho, sabor e decoração. No momento do pedido, enviar data de entrega e foto de referência."
+Informação adicional: "Pedidos apenas pelo WhatsApp: (66) 99985-2299"
+Galeria de Bolos
+Exibir 3-5 imagens de bolos decorados em um carrossel ou grid
+Cada imagem deve ter uma legenda indicando o tipo de bolo
+Sabores Disponíveis
+Lista de sabores:
+La Crema tradicional
+La Crema Ninho com Nutella
+La Crema Prestígio
+BanaCrema
+MaracuNinho
+Bolo do Amor
+Pudim de Leite Condensado
+Botão de Orçamento
+Texto: "Solicitar orçamento para bolo personalizado"
+Link WhatsApp: https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20bolo%20personalizado.%20Tenho%20interesse%20no%20sabor%20[PREENCHER]%20para%20o%20dia%20[PREENCHER].
+Implementação Técnica
+Funcionalidade de Abas
+Implemente um sistema de abas/tabs que exiba o conteúdo correspondente quando cada botão é clicado
+Apenas uma categoria deve ser exibida por vez
+A categoria ativa deve ter destaque visual (cor diferente, sublinhado, etc. )
+Ao carregar a página, a categoria "Taças" deve estar selecionada por padrão
+Layout dos Produtos
+Exiba os produtos em cards com layout consistente
+Cada card deve conter: imagem, nome do produto, descrição e opções de tamanho com preço
+Botões de "Solicitar" devem ser destacados e claramente visíveis
+Responsividade
+Em dispositivos móveis, os cards devem se reorganizar em uma única coluna
+O sistema de abas deve permanecer funcional e intuitivo em todas as resoluções
+Animações
+Adicione transições suaves entre as categorias (fade in/out)
+Implemente animações sutis nos cards ao carregar cada categoria
+Observações Importantes
+Certifique-se de que todos os links de WhatsApp estejam funcionando corretamente
+Mantenha a consistência visual com o restante do site
+Garanta que as imagens sejam otimizadas para carregamento rápido
+Implemente tratamento para casos em que as imagens não carreguem (fallback)
