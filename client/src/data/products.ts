@@ -139,7 +139,7 @@ export const potesProducts: ProductType[] = [
     id: 6,
     name: "Torta Alemã",
     description: "Camadas de biscoito e creme amanteigado, uma receita tradicional que nunca sai de moda.",
-    image: "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/torta-alema-11.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Torta%20Alemã%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
@@ -183,7 +183,7 @@ export const potesProducts: ProductType[] = [
     id: 8,
     name: "Tiramisù",
     description: "O clássico italiano com café, queijo mascarpone e cacau, uma sobremesa sofisticada e irresistível.",
-    image: "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/tiramissu1.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Tiramisù%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
@@ -205,7 +205,7 @@ export const potesProducts: ProductType[] = [
     id: 9,
     name: "Banoffee",
     description: "A combinação perfeita de banana, doce de leite e chantilly, uma sobremesa que derrete na boca.",
-    image: "https://pixabay.com/get/g2091126adb3fa2406a1c8eeee5da409c7986fa114826abd636e23c068efd8d3698c4e5d168ed81899a6d5dab2b74e05b9434ca48aaefab6a7f8ad0cca88e04e9_1280.jpg",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/banoffe-1.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20Banoffee%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
@@ -293,7 +293,7 @@ export const potesProducts: ProductType[] = [
     id: 13,
     name: "Cassata de Morango",
     description: "Sorvete artesanal com pedaços de morango, uma sobremesa refrescante para os dias quentes.",
-    image: "https://pixabay.com/get/g3395d408c063d88fae5951582885d3f607d57a46792f868cd8e285f55678fe47b7c9a76e6c73a9851fb906a70e26d761cf13ba800d47d0e37e5ea3a223f4f6c8_1280.jpg",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/cassata-de-morango-.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Morango%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
@@ -315,7 +315,7 @@ export const potesProducts: ProductType[] = [
     id: 14,
     name: "Cassata de Uva",
     description: "Sorvete cremoso com pedaços de uva, uma opção refrescante e diferenciada.",
-    image: "https://images.unsplash.com/photo-1573500883495-6c9b16d88d8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/cassata-de-uva.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20na%20Cassata%20de%20Uva%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
