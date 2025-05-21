@@ -1,0 +1,129 @@
+Prompt para Adicionar Ícones nos Círculos da Seção de Informações
+Adicione ícones temáticos aos círculos turquesa vazios na seção de informações do site ÉDoce, seguindo estas especificações:
+Ícones Necessários
+Círculo 1: Horário de Atendimento
+Texto atual: "Atendemos todos os dias, das 9h às 18h"
+Ícone recomendado: Relógio/Calendário
+Código SVG:
+html
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10"></circle>
+  <polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+Círculo 2: Prazo de Encomendas
+Texto atual: "Encomendas com pelo menos 24h de antecedência"
+Ícone recomendado: Ampulheta/Cronômetro
+Código SVG:
+html
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+  <circle cx="12" cy="12" r="3"></circle>
+</svg>
+Círculo 3: Opções de Entrega
+Texto atual: "Consulte opções de entrega"
+Ícone recomendado: Caminhão/Entrega
+Código SVG:
+html
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="1" y="3" width="15" height="13"></rect>
+  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+</svg>
+Implementação Técnica
+Localizar os elementos no HTML
+Encontre os três círculos turquesa vazios na seção de informações
+Eles provavelmente estão dentro de uma estrutura como:
+html
+<div class="features-section">
+  <div class="feature">
+    <div class="feature-icon">
+      <!-- Inserir ícone aqui -->
+    </div>
+    <p>Atendemos todos os dias, das 9h às 18h</p>
+  </div>
+  <!-- Outros círculos similares -->
+</div>
+Adicionar os ícones SVG
+Insira cada código SVG dentro do respectivo elemento .feature-icon (ou similar )
+Certifique-se de que os ícones estão centralizados dentro dos círculos
+Estilização CSS
+Adicione ou modifique o CSS para garantir que os ícones fiquem bem posicionados:
+css
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #00A9A5; /* Azul-petróleo */
+  margin: 0 auto 15px;
+}
+
+.feature-icon svg {
+  width: 40px;
+  height: 40px;
+}
+Animação (opcional)
+Adicione uma sutil animação de hover para melhorar a experiência do usuário:
+css
+.feature-icon:hover svg {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+Alternativa com Font Awesome
+Se preferir usar Font Awesome em vez de SVG, aqui está o código alternativo:
+html
+<!-- No head do documento -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Para o ícone de relógio -->
+<div class="feature-icon">
+  <i class="fas fa-clock"></i>
+</div>
+
+<!-- Para o ícone de ampulheta -->
+<div class="feature-icon">
+  <i class="fas fa-hourglass-half"></i>
+</div>
+
+<!-- Para o ícone de entrega -->
+<div class="feature-icon">
+  <i class="fas fa-truck"></i>
+</div>
+Com o CSS correspondente:
+css
+.feature-icon i {
+  font-size: 40px;
+  color: #FFFFFF;
+}
+Considerações Importantes
+Manter a paleta de cores
+Os ícones devem ser brancos (#FFFFFF ) para contrastar com o fundo azul-petróleo
+Não altere a cor de fundo dos círculos, mantenha o azul-petróleo (#00A9A5)
+Responsividade
+Garanta que os ícones se ajustem corretamente em dispositivos móveis
+Adicione media queries se necessário:
+css
+@media (max-width: 768px) {
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .feature-icon svg,
+  .feature-icon i {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+  }
+}
+Acessibilidade
+Adicione atributos aria-label aos ícones para melhorar a acessibilidade:
+html
+<div class="feature-icon" aria-label="Horário de Atendimento">
+  <!-- Ícone aqui -->
+</div>
+Implementação Prioritária
+Esta melhoria visual é importante para a experiência do usuário e deve ser implementada o mais rápido possível. Os ícones ajudarão a comunicar visualmente as informações importantes sobre horários, prazos e entregas, tornando o site mais intuitivo e profissional.

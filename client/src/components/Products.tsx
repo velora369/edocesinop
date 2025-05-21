@@ -225,27 +225,7 @@ export default function Products() {
                     </li>
                   </ul>
                   
-                  <div className="mt-8 bg-gray-50 p-6 rounded-lg border border-gray-100">
-                    <h4 className="font-montserrat font-medium text-lg mb-4 text-chocolate">Sabores Disponíveis</h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-left">
-                      {[
-                        "La Crema tradicional",
-                        "La Crema Ninho com Nutella",
-                        "La Crema Prestígio",
-                        "BanaCrema",
-                        "MaracuNinho",
-                        "Bolo do Amor",
-                        "Pudim de Leite Condensado"
-                      ].map((sabor, index) => (
-                        <div key={index} className="flex items-center">
-                          <i className="fas fa-birthday-cake text-secondary mr-2"></i>
-                          <span>{sabor}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+                  <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="mt-8">
                     <Button 
                       asChild
                       className="mt-8 bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-8 py-6 shadow-md"
