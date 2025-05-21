@@ -68,7 +68,7 @@ export default function About() {
               whileHover={{ y: -5 }}
             >
               <p className="font-dancing text-2xl text-primary">
-                "Ingredientes premium selecionados a dedo para sabores que encantam todos os paladares"
+                "Ingredientes premium cuidadosamente selecionados para sabores que encantam todos os paladares"
               </p>
             </motion.div>
           </motion.div>
