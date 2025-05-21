@@ -26,7 +26,7 @@ export const tacasProducts: ProductType[] = [
     id: 1,
     name: "La Crema Tradicional",
     description: "Nossa receita original que conquistou o paladar dos clientes. Um clássico irresistível.",
-    image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/la-crema-trad.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Tradicional%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
@@ -48,7 +48,7 @@ export const tacasProducts: ProductType[] = [
     id: 2,
     name: "La Crema Ninho com Nutella",
     description: "A combinação perfeita do cremoso leite Ninho com a irresistível Nutella, uma explosão de sabores.",
-    image: "https://images.unsplash.com/photo-1541599468348-e96984315921?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/lacrema-1.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20Ninho%20com%20Nutella%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90."
