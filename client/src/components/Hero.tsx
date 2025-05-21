@@ -65,28 +65,7 @@ export default function Hero() {
             </Button>
           </motion.div>
           
-          <motion.div 
-            className="mt-16 flex justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.2 }}
-          >
-            <a 
-              href="#quem-somos" 
-              className="text-white/80 hover:text-white flex flex-col items-center transition-all duration-300 hover:transform hover:-translate-y-1"
-              aria-label="Rolar para baixo"
-            >
-              <span className="text-sm mb-2">Descubra nossa história</span>
-              <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 5L12 19M12 19L19 12M12 19L5 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </motion.div>
-            </a>
-          </motion.div>
+
         </motion.div>
       </div>
     </section>
