@@ -17,7 +17,13 @@ interface TabsEdoceContentProps extends React.HTMLAttributes<HTMLDivElement> {
 const TabsEdoce = React.forwardRef<HTMLDivElement, TabsEdoceProps>(
   ({ className, value, onValueChange, ...props }, ref) => {
     return (
-      <div ref={ref} className={cn("", className)} {...props}>
+      <div 
+        ref={ref} 
+        className={cn("", className)} 
+        data-value={value}
+        data-state={value}
+        {...props}
+      >
         {/* Actual tabs are handled via context and triggers */}
         {React.Children.map(props.children, (child) => {
           if (React.isValidElement(child)) {
