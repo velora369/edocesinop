@@ -1,0 +1,87 @@
+Prompt para o Agente IA do Replit: Revisão e Correção dos Produtos da Confeitaria ÉDoce
+Olá, Agente do Replit! Preciso da sua ajuda para revisar e corrigir os produtos exibidos no site da confeitaria ÉDoce. Após uma análise detalhada, identifiquei que alguns produtos do catálogo original estão faltando e precisamos garantir que todos estejam corretamente implementados no site.
+Contexto
+A confeitaria ÉDoce oferece uma variedade de sobremesas deliciosas, organizadas em três categorias principais: Taças, Potes e Bolos. Cada produto deve ter opções de tamanho (M e G) com seus respectivos preços, e cada botão de tamanho deve redirecionar para o WhatsApp com uma mensagem personalizada incluindo o nome do produto, tamanho escolhido e preço.
+A seção de Bolos já está correta e não precisa de ajustes. No entanto, as seções de Taças e Potes precisam ser revisadas para garantir que todos os produtos do catálogo original estejam presentes e configurados corretamente.
+Requisitos Técnicos
+1. Mantenha o design e a funcionalidade atual do site, seguindo o mesmo padrão visual dos produtos já implementados.
+2. Cada produto deve ter:
+    * Nome exato conforme o catálogo
+    * Descrição atrativa
+    * Opções de tamanho (M e G) com preços corretos
+    * Botões de tamanho que redirecionam para o WhatsApp (+55 66 99985-2299) com mensagem personalizada
+3. A estrutura HTML/CSS deve seguir o mesmo padrão dos produtos existentes, mantendo a consistência visual.
+4. Os links de WhatsApp devem seguir o formato: https://wa.me/556699985-2299?text=Olá!%20Gostaria%20de%20encomendar%20um(a )%20[NOME_DO_PRODUTO]%20tamanho%20[TAMANHO]%20por%20R$%20[PREÇO].
+5. 
+6. Certifique-se de que as imagens dos produtos sejam adequadas e representativas. Se necessário, utilize imagens semelhantes às já existentes para manter a coerência visual.
+Lista Completa de Produtos por Categoria
+Categoria: Taças
+Todas as taças devem ter os seguintes tamanhos e preços:
+* Taça M (1,4L): R$ 149,90
+* Taça G (2,4L): R$ 249,90
+Os produtos desta categoria são:
+1. La Crema Tradicional
+    * Descrição: Nossa receita original que conquistou o paladar dos clientes. Um clássico irresistível.
+2. La Crema Ninho com Nutella
+    * Descrição: A combinação perfeita do cremoso leite Ninho com a irresistível Nutella, uma explosão de sabores.
+3. La Crema Prestígio
+    * Descrição: A união do chocolate com coco, criando uma experiência tropical e sofisticada.
+4. BanaCrema
+    * Descrição: A doçura da banana combinada com nosso creme especial, uma sobremesa reconfortante e deliciosa.
+5. MaracuNinho
+    * Descrição: A acidez do maracujá equilibrada com a doçura do leite Ninho, uma combinação refrescante e surpreendente.
+Categoria: Potes
+Todos os potes devem ter os seguintes tamanhos e preços:
+* Pote M (500ml): R$ 44,90
+* Pote G (1L): R$ 99,90
+Os produtos desta categoria são:
+1. Torta Alemã
+    * Descrição: Camadas de biscoito e creme amanteigado, uma receita tradicional que nunca sai de moda.
+2. Torta de Bombons
+    * Descrição: Uma explosão de chocolate com pedaços de bombons, para os verdadeiros chocólatras.
+3. Tiramisù
+    * Descrição: O clássico italiano com café, queijo mascarpone e cacau, uma sobremesa sofisticada e irresistível.
+4. Banoffee
+    * Descrição: A combinação perfeita de banana, doce de leite e chantilly, uma sobremesa que derrete na boca.
+5. Manjar Branco (PRODUTO FALTANTE)
+    * Descrição: Sobremesa tradicional brasileira com calda de ameixa, uma combinação suave e elegante.
+6. Creme Louise (PRODUTO FALTANTE)
+    * Descrição: Creme aveludado com notas de baunilha e um toque especial da casa, uma experiência única.
+7. Cassata de Morango
+    * Descrição: Sorvete artesanal com pedaços de morango, uma sobremesa refrescante para os dias quentes.
+8. Cassata de Uva
+    * Descrição: Sorvete cremoso com pedaços de uva, uma opção refrescante e diferenciada.
+9. Cassata de Abacaxi
+    * Descrição: Sorvete tropical com pedaços de abacaxi caramelizado, uma explosão de sabor.
+10. Pudim de Leite Condensado (PRODUTO FALTANTE)
+    * Descrição: O tradicional pudim brasileiro, cremoso e com calda caramelizada perfeita.
+Exemplos de Implementação
+Para ajudar na implementação, aqui está um exemplo de como o código HTML para um produto deve ser estruturado:
+html
+
+<div class="product-card">
+  <img src="caminho/para/imagem.jpg" alt="Nome do Produto">
+  <h3>Nome do Produto</h3>
+  <p>Descrição atrativa do produto que destaca seus principais atributos e sabores.</p>
+  
+  <p class="size-label">Escolha o tamanho:</p>
+  
+  <a href="https://wa.me/556699985-2299?text=Olá!%20Gostaria%20de%20encomendar%20um(a )%20Nome%20do%20Produto%20tamanho%20M%20por%20R$%2044,90." class="size-button size-m">
+    Pote M (500ml)
+    <span class="price">R$ 44,90</span>
+  </a>
+  
+  <a href="https://wa.me/556699985-2299?text=Olá!%20Gostaria%20de%20encomendar%20um(a )%20Nome%20do%20Produto%20tamanho%20G%20por%20R$%2099,90." class="size-button size-g">
+    Pote G (1L)
+    <span class="price">R$ 99,90</span>
+  </a>
+</div>
+Ajuste os valores de tamanho, preço e texto conforme a categoria do produto (Taça ou Pote).
+Verificação Final
+Após implementar todos os produtos faltantes e corrigir os existentes, por favor, verifique se:
+1. Todos os 16 produtos do catálogo original estão presentes no site
+2. Cada produto tem os tamanhos corretos (M e G)
+3. Cada opção de tamanho tem o preço correto conforme a categoria
+4. Cada botão de tamanho redireciona para o WhatsApp com a mensagem personalizada correta
+5. O design está consistente em todo o site
+Agradeço antecipadamente pela sua ajuda na revisão e correção dos produtos do site da confeitaria ÉDoce. Estas melhorias garantirão que todos os deliciosos produtos estejam disponíveis para os clientes e funcionem corretamente.
