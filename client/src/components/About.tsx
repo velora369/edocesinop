@@ -14,7 +14,7 @@ export default function About() {
           >
             <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
               <img 
-                src="https://pixabay.com/get/g5beab9b9759a9d785b4827083d65643f452b5612f4fdbda3a0b5b93fb930de3800e4bf7c53cb0e34c5b42cc7897d320a853e8a08af4e336a73920a4eb997bb83_1280.jpg" 
+                src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/foto-giselle-.webp" 
                 alt="Confeitaria ÉDoce em ação" 
                 className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
               />
