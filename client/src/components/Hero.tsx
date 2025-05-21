@@ -4,32 +4,89 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section 
-      className="h-screen pt-20 bg-cover bg-center flex items-center" 
+      className="min-h-screen pt-20 bg-cover bg-center flex items-center relative overflow-hidden" 
       style={{ 
-        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')"
+        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')"
       }}
     >
-      <div className="container mx-auto px-4 text-center">
+      {/* Decorative elements */}
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary opacity-10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 py-16 md:py-24 text-center relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="max-w-5xl mx-auto backdrop-blur-sm bg-black/10 rounded-3xl p-8 md:p-12 shadow-2xl"
         >
-          <h1 className="font-playfair text-4xl md:text-6xl text-white mb-4 leading-tight">
-            Você não pode comprar felicidade, mas pode comprar <span className="font-dancing"><span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span></span>, que é quase a mesma coisa!
-          </h1>
-          <p className="font-montserrat text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
-            Confeitaria artesanal com ingredientes selecionados com excelência para tornar seus momentos especiais inesquecíveis
-          </p>
-          <Button 
-            asChild
-            size="lg" 
-            className="bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-8 py-6 text-lg transition duration-300 transform hover:scale-105"
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido">
-              Fazer Pedido Agora
+            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+              Você não pode comprar felicidade, mas pode comprar <motion.span 
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, duration: 0.8, type: "spring" }}
+                className="font-dancing inline-block"
+              >
+                <span className="text-[#00A9A5]">É</span><span className="text-[#F03D87]">Do</span><span className="text-[#00A9A5]">ce</span>
+              </motion.span>, que é quase a mesma coisa!
+            </h1>
+          </motion.div>
+          
+          <motion.p 
+            className="font-montserrat text-lg md:text-xl text-white mb-10 max-w-3xl mx-auto opacity-90"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            Confeitaria artesanal com ingredientes selecionados com excelência para tornar seus momentos especiais inesquecíveis
+          </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
+            className="flex justify-center"
+          >
+            <Button 
+              asChild
+              size="lg" 
+              className="bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-10 py-7 text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative overflow-hidden group"
+            >
+              <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido" className="flex items-center gap-2">
+                <span className="relative z-10">Fazer Pedido Agora</span>
+                <span className="relative z-10">→</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              </a>
+            </Button>
+          </motion.div>
+          
+          <motion.div 
+            className="mt-16 flex justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+          >
+            <a 
+              href="#quem-somos" 
+              className="text-white/80 hover:text-white flex flex-col items-center transition-all duration-300 hover:transform hover:-translate-y-1"
+              aria-label="Rolar para baixo"
+            >
+              <span className="text-sm mb-2">Descubra nossa história</span>
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5L12 19M12 19L19 12M12 19L5 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </motion.div>
             </a>
-          </Button>
+          </motion.div>
         </motion.div>
       </div>
     </section>
