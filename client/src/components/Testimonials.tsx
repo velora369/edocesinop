@@ -3,6 +3,13 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -109,6 +116,62 @@ export default function Testimonials() {
           </Button>
         </div>
         
+        {/* Imagens de Depoimentos em Carrossel */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-16 mb-12"
+        >
+          <h3 className="text-2xl text-center font-dancing text-primary mb-8">
+            Nossos clientes adoram compartilhar seus momentos doces
+          </h3>
+          
+          <div className="max-w-4xl mx-auto px-4">
+            <Carousel 
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {[
+                  "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/depoimento1.webp",
+                  "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/depoimento2.webp",
+                  "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/depoimento3.webp"
+                ].map((image, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-1">
+                      <motion.div 
+                        whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
+                        transition={{ duration: 0.2 }}
+                        className="overflow-hidden rounded-xl shadow-md group"
+                      >
+                        <div className="relative aspect-square overflow-hidden">
+                          <img
+                            src={image}
+                            alt={`Depoimento de cliente ${index + 1}`}
+                            className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                            <span className="text-white font-medium">Ver depoimento</span>
+                          </div>
+                        </div>
+                      </motion.div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="flex justify-center gap-2 mt-4">
+                <CarouselPrevious className="relative -left-0 top-0 translate-y-0 border-primary text-primary hover:bg-primary hover:text-white" />
+                <CarouselNext className="relative -right-0 top-0 translate-y-0 border-primary text-primary hover:bg-primary hover:text-white" />
+              </div>
+            </Carousel>
+          </div>
+        </motion.div>
+
         <div className="text-center mt-10">
           <a 
             href="https://www.instagram.com/edocesinop" 
