@@ -13,14 +13,14 @@ const specialDatesData = [
     id: 2,
     title: "Páscoa",
     description: "Ovos de colher recheados, colombas pascal e outras delícias que transformam a Páscoa em uma celebração inesquecível.",
-    image: "https://pixabay.com/get/gf579f4a3de706db03e8cd81eeccced11ee8011768f5250da4a9d4e72ca57e6b203ea39c711569f3f5d1b0d0b8ceb32ba76c17fe6d767ff9a3b2d6ef66982df3a_1280.jpg",
+    image: "https://images.unsplash.com/photo-1554668048-1736168036?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
     link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Páscoa."
   },
   {
     id: 3,
     title: "Dia dos Namorados",
     description: "Doces especiais para dois, com opções românticas e irresistíveis para surpreender quem você ama.",
-    image: "https://pixabay.com/get/gb3d28a105cc1ba092ef191f7aa90130542fa35009709584ef0487f7c72e3e11608d5aeed82431ff43bcdebe46a0171d15a77d258f66b5708956a74cd074192e5_1280.jpg",
+    image: "https://images.unsplash.com/photo-1518365050014-70fe7232897f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
     link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20para%20o%20Dia%20dos%20Namorados."
   }
 ];
