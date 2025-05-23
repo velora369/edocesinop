@@ -50,7 +50,7 @@ export const tacasProducts: ProductType[] = [
     id: 2,
     name: "VIBE",
     description: "Uma combinação irresistível de creme de doce de leite, café e ganache de chocolate que vai conquistar seu paladar.",
-    image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.17.23.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIBE%20tamanho%20M%20por%20R$%20149,90."
@@ -72,7 +72,7 @@ export const tacasProducts: ProductType[] = [
     id: 3,
     name: "NIZA",
     description: "Uma experiência única com o sabor refinado do creme de pistache combinado com ganache de chocolate.",
-    image: "https://images.unsplash.com/photo-1543255006-d6395b6f1171?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/niza-1.jpg",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NIZA%20tamanho%20M%20por%20R$%20149,90."
@@ -94,7 +94,7 @@ export const tacasProducts: ProductType[] = [
     id: 4,
     name: "NINO",
     description: "Deliciosa combinação de creme de avelã, ovo maltine e ganache de chocolate que derrete na boca.",
-    image: "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/d_nq_np_2x_832569-mlb53040369209_122022-f.webp-2x.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NINO%20tamanho%20M%20por%20R$%20149,90."
@@ -116,7 +116,7 @@ export const tacasProducts: ProductType[] = [
     id: 5,
     name: "MANU",
     description: "Uma tentação para os amantes de chocolate, com creme de chocolate e ganache de chocolates branco e preto.",
-    image: "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-19.57.25.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANU%20tamanho%20M%20por%20R$%20149,90."
@@ -298,7 +298,7 @@ export const cassatasProducts: ProductType[] = [
     id: 3,
     name: "MISSI",
     description: "Uma sobremesa tropical com camadas de creme, bolacha champagne, abacaxi, coco e chantiMellow.",
-    image: "https://images.unsplash.com/photo-1497534446932-c925b458314e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/deliciosa-natureza-morta-de-abacaxi.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MISSI%20tamanho%20M%20por%20R$%20149,90."
@@ -417,7 +417,7 @@ export const potesProducts: ProductType[] = [
     id: 4,
     name: "MARACUNINHO",
     description: "Deliciosa mousse de maracujá com ninho, coberta com ganache de chocolate. Uma combinação perfeita de sabores.",
-    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/goiaba-deliciosa-close-up-pronta-para-ser-servida.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MARACUNINHO%20tamanho%20M%20por%20R$%20149,90."
