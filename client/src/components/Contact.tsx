@@ -46,7 +46,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-[#00A9A5] text-white">
+    <section id="contato" className="py-20 bg-[#F03D87] text-white">
       <div className="container mx-auto px-4">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
