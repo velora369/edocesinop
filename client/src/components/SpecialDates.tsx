@@ -6,21 +6,21 @@ const specialDatesData = [
     id: 1,
     title: "Natal",
     description: "Panetones artesanais, tortas natalinas e bolos temáticos que trazem o verdadeiro espírito do Natal para sua mesa.",
-    image: "https://placehold.co/600x400/e53e3e/ffffff?text=Natal+3D&font=montserrat",
+    image: "https://dummyimage.com/600x400/e53e3e/ffffff.png&text=Natal+3D",
     link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Natal."
   },
   {
     id: 2,
     title: "Páscoa",
     description: "Ovos de colher recheados, colombas pascal e outras delícias que transformam a Páscoa em uma celebração inesquecível.",
-    image: "https://placehold.co/600x400/4299e1/ffffff?text=Páscoa+3D&font=montserrat",
+    image: "https://dummyimage.com/600x400/4299e1/ffffff.png&text=Páscoa+3D",
     link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Páscoa."
   },
   {
     id: 3,
     title: "Dia dos Namorados",
     description: "Doces especiais para dois, com opções românticas e irresistíveis para surpreender quem você ama.",
-    image: "https://placehold.co/600x400/ed64a6/ffffff?text=Dia+dos+Namorados+3D&font=montserrat",
+    image: "https://dummyimage.com/600x400/ed64a6/ffffff.png&text=Dia+dos+Namorados+3D",
     link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20para%20o%20Dia%20dos%20Namorados."
   }
 ];
