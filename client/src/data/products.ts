@@ -138,7 +138,7 @@ export const tacasProducts: ProductType[] = [
     id: 6,
     name: "NATI",
     description: "Uma combinação tropical de creme de coco e ganache de chocolate que transporta você para um paraíso de sabores.",
-    image: "https://images.unsplash.com/photo-1514517521153-1be72277b32f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.20.52.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NATI%20tamanho%20M%20por%20R$%20149,90."
@@ -160,7 +160,7 @@ export const tacasProducts: ProductType[] = [
     id: 7,
     name: "MANGO",
     description: "A doçura exótica da manga combinada com ganache de chocolate, uma experiência refrescante e sofisticada.",
-    image: "https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.22.37.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANGO%20tamanho%20M%20por%20R$%20149,90."
@@ -182,7 +182,7 @@ export const tacasProducts: ProductType[] = [
     id: 8,
     name: "LYCA",
     description: "Uma sobremesa sofisticada com creme de creme brullè, macadâmia e ganache de chocolate para paladares exigentes.",
-    image: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/pilha-de-semente-crua-de-macadamia.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LYCA%20tamanho%20M%20por%20R$%20149,90."
@@ -204,7 +204,7 @@ export const tacasProducts: ProductType[] = [
     id: 9,
     name: "LOLA",
     description: "O sabor marcante do creme de nozes combinado com ganache de chocolate, uma sobremesa rica e saborosa.",
-    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/vista-superior-de-nozes-em-uma-tigela-no-rustico.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LOLA%20tamanho%20M%20por%20R$%20149,90."
@@ -226,7 +226,7 @@ export const tacasProducts: ProductType[] = [
     id: 10,
     name: "GITO",
     description: "Uma harmonia perfeita de CreamCheese, chocolate branco e frutas vermelhas que proporcionam uma experiência inesquecível.",
-    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bagas-misturadas-close-up.webp",
     tamaM: {
       price: "149,90",
       link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20GITO%20tamanho%20M%20por%20R$%20149,90."
