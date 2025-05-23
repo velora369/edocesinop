@@ -1,0 +1,52 @@
+Prompt para o Agente IA do Replit: Alteração de Cor da Seção "Faça seu pedido e adoce seu dia"
+
+Olá, Agente do Replit! Preciso da sua ajuda para fazer uma alteração específica no site da confeitaria ÉDoce. Trata-se de uma mudança na cor de fundo da seção "Faça seu pedido e adoce seu dia".
+Alteração Solicitada
+
+Por favor, altere a cor de fundo da seção "Faça seu pedido e adoce seu dia" (seção de contato com os ícones de atendimento, encomendas e entrega) do atual azul ciano para Rosa-chiclete (#F03D87).
+Detalhes Importantes
+
+Escopo da alteração: Apenas a seção específica mostrada na imagem deve ser alterada, não o site inteiro.
+Elementos a manter intactos:
+Todo o conteúdo textual
+Os ícones e suas cores
+O layout e estrutura da seção
+A caixa branca com os três ícones de informações
+Os botões de "Fazer Pedido via WhatsApp" e "Seguir no Instagram"
+A responsividade da seção
+Cor a ser aplicada:
+Cor atual: Ciano-claro (#44CFC6)
+Nova cor: Rosa-chiclete (#F03D87)
+Instruções de Implementação
+
+Localize no código CSS do site a definição de cor de fundo para a seção "Faça seu pedido e adoce seu dia".
+Substitua todas as ocorrências da cor atual (#44CFC6 ou similar) pela nova cor Rosa-chiclete (#F03D87) apenas para esta seção específica.
+Se a cor de fundo estiver definida em vários lugares (como em media queries para responsividade), certifique-se de alterar em todos os locais relevantes.
+Verifique se há algum gradiente ou variação da cor que também precise ser ajustado para manter a consistência visual.
+Teste a alteração em diferentes tamanhos de tela para garantir que a responsividade seja mantida.
+Certifique-se de que o texto branco na seção tenha contraste suficiente com o novo fundo rosa para manter a acessibilidade.
+Exemplo de Código
+
+Aqui está um exemplo de como a alteração pode ser implementada no CSS:
+css
+/* Antes */
+.contact-section {
+  background-color: #44CFC6; /* ou qualquer valor atual */
+  /* outros estilos... */
+}
+
+/* Depois */
+.contact-section {
+  background-color: #F03D87; /* novo valor: Rosa-chiclete */
+  /* outros estilos permanecem inalterados... */
+}
+Verificação Final
+
+Após implementar a alteração, por favor verifique se:
+A cor de fundo da seção foi alterada corretamente para Rosa-chiclete (#F03D87)
+Todo o conteúdo e layout permanecem exatamente como antes
+A seção continua totalmente responsiva em diferentes tamanhos de tela
+O texto branco tem contraste adequado com o novo fundo rosa
+Não houve alterações acidentais em outras partes do site
+Esta alteração trará mais calor e personalidade à seção, reforçando a identidade visual doce da confeitaria e criando uma conexão visual mais forte com o logo e os botões rosa já existentes no site.
+Obrigado pela sua ajuda!
