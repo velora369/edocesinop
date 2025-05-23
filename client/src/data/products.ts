@@ -482,27 +482,5 @@ export const potesProducts: ProductType[] = [
     },
     note: "É congelável"
   },
-  {
-    id: 7,
-    name: "BOLO DE ABACAXI",
-    description: "Delicioso bolo de pão de ló com camadas de creme, abacaxi e finalizado com chantilly. Uma sobremesa fresca e saborosa.",
-    image: "https://images.unsplash.com/photo-1497534446932-c925b458314e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20BOLO%20DE%20ABACAXI%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20BOLO%20DE%20ABACAXI%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20BOLO%20DE%20ABACAXI%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20BOLO%20DE%20ABACAXI%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    },
-    note: "É congelável"
-  }
+
 ];
