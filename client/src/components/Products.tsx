@@ -131,7 +131,7 @@ export default function Products() {
             className="w-full"
           >
             <div className="mb-8 border-b border-gray-200 flex justify-center">
-              <div className="inline-flex rounded-lg bg-gray-100 p-1 shadow-md">
+              <div className="flex flex-wrap justify-center rounded-lg bg-gray-100 p-1 shadow-md overflow-hidden">
                 {[
                   { value: "tacas", label: "Pavês", icon: "fas fa-glass-martini" },
                   { value: "cassatas", label: "Cassatas", icon: "fas fa-ice-cream" },
@@ -141,10 +141,10 @@ export default function Products() {
                   <TabsEdoceTrigger 
                     key={tab.value}
                     value={tab.value} 
-                    className="flex items-center gap-2 px-6 py-3 transition-all duration-300 rounded-lg"
+                    className="flex items-center gap-1 px-3 sm:px-4 md:px-6 py-2 md:py-3 transition-all duration-300 rounded-lg text-xs sm:text-sm md:text-base"
                   >
-                    <i className={`${tab.icon} text-lg`}></i>
-                    <span>{tab.label}</span>
+                    <i className={`${tab.icon} text-base md:text-lg`}></i>
+                    <span className="ml-1">{tab.label}</span>
                   </TabsEdoceTrigger>
                 ))}
               </div>
