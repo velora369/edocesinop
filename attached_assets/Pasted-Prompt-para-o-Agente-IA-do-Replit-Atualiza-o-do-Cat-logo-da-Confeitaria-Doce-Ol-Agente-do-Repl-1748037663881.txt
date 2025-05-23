@@ -1,0 +1,88 @@
+Prompt para o Agente IA do Replit: Atualização do Catálogo da Confeitaria ÉDoce
+
+Olá, Agente do Replit! Preciso da sua ajuda para atualizar o catálogo de produtos no site da confeitaria ÉDoce. O cliente enviou um catálogo atualizado com novos produtos e categorias, e precisamos implementar essas mudanças mantendo o formato de apresentação atual.
+Alterações Necessárias
+
+1. Produtos a Remover
+
+Por favor, remova os seguintes produtos que foram descontinuados:
+La Crema Prestígio
+BanaCrema
+Creme Louise
+2. Reorganização de Categorias
+
+O catálogo agora está organizado em três categorias principais:
+PAVÊS
+CASSATAS
+Demais sobremesas
+3. Lista Completa de Produtos Atualizados
+
+PAVÊS
+
+Todos os pavês devem manter os mesmos tamanhos e preços:
+Taça M (1,4L): R$ 149,90
+Taça G (2,4L): R$ 249,90
+Lista de pavês:
+LA CREMA: creme iogurtado/ganache de chocolate
+VIBE: creme de doce de leite/café/ganache de chocolate
+NIZA: creme de pistache/ganache de chocolate
+NINO: creme de avelã/ovo maltine/ganache de chocolate
+MANU: creme de chocolate/ganache de chocolates branco e preto
+NATI: creme de coco/ganache de chocolate
+MANGO: creme de manga/ganache de chocolate
+LYCA: creme de creme brullè/macadâmia/ganache de chocolate
+LOLA: creme de nozes/ganache de chocolate
+GITO: CreamCheese/chocolate branco/frutas vermelhas
+CASSATAS
+
+Todas as cassatas devem manter os mesmos tamanhos e preços:
+Pote M (500ml): R$ 44,90
+Pote G (1L): R$ 99,90
+Lista de cassatas:
+VIC: creme/bolacha champagne/morango/chantilly
+YAS: creme/bolacha champagne/bombom/calda de chocolate/chantiMellow
+MISSI: creme/bolacha champagne/abacaxi/coco/chantiMellow
+NICE: creme/bolacha champagne/uva/ganache de chocolate/chantiMellow
+Observação importante: Adicionar uma nota em cada cassata informando que "Não é congelável".
+Demais sobremesas
+
+Todas as demais sobremesas devem manter os mesmos tamanhos e preços:
+Pote M (500ml): R$ 44,90
+Pote G (1L): R$ 99,90
+Lista de demais sobremesas:
+TORTA ALEMÃ: creme amanteigado/bolacha champagne/chocolate
+TORTA HOLANDESA: creme amanteigado/baunilha/chocolate
+TIRAMISÙ: creme de queijo mascarpone, chocolate/café/rum
+MARACUNINHO: mousse de maracujá c/ninho, coberto c/ganache de chocolate
+LEMON: mousse de limão c/ninho, coberto c/ganache de chocolate
+MOUSSE DE CHOCOLATE
+BOLO DE ABACAXI: pão de ló/creme/abacaxi/chantilly
+Observação importante: Adicionar uma nota em cada produto desta categoria informando que "É congelável".
+Instruções de Implementação
+
+Manter o formato atual: Use o mesmo estilo de apresentação, layout e design dos produtos existentes.
+Imagens temporárias: Para os novos produtos, utilize imagens similares aos produtos existentes temporariamente. Escolha imagens que representem visualmente cada tipo de sobremesa.
+Links de WhatsApp: Mantenha o mesmo formato de links para WhatsApp, atualizando apenas o nome do produto:
+https://wa.me/556699985-2299?text=Olá!%20Gostaria%20de%20encomendar%20um(a )%20[NOME_DO_PRODUTO]%20tamanho%20[TAMANHO]%20por%20R$%20[PREÇO].
+Descrições: Use as descrições fornecidas no catálogo atualizado, formatando-as de maneira atrativa e consistente com o estilo do site.
+Verificação: Após implementar todas as alterações, verifique se:
+Todos os produtos descontinuados foram removidos
+Todos os novos produtos foram adicionados nas categorias corretas
+Os preços e tamanhos estão corretos
+Os links de WhatsApp funcionam adequadamente
+As observações sobre congelamento estão presentes onde necessário
+Exemplo de Descrição Atrativa para Novos Produtos
+
+Para ajudar na criação de descrições atrativas, aqui estão alguns exemplos:
+Para PAVÊ LA CREMA:
+"Nossa receita original que conquistou o paladar dos clientes. Uma combinação perfeita de creme iogurtado e ganache de chocolate que derrete na boca. Um clássico irresistível!"
+Para CASSATA VIC:
+"Uma sobremesa refrescante com camadas de creme, bolacha champagne e morangos frescos, finalizada com chantilly. Perfeita para os dias quentes!"
+Para TORTA HOLANDESA:
+"A combinação perfeita de creme amanteigado com notas de baunilha e cobertura de chocolate. Uma sobremesa tradicional com toque especial que conquista a todos."
+Considerações Finais
+
+Mantenha a consistência visual e de experiência do usuário em todo o site
+Certifique-se de que todos os elementos são responsivos e funcionam bem em dispositivos móveis
+Preserve a identidade visual da marca ÉDoce em todas as alterações
+Obrigado pela sua ajuda na atualização do catálogo da confeitaria ÉDoce
