@@ -32,7 +32,7 @@ export default function Hero() {
                 transition={{ delay: 1, duration: 0.8, type: "spring" }}
                 className="font-dancing inline-block"
               >
-                <span className="text-[#00A9A5]">É</span><span className="text-[#F03D87]">Do</span><span className="text-[#00A9A5]">ce</span>
+                <span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span>
               </motion.span>, que é quase a mesma coisa!
             </h1>
           </motion.div>
