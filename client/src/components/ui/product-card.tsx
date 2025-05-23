@@ -42,7 +42,19 @@ export default function ProductCard({ product, type }: ProductCardProps) {
       
       <div className="p-6 relative">
         <h3 className="font-montserrat font-semibold text-xl mb-2 text-chocolate">{product.name}</h3>
-        <p className="text-gray-600 mb-6">{product.description}</p>
+        <p className="text-gray-600 mb-3">{product.description}</p>
+        
+        {product.note && (
+          <div className={`text-xs font-medium py-1 px-2 rounded-md mb-3 inline-block 
+            ${product.note.includes("não") || product.note.includes("Não") 
+              ? "bg-yellow-50 text-yellow-800 border border-yellow-100" 
+              : "bg-green-50 text-green-800 border border-green-100"}`}>
+            <i className={`${product.note.includes("não") || product.note.includes("Não") 
+              ? "fas fa-exclamation-circle" 
+              : "fas fa-check-circle"} mr-1`}></i>
+            {product.note}
+          </div>
+        )}
         
         <div className="flex flex-col space-y-3">
           {type === 'taca' ? (
