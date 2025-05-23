@@ -1,0 +1,58 @@
+Prompt para o Agente IA do Replit: Alteração da Cor dos Ícones para Marrom-Chocolate
+
+Olá, Agente do Replit! Preciso da sua ajuda para fazer uma alteração específica no site da confeitaria ÉDoce. Trata-se de mudar a cor dos ícones na seção "Faça seu pedido e adoce seu dia" para marrom-chocolate.
+Alteração Solicitada
+
+Por favor, altere a cor dos três ícones circulares (relógio, calendário e caminhão de entrega) na seção de contato "Faça seu pedido e adoce seu dia" do atual azul/ciano para Marrom-chocolate (#4B2E1F).
+Detalhes Importantes
+
+Elementos a serem alterados:
+Os três ícones circulares dentro da caixa branca:
+Ícone de relógio (horário de atendimento)
+Ícone de calendário (prazo de encomendas)
+Ícone de caminhão (opções de entrega)
+Elementos a manter intactos:
+A cor de fundo dos círculos (manter o ciano atual)
+O texto marrom abaixo dos ícones
+O layout e estrutura da seção
+Todos os outros elementos da página
+Cor a ser aplicada:
+Cor atual dos ícones: Branco dentro de círculos ciano
+Nova configuração: Manter os círculos ciano, mas alterar os ícones internos para Marrom-chocolate (#4B2E1F)
+Instruções de Implementação
+
+Localize no código CSS ou HTML do site a definição dos ícones na seção de contato.
+Altere a cor dos ícones (SVG ou elementos de fonte) para marrom-chocolate (#4B2E1F).
+Se os ícones forem imagens, pode ser necessário substituí-los por versões em marrom ou aplicar filtros CSS para alterar sua cor.
+Exemplo de código CSS para alterar a cor de ícones SVG ou de fonte:
+css
+/* Para ícones SVG */
+.contact-icon svg path {
+  fill: #4B2E1F;
+}
+
+/* Para ícones de fonte */
+.contact-icon i {
+  color: #4B2E1F;
+}
+Se os ícones estiverem definidos como imagens de fundo, você pode usar filtros CSS:
+css
+.contact-icon {
+  background-color: #44CFC6; /* manter a cor de fundo do círculo */
+}
+
+.contact-icon img {
+  /* Aplicar filtros para transformar em marrom-chocolate */
+  filter: invert(15%) sepia(29%) saturate(634%) hue-rotate(346deg) brightness(94%) contrast(91%);
+}
+Verificação Final
+
+Após implementar a alteração, por favor verifique se:
+Os ícones estão claramente visíveis em marrom-chocolate sobre o fundo ciano dos círculos
+O contraste é adequado para boa legibilidade
+A cor marrom dos ícones combina visualmente com o texto marrom abaixo deles, criando coesão visual
+A aparência é consistente em diferentes navegadores
+A responsividade é mantida em diferentes tamanhos de tela
+Não houve alterações acidentais em outros elementos do site
+Esta alteração vai criar uma harmonia visual melhor com o novo fundo rosa da seção e o texto marrom já existente, criando uma identidade visual mais coesa e sofisticada.
+Obrigado pela sua ajuda!
