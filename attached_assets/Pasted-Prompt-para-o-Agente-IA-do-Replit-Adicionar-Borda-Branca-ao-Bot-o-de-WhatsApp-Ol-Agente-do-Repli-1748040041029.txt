@@ -1,0 +1,52 @@
+Prompt para o Agente IA do Replit: Adicionar Borda Branca ao Botão de WhatsApp
+
+Olá, Agente do Replit! Preciso da sua ajuda para fazer uma alteração específica no site da confeitaria ÉDoce. Trata-se de adicionar uma borda branca ao botão "Fazer Pedido via WhatsApp" na seção de contato.
+Alteração Solicitada
+
+Por favor, adicione uma borda branca ao botão "Fazer Pedido via WhatsApp" que está sobre o fundo rosa na seção de contato.
+Detalhes Importantes
+
+Elemento a ser alterado:
+Apenas o botão "Fazer Pedido via WhatsApp" (botão rosa com ícone do WhatsApp)
+Elementos a manter intactos:
+O botão "Seguir no Instagram" (não precisa de borda)
+A cor de fundo e texto do botão de WhatsApp
+O layout e estrutura da seção
+Todos os outros elementos da página
+Especificações da borda:
+Cor: Branco (#FFFFFF)
+Espessura: 2px (ou o que for visualmente adequado)
+Estilo: Sólido
+Raio de borda: Manter o mesmo raio arredondado atual do botão
+Instruções de Implementação
+
+Localize no código CSS ou HTML do site a definição do botão "Fazer Pedido via WhatsApp".
+Adicione a propriedade de borda ao botão. Exemplo:
+css
+/* Adicionar ao seletor CSS existente do botão de WhatsApp */
+.whatsapp-button {
+  border: 2px solid #FFFFFF;
+  /* manter todas as outras propriedades existentes */
+}
+Se o botão já tiver uma borda definida, substitua-a pela nova especificação.
+Certifique-se de que a borda seja visível em todos os estados do botão (normal, hover, active, focus).
+Exemplo para estados diferentes:
+css
+.whatsapp-button:hover,
+.whatsapp-button:active,
+.whatsapp-button:focus {
+  border: 2px solid #FFFFFF;
+  /* manter todas as outras propriedades existentes para estes estados */
+}
+Verificação Final
+
+Após implementar a alteração, por favor verifique se:
+A borda branca é claramente visível ao redor do botão "Fazer Pedido via WhatsApp"
+A borda mantém o formato arredondado do botão
+A borda permanece visível em todos os estados do botão
+A borda não afeta o alinhamento ou espaçamento do botão
+A aparência é consistente em diferentes navegadores
+A responsividade é mantida em diferentes tamanhos de tela
+Não houve alterações acidentais em outros elementos do site
+Esta alteração vai melhorar a visibilidade e destaque do botão de WhatsApp sobre o fundo rosa, facilitando a navegação dos usuários.
+Obrigado pela sua ajuda!

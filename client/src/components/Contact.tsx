@@ -99,7 +99,7 @@ export default function Contact() {
             <Button
               asChild
               size="lg"
-              className="bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full transition transform hover:scale-105"
+              className="bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full transition transform hover:scale-105 border-2 border-white"
             >
               <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido.">
                 <i className="fab fa-whatsapp text-xl mr-2"></i>
