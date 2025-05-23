@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { TabsEdoce, TabsEdoceContent, TabsEdoceTrigger } from "@/components/ui/tabs-edoce";
 import ProductCard from "@/components/ui/product-card";
-import { tacasProducts, potesProducts } from "@/data/products";
+import { tacasProducts, cassatasProducts, potesProducts } from "@/data/products";
 import { Button } from "@/components/ui/button";
 
 export default function Products() {
@@ -133,8 +133,9 @@ export default function Products() {
             <div className="mb-8 border-b border-gray-200 flex justify-center">
               <div className="inline-flex rounded-lg bg-gray-100 p-1 shadow-md">
                 {[
-                  { value: "tacas", label: "Taças", icon: "fas fa-glass-martini" },
-                  { value: "potes", label: "Potes", icon: "fas fa-box" },
+                  { value: "tacas", label: "Pavês", icon: "fas fa-glass-martini" },
+                  { value: "cassatas", label: "Cassatas", icon: "fas fa-ice-cream" },
+                  { value: "potes", label: "Sobremesas", icon: "fas fa-box" },
                   { value: "bolos", label: "Bolos", icon: "fas fa-birthday-cake" }
                 ].map((tab) => (
                   <TabsEdoceTrigger 
@@ -149,11 +150,11 @@ export default function Products() {
               </div>
             </div>
             
-            {/* Taças Tab Content */}
+            {/* Pavês Tab Content */}
             <TabsEdoceContent value="tacas">
               <div className="mb-8 text-center">
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
-                  Nossas taças são verdadeiras obras de arte, perfeitas para momentos especiais ou para se deliciar em casa.
+                  Nossos pavês são verdadeiras obras de arte, elaborados com ingredientes selecionados e muito amor. Perfeitos para momentos especiais ou para se deliciar em casa.
                 </p>
                 <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-10">
                   <span className="font-montserrat mr-4">Taça M (1,4 litros) - R$ 149,90</span>
@@ -170,15 +171,44 @@ export default function Products() {
               </div>
             </TabsEdoceContent>
             
-            {/* Potes Tab Content */}
+            {/* Cassatas Tab Content */}
+            <TabsEdoceContent value="cassatas">
+              <div className="mb-8 text-center">
+                <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
+                  Nossas cassatas combinam cremosidade, sabor e uma apresentação impecável. Cada uma é preparada com carinho em nosso atelier.
+                </p>
+                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-6">
+                  <span className="font-montserrat mr-4">Pote M (500 ml) - R$ 44,90</span>
+                  <span className="font-montserrat">Pote G (1 litro) - R$ 99,90</span>
+                </div>
+                <div className="bg-yellow-50 border border-yellow-100 text-yellow-800 rounded-lg py-2 px-4 inline-block mt-2 mb-10">
+                  <i className="fas fa-info-circle mr-2"></i>
+                  <span className="text-sm font-medium">As cassatas não são congeláveis</span>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {cassatasProducts.map((product, index) => (
+                  <div key={product.id}>
+                    <ProductCard product={product} type="pote" />
+                  </div>
+                ))}
+              </div>
+            </TabsEdoceContent>
+            
+            {/* Demais Sobremesas Tab Content */}
             <TabsEdoceContent value="potes">
               <div className="mb-8 text-center">
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
-                  Nossos potes são perfeitos para quem quer ter sempre em casa uma sobremesa especial.
+                  Nossas sobremesas são preparadas com ingredientes selecionados e recheios diferenciados, garantindo experiências únicas a cada colherada.
                 </p>
-                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-10">
+                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-6">
                   <span className="font-montserrat mr-4">Pote M (500 ml) - R$ 44,90</span>
                   <span className="font-montserrat">Pote G (1 litro) - R$ 99,90</span>
+                </div>
+                <div className="bg-green-50 border border-green-100 text-green-800 rounded-lg py-2 px-4 inline-block mt-2 mb-10">
+                  <i className="fas fa-check-circle mr-2"></i>
+                  <span className="text-sm font-medium">Todas as sobremesas desta categoria são congeláveis</span>
                 </div>
               </div>
               
