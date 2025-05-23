@@ -18,15 +18,13 @@ export default function Contact() {
       id: 2,
       text: "Encomendas com pelo menos 24h de antecedência",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B2E1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="#72CEC3"></rect>
-          <line x1="16" y1="2" x2="16" y2="6" stroke="#4B2E1F" strokeWidth="2"></line>
-          <line x1="8" y1="2" x2="8" y2="6" stroke="#4B2E1F" strokeWidth="2"></line>
-          <line x1="3" y1="10" x2="21" y2="10" stroke="#4B2E1F" strokeWidth="1.5"></line>
-          <rect x="8" y="14" width="2" height="2" fill="#4B2E1F" rx="0.5"></rect>
-          <rect x="12" y="14" width="2" height="2" fill="#4B2E1F" rx="0.5"></rect>
-          <rect x="16" y="14" width="2" height="2" fill="#4B2E1F" rx="0.5"></rect>
-        </svg>
+        <img 
+          src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/icons8-calendar-25-50.webp" 
+          alt="Calendário" 
+          width="40" 
+          height="40"
+          className="object-contain"
+        />
       ),
       ariaLabel: "Prazo de Encomendas"
     },
