@@ -7,7 +7,7 @@ export default function Contact() {
       id: 1,
       text: "Atendemos todos os dias, das 9h às 18h",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B2E1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
@@ -18,14 +18,14 @@ export default function Contact() {
       id: 2,
       text: "Encomendas com pelo menos 24h de antecedência",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B2E1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="#72CEC3"></rect>
-          <line x1="16" y1="2" x2="16" y2="6" stroke="#FFFFFF" strokeWidth="2"></line>
-          <line x1="8" y1="2" x2="8" y2="6" stroke="#FFFFFF" strokeWidth="2"></line>
-          <line x1="3" y1="10" x2="21" y2="10" stroke="#FFFFFF" strokeWidth="1.5"></line>
-          <rect x="8" y="14" width="2" height="2" fill="#FFFFFF" rx="0.5"></rect>
-          <rect x="12" y="14" width="2" height="2" fill="#FFFFFF" rx="0.5"></rect>
-          <rect x="16" y="14" width="2" height="2" fill="#FFFFFF" rx="0.5"></rect>
+          <line x1="16" y1="2" x2="16" y2="6" stroke="#4B2E1F" strokeWidth="2"></line>
+          <line x1="8" y1="2" x2="8" y2="6" stroke="#4B2E1F" strokeWidth="2"></line>
+          <line x1="3" y1="10" x2="21" y2="10" stroke="#4B2E1F" strokeWidth="1.5"></line>
+          <rect x="8" y="14" width="2" height="2" fill="#4B2E1F" rx="0.5"></rect>
+          <rect x="12" y="14" width="2" height="2" fill="#4B2E1F" rx="0.5"></rect>
+          <rect x="16" y="14" width="2" height="2" fill="#4B2E1F" rx="0.5"></rect>
         </svg>
       ),
       ariaLabel: "Prazo de Encomendas"
@@ -34,7 +34,7 @@ export default function Contact() {
       id: 3,
       text: "Consulte opções de entrega",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B2E1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="1" y="3" width="15" height="13"></rect>
           <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
           <circle cx="5.5" cy="18.5" r="2.5"></circle>
