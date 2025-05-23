@@ -13,7 +13,7 @@ const specialDatesData = [
     id: 2,
     title: "Páscoa",
     description: "Ovos de colher recheados, colombas pascal e outras delícias que transformam a Páscoa em uma celebração inesquecível.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/celebracao-de-pascoa-com-o-coelho-de-sonho.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-19.33.13.webp",
     link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Páscoa."
   },
   {
