@@ -239,7 +239,7 @@ export default function Products() {
               <div className="flex flex-wrap justify-center rounded-lg bg-gray-100 p-1 shadow-md overflow-hidden">
                 {[
                   { value: "tacas", label: "Pavês", icon: "fas fa-glass-martini" },
-                  { value: "cassatas", label: "Cassatas", icon: "fas fa-pizza-slice" },
+                  { value: "cassatas", label: "Cassatas", icon: "fas fa-ice-cream" },
                   { value: "potes", label: "Sobremesas", icon: "fas fa-box" },
                   { value: "bolos", label: "Bolos", icon: "fas fa-birthday-cake" }
                 ].map((tab) => (
