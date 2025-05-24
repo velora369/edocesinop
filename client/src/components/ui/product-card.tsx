@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ProductType } from "@/data/products";
+import { ImageModal } from "@/components/ui/image-modal";
+import { Search } from "lucide-react";
 
 type ProductCardProps = {
   product: ProductType;
@@ -12,6 +15,9 @@ export default function ProductCard({ product, type }: ProductCardProps) {
   const isLaCrema = product.isLaCrema;
   const isPremium = product.isPremium;
   
+  // Estado para controlar a exibição do modal
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  
   return (
     <motion.div 
       className="product-card relative"
@@ -20,6 +26,14 @@ export default function ProductCard({ product, type }: ProductCardProps) {
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
+      {/* Modal para visualização ampliada da imagem */}
+      <ImageModal 
+        isOpen={isImageModalOpen}
+        onClose={() => setIsImageModalOpen(false)}
+        imageUrl={product.image}
+        altText={`${product.name} - imagem ampliada`}
+      />
+      
       {/* Chocolate drip decoration - only for featured products */}
       {isLaCrema && <div className="chocolate-drip"></div>}
       
@@ -30,15 +44,24 @@ export default function ProductCard({ product, type }: ProductCardProps) {
         </span>
       )}
       
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden group">
         <motion.img 
           src={product.image} 
           alt={product.name} 
-          className="w-full h-56 object-cover transition-transform"
+          className="w-full h-56 object-cover transition-transform cursor-pointer"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.4 }}
+          onClick={() => setIsImageModalOpen(true)}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60"></div>
+        <div 
+          className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          onClick={() => setIsImageModalOpen(true)}
+        >
+          <div className="bg-white/80 p-3 rounded-full">
+            <Search className="text-gray-800" size={24} />
+          </div>
+        </div>
       </div>
       
       <div className="p-6 relative">
