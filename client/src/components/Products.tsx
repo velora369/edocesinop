@@ -4,12 +4,24 @@ import { TabsEdoce, TabsEdoceContent, TabsEdoceTrigger } from "@/components/ui/t
 import ProductCard from "@/components/ui/product-card";
 import { tacasProducts, cassatasProducts, potesProducts } from "@/data/products";
 import { Button } from "@/components/ui/button";
+import { ImageModal } from "@/components/ui/image-modal";
+import { useImageModal } from "@/hooks/use-image-modal";
+import { Search } from "lucide-react";
 
 export default function Products() {
   const [activeTab, setActiveTab] = useState("tacas");
+  const imageModal = useImageModal();
 
   return (
     <section id="produtos" className="py-24 relative">
+      {/* Image Modal for Gallery Images */}
+      <ImageModal 
+        isOpen={imageModal.isOpen}
+        onClose={imageModal.closeModal}
+        imageUrl={imageModal.imageUrl}
+        altText={imageModal.altText}
+      />
+      
       {/* Elementos decorativos de fundo */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent z-10"></div>
       <motion.div 
@@ -235,21 +247,32 @@ export default function Products() {
             onValueChange={setActiveTab}
             className="w-full"
           >
-            <div className="mb-8 border-b border-gray-200 flex justify-center">
-              <div className="flex flex-wrap justify-center rounded-lg bg-gray-100 p-1 shadow-md overflow-hidden">
+            <div className="mb-8 flex justify-center">
+              <div className="flex flex-wrap justify-center max-w-3xl w-full">
                 {[
-                  { value: "tacas", label: "Pavês", icon: "fas fa-glass-martini" },
-                  { value: "cassatas", label: "Cassatas", icon: "fas fa-cake-slice" },
-                  { value: "potes", label: "Sobremesas", icon: "fas fa-box" },
-                  { value: "bolos", label: "Bolos", icon: "fas fa-birthday-cake" }
-                ].map((tab) => (
+                  { value: "tacas", label: "Pavês" },
+                  { value: "cassatas", label: "Cassatas" },
+                  { value: "potes", label: "Sobremesas" },
+                  { value: "bolos", label: "Bolos" }
+                ].map((tab, index) => (
                   <TabsEdoceTrigger 
                     key={tab.value}
                     value={tab.value} 
-                    className="flex items-center gap-1 px-3 sm:px-4 md:px-6 py-2 md:py-3 transition-all duration-300 rounded-lg text-xs sm:text-sm md:text-base"
+                    className={`relative px-6 sm:px-8 py-3 sm:py-4 transition-all duration-300 text-sm sm:text-base font-medium
+                      ${activeTab === tab.value 
+                        ? "text-secondary" 
+                        : "text-gray-600 hover:text-gray-800"
+                      }
+                    `}
                   >
-                    <i className={`${tab.icon} text-base md:text-lg`}></i>
-                    <span className="ml-1">{tab.label}</span>
+                    <span>{tab.label}</span>
+                    {activeTab === tab.value && (
+                      <motion.div
+                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary"
+                        layoutId="activeTabIndicator"
+                        initial={false}
+                      />
+                    )}
                   </TabsEdoceTrigger>
                 ))}
               </div>
@@ -378,7 +401,7 @@ export default function Products() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 {/* Bolo de Kit Kat com Carrossel */}
                 <motion.div 
-                  className="relative overflow-hidden group rounded-xl shadow-md"
+                  className="relative overflow-hidden group rounded-xl shadow-md cursor-pointer"
                   whileHover={{ y: -5 }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -406,11 +429,23 @@ export default function Products() {
                           repeatDelay: 2,
                           delay: i === 0 ? 0 : 3 
                         }}
+                        onClick={() => imageModal.openModal(src, "Bolo de Kit Kat ÉDoce")}
                       />
                     ))}
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div 
+                    className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"
+                    onClick={() => imageModal.openModal("https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-kitkat.webp", "Bolo de Kit Kat ÉDoce")}
+                  ></div>
+                  <div 
+                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+                    onClick={() => imageModal.openModal("https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-kitkat.webp", "Bolo de Kit Kat ÉDoce")}
+                  >
+                    <div className="bg-white/80 p-3 rounded-full">
+                      <Search className="text-gray-800" size={24} />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
                     <p className="text-white font-montserrat font-medium text-center">Bolo de Kit Kat</p>
                   </div>
                 </motion.div>
