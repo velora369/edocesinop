@@ -56,15 +56,10 @@ export default function About() {
                   <span className="relative z-10 font-dancing">
                     <span className="text-primary">É</span><span className="text-secondary">Do</span><span className="text-primary">ce</span>
                   </span>
-                  <motion.div 
-                    className="absolute -bottom-1 left-0 h-3 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 w-full rounded-full z-0"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.7 }}
-                  ></motion.div>
+
                 </span>
               </h2>
+              <div className="h-1 w-12 bg-gradient-to-r from-primary to-secondary rounded-full mt-4"></div>
             </motion.div>
             
             <motion.div
