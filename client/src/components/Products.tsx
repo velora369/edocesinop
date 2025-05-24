@@ -239,100 +239,29 @@ export default function Products() {
           </div>
         </motion.div>
         
-        {/* Product Tabs */}
+        {/* Product Tabs - Simplified */}
         <div className="w-full">
           <div className="mb-12 flex justify-center">
-            <motion.div 
-              className="relative bg-white/60 backdrop-blur-xl rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.06)] border border-white/20 p-2"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Gradient background overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5 rounded-2xl"></div>
-              
-              <div className="relative flex flex-wrap justify-center gap-1">
-                {[
-                  { value: "tacas", label: "Pavês" },
-                  { value: "cassatas", label: "Cassatas" },
-                  { value: "potes", label: "Sobremesas" },
-                  { value: "bolos", label: "Bolos" }
-                ].map((tab, index) => (
-                  <motion.button
-                    key={tab.value}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => setActiveTab(tab.value)}
-                    className={`relative px-8 py-4 rounded-xl transition-all duration-500 text-sm font-medium border-0 hover:shadow-lg group overflow-hidden cursor-pointer
-                      ${activeTab === tab.value 
-                        ? "bg-gradient-to-r from-primary to-secondary text-white shadow-[0_4px_20px_rgba(240,61,135,0.3)]" 
-                        : "text-gray-600 hover:text-gray-800 hover:bg-white/50"
-                      }
-                    `}
-                  >
-                    {/* Hover effect background */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
-                    {/* Label */}
-                    <span className="relative z-10 font-medium tracking-wide">
-                      {tab.label}
-                    </span>
-                    
-                    {/* Active indicator with glow */}
-                    {activeTab === tab.value && (
-                      <>
-                        <motion.div
-                          className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl"
-                          layoutId="activeTabBackground"
-                          initial={false}
-                          transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                        />
-                        <motion.div
-                          className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl blur-xl opacity-30"
-                          layoutId="activeTabGlow"
-                          initial={false}
-                          transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                        />
-                      </>
-                    )}
-                    
-                    {/* Subtle animation particles */}
-                    {activeTab === tab.value && (
-                      <motion.div
-                        className="absolute top-1/2 left-1/2 w-1 h-1 bg-white/30 rounded-full"
-                        animate={{
-                          scale: [0, 1, 0],
-                          opacity: [0, 1, 0],
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          delay: index * 0.2,
-                        }}
-                      />
-                    )}
-                  </motion.button>
-                ))}
-              </div>
-              
-              {/* Subtle border shimmer effect */}
-              <motion.div
-                className="absolute inset-0 rounded-2xl"
-                style={{
-                  background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
-                  backgroundSize: "200% 100%",
-                }}
-                animate={{
-                  backgroundPosition: ["200% 0%", "-200% 0%"],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-              />
-            </motion.div>
+            <div className="bg-white rounded-xl shadow-lg p-1 flex flex-wrap gap-1">
+              {[
+                { value: "tacas", label: "Pavês" },
+                { value: "cassatas", label: "Cassatas" },
+                { value: "potes", label: "Sobremesas" },
+                { value: "bolos", label: "Bolos" }
+              ].map((tab) => (
+                <button
+                  key={tab.value}
+                  onClick={() => setActiveTab(tab.value)}
+                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+                    activeTab === tab.value 
+                      ? "bg-primary text-white shadow-md" 
+                      : "text-gray-600 hover:bg-gray-100"
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
           </div>
           
           {/* Tab Content */}
