@@ -260,10 +260,10 @@ export default function Products() {
                 
                 <div className="relative flex flex-wrap justify-center gap-1">
                   {[
-                    { value: "tacas", label: "Pavês", icon: "M12 2l1.09 3.26L16 6.18l-1.91 2.82L16 12l-2.91 1.09L12 16l-1.09-3.09L8 12l1.91-1.91L8 6.18l2.91-.92z" },
-                    { value: "cassatas", label: "Cassatas", icon: "M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z" },
-                    { value: "potes", label: "Sobremesas", icon: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" },
-                    { value: "bolos", label: "Bolos", icon: "M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 1l-1.71 1.97c-.19.3-.29.65-.29 1.03 0 1.1.9 2 2 2zm4.6 9.99l-1.07-1.07-1.08 1.07c-1.3 1.3-3.58 1.31-4.89 0l-1.07-1.07-1.09 1.07C6.75 16.64 5.88 17 4.96 17c-.73 0-1.4-.23-1.96-.61v3.11c0 .28.22.5.5.5h14c.28 0 .5-.22.5-.5v-3.11c-.56.38-1.23.61-1.96.61-.92 0-1.79-.36-2.44-1.01z" }
+                    { value: "tacas", label: "Pavês" },
+                    { value: "cassatas", label: "Cassatas" },
+                    { value: "potes", label: "Sobremesas" },
+                    { value: "bolos", label: "Bolos" }
                   ].map((tab, index) => (
                     <motion.div
                       key={tab.value}
@@ -272,7 +272,7 @@ export default function Products() {
                     >
                       <TabsEdoceTrigger 
                         value={tab.value} 
-                        className={`relative flex items-center gap-3 px-6 py-4 rounded-xl transition-all duration-500 text-sm font-medium border-0 hover:shadow-lg group overflow-hidden
+                        className={`relative px-8 py-4 rounded-xl transition-all duration-500 text-sm font-medium border-0 hover:shadow-lg group overflow-hidden cursor-pointer
                           ${activeTab === tab.value 
                             ? "bg-gradient-to-r from-primary to-secondary text-white shadow-[0_4px_20px_rgba(240,61,135,0.3)]" 
                             : "text-gray-600 hover:text-gray-800 hover:bg-white/50"
@@ -281,15 +281,6 @@ export default function Products() {
                       >
                         {/* Hover effect background */}
                         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        
-                        {/* Icon */}
-                        <div className={`relative z-10 w-5 h-5 transition-colors duration-300 ${
-                          activeTab === tab.value ? "text-white" : "text-gray-500 group-hover:text-primary"
-                        }`}>
-                          <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-                            <path d={tab.icon} />
-                          </svg>
-                        </div>
                         
                         {/* Label */}
                         <span className="relative z-10 font-medium tracking-wide">
