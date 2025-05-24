@@ -14,7 +14,7 @@
   --border: 20 5.9% 90%;
   --input: 20 5.9% 90%;
   
-  /* Custom ÉDoce Colors */
+  /* Enhanced ÉDoce Colors */
   --petrol: 179 100% 33%; /* #00A9A5 */
   --bubblegum: 336 87% 57%; /* #F03D87 */
   --chocolate: 25 42% 21%; /* #4B2E1F */
@@ -27,6 +27,21 @@
   --chocolate-light: 25 42% 28%;
   --cyan-light-bright: 176 57% 65%;
   
+  /* Subtle modern gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(var(--petrol)) 0%, hsl(var(--cyan-light)) 100%);
+  --gradient-secondary: linear-gradient(135deg, hsl(var(--bubblegum)) 0%, hsl(336 87% 67%) 100%);
+  --gradient-accent: linear-gradient(135deg, hsl(var(--cyan-light)) 0%, hsl(186 57% 64%) 100%);
+  --gradient-surface: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(249,249,249,0.95) 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.3) 100%);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.16);
+  --shadow-highlight: 0 0 16px rgba(0, 169, 165, 0.4);
+  --shadow-highlight-secondary: 0 0 16px rgba(240, 61, 135, 0.4);
+  
   --primary: 179 100% 33%;
   --primary-foreground: 0 0% 100%;
   --secondary: 336 87% 57%;
@@ -36,7 +51,7 @@
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
   --ring: 179 100% 33%;
-  --radius: 1rem; /* Increased for more rounded elements */
+  --radius: 1.25rem; /* More rounded elements for modern look */
 }
 
 .dark {

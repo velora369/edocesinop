@@ -39,8 +39,8 @@ export default function Header() {
 
   const headerClasses = `fixed w-full top-0 z-50 transition-all duration-300 ${
     scrolled 
-      ? "bg-white shadow-lg translate-y-0" 
-      : "bg-white/95"
+      ? "bg-white/95 backdrop-blur-md shadow-[var(--shadow-md)] translate-y-0" 
+      : "bg-white/90 backdrop-blur-sm"
   }`;
 
   return (
@@ -55,7 +55,7 @@ export default function Header() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <div className="logo-container w-[60px] h-[60px] md:w-[60px] md:h-[60px] sm:w-[45px] sm:h-[45px] rounded-full overflow-hidden border-2 border-[#F03D87] shadow-lg flex items-center justify-center bg-[#00A9A5]">
+          <div className="logo-container w-[60px] h-[60px] md:w-[60px] md:h-[60px] sm:w-[45px] sm:h-[45px] rounded-full overflow-hidden border-2 border-[#F03D87] shadow-[var(--shadow-md)] flex items-center justify-center bg-gradient-to-br from-[#00A9A5] to-[#44CFC6] transition-all duration-300 hover:shadow-[var(--shadow-highlight)] hover:scale-105">
             <img 
               src="/src/assets/logo.png" 
               alt="Logo ÉDoce Confeitaria Artesanal" 
@@ -66,23 +66,25 @@ export default function Header() {
         
         <nav className="hidden md:flex items-center space-x-6">
           {[
-            { href: "#quem-somos", label: "Quem Somos" },
-            { href: "#produtos", label: "Produtos" },
-            { href: "#datas-especiais", label: "Datas Especiais" },
-            { href: "#depoimentos", label: "Depoimentos" },
-            { href: "#contato", label: "Contato" }
+            { href: "#quem-somos", label: "Quem Somos", icon: "fas fa-store" },
+            { href: "#produtos", label: "Produtos", icon: "fas fa-birthday-cake" },
+            { href: "#datas-especiais", label: "Datas Especiais", icon: "fas fa-calendar-alt" },
+            { href: "#depoimentos", label: "Depoimentos", icon: "fas fa-comment-dots" },
+            { href: "#contato", label: "Contato", icon: "fas fa-envelope" }
           ].map((item, index) => (
             <motion.a 
               key={item.href}
               href={item.href} 
-              className="font-montserrat text-sm font-medium hover:text-primary transition duration-300 relative group"
+              className="font-montserrat text-sm font-medium hover:text-primary transition-all duration-300 relative group flex items-center"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
             >
+              <span className="absolute inset-0 rounded-full bg-primary/5 scale-0 transition-transform duration-300 group-hover:scale-100"></span>
+              <i className={`${item.icon} mr-1 text-xs text-primary opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0`}></i>
               {item.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full" />
             </motion.a>
           ))}
         </nav>
@@ -90,21 +92,23 @@ export default function Header() {
         <div className="flex items-center">
           <motion.a 
             href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido" 
-            className="md:flex items-center hidden text-white bg-green-500 hover:bg-green-600 transition px-4 py-2 rounded-full font-medium text-sm"
+            className="md:flex items-center hidden text-white bg-gradient-to-r from-green-500 to-green-400 hover:shadow-[0_0_12px_rgba(74,194,107,0.5)] hover:from-green-400 hover:to-green-500 transition-all duration-300 px-5 py-2.5 rounded-full font-medium text-sm overflow-hidden relative group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
+            <span className="absolute w-0 h-0 transition-all duration-300 bg-white rounded-full opacity-20 group-hover:w-32 group-hover:h-32 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></span>
             <i className="fab fa-whatsapp mr-2 text-lg"></i>
             Fazer Pedido
           </motion.a>
           
           <motion.button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
-            className="md:hidden text-chocolate p-2"
+            className="md:hidden text-chocolate p-2 relative z-50 bg-white/80 backdrop-blur-sm rounded-full shadow-sm hover:shadow-md transition-all duration-300"
             aria-label="Toggle menu"
             whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05 }}
           >
-            <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
+            <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'} text-xl transition-all duration-300 ${mobileMenuOpen ? 'rotate-90' : 'rotate-0'}`}></i>
           </motion.button>
         </div>
       </div>
