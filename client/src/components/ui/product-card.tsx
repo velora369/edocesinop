@@ -81,7 +81,7 @@ export default function ProductCard({ product, type }: ProductCardProps) {
           {isLaCrema && (
             <div className="mt-2 text-sm text-center text-green-600 font-medium">
               <i className="fas fa-star mr-1"></i>
-              Único produto com decoração especial de frutas frescas
+              Produto com decoração especial de frutas frescas
             </div>
           )}
         </div>
