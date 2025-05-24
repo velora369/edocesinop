@@ -247,35 +247,110 @@ export default function Products() {
             onValueChange={setActiveTab}
             className="w-full"
           >
-            <div className="mb-8 flex justify-center">
-              <div className="flex flex-wrap justify-center max-w-3xl w-full">
-                {[
-                  { value: "tacas", label: "Pavês" },
-                  { value: "cassatas", label: "Cassatas" },
-                  { value: "potes", label: "Sobremesas" },
-                  { value: "bolos", label: "Bolos" }
-                ].map((tab, index) => (
-                  <TabsEdoceTrigger 
-                    key={tab.value}
-                    value={tab.value} 
-                    className={`relative px-6 sm:px-8 py-3 sm:py-4 transition-all duration-300 text-sm sm:text-base font-medium
-                      ${activeTab === tab.value 
-                        ? "text-secondary" 
-                        : "text-gray-600 hover:text-gray-800"
-                      }
-                    `}
-                  >
-                    <span>{tab.label}</span>
-                    {activeTab === tab.value && (
-                      <motion.div
-                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary"
-                        layoutId="activeTabIndicator"
-                        initial={false}
-                      />
-                    )}
-                  </TabsEdoceTrigger>
-                ))}
-              </div>
+            <div className="mb-12 flex justify-center">
+              <motion.div 
+                className="relative bg-white/60 backdrop-blur-xl rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.06)] border border-white/20 p-2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                {/* Gradient background overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5 rounded-2xl"></div>
+                
+                <div className="relative flex flex-wrap justify-center gap-1">
+                  {[
+                    { value: "tacas", label: "Pavês", icon: "M12 2l1.09 3.26L16 6.18l-1.91 2.82L16 12l-2.91 1.09L12 16l-1.09-3.09L8 12l1.91-1.91L8 6.18l2.91-.92z" },
+                    { value: "cassatas", label: "Cassatas", icon: "M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z" },
+                    { value: "potes", label: "Sobremesas", icon: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" },
+                    { value: "bolos", label: "Bolos", icon: "M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 1l-1.71 1.97c-.19.3-.29.65-.29 1.03 0 1.1.9 2 2 2zm4.6 9.99l-1.07-1.07-1.08 1.07c-1.3 1.3-3.58 1.31-4.89 0l-1.07-1.07-1.09 1.07C6.75 16.64 5.88 17 4.96 17c-.73 0-1.4-.23-1.96-.61v3.11c0 .28.22.5.5.5h14c.28 0 .5-.22.5-.5v-3.11c-.56.38-1.23.61-1.96.61-.92 0-1.79-.36-2.44-1.01z" }
+                  ].map((tab, index) => (
+                    <motion.div
+                      key={tab.value}
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <TabsEdoceTrigger 
+                        value={tab.value} 
+                        className={`relative flex items-center gap-3 px-6 py-4 rounded-xl transition-all duration-500 text-sm font-medium border-0 hover:shadow-lg group overflow-hidden
+                          ${activeTab === tab.value 
+                            ? "bg-gradient-to-r from-primary to-secondary text-white shadow-[0_4px_20px_rgba(240,61,135,0.3)]" 
+                            : "text-gray-600 hover:text-gray-800 hover:bg-white/50"
+                          }
+                        `}
+                      >
+                        {/* Hover effect background */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                        {/* Icon */}
+                        <div className={`relative z-10 w-5 h-5 transition-colors duration-300 ${
+                          activeTab === tab.value ? "text-white" : "text-gray-500 group-hover:text-primary"
+                        }`}>
+                          <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
+                            <path d={tab.icon} />
+                          </svg>
+                        </div>
+                        
+                        {/* Label */}
+                        <span className="relative z-10 font-medium tracking-wide">
+                          {tab.label}
+                        </span>
+                        
+                        {/* Active indicator with glow */}
+                        {activeTab === tab.value && (
+                          <>
+                            <motion.div
+                              className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl"
+                              layoutId="activeTabBackground"
+                              initial={false}
+                              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                            />
+                            <motion.div
+                              className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl blur-xl opacity-30"
+                              layoutId="activeTabGlow"
+                              initial={false}
+                              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                            />
+                          </>
+                        )}
+                        
+                        {/* Subtle animation particles */}
+                        {activeTab === tab.value && (
+                          <motion.div
+                            className="absolute top-1/2 left-1/2 w-1 h-1 bg-white/30 rounded-full"
+                            animate={{
+                              scale: [0, 1, 0],
+                              opacity: [0, 1, 0],
+                            }}
+                            transition={{
+                              duration: 2,
+                              repeat: Infinity,
+                              delay: index * 0.2,
+                            }}
+                          />
+                        )}
+                      </TabsEdoceTrigger>
+                    </motion.div>
+                  ))}
+                </div>
+                
+                {/* Subtle border shimmer effect */}
+                <motion.div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
+                    backgroundSize: "200% 100%",
+                  }}
+                  animate={{
+                    backgroundPosition: ["200% 0%", "-200% 0%"],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                />
+              </motion.div>
             </div>
             
             {/* Pavês Tab Content */}
