@@ -3,23 +3,11 @@ export type ProductType = {
   name: string;
   description: string;
   image: string;
-  tamaM: {
-    price: string;
-    link: string;
-  };
-  tamaG: {
-    price: string;
-    link: string;
-  };
-  poteM: {
-    price: string;
-    link: string;
-  };
-  poteG: {
-    price: string;
-    link: string;
-  };
-  note?: string; // Optional note for freezing instructions
+  isLaCrema?: boolean; // Identificar o La Crema para formatação especial
+  isPremium?: boolean; // Identificar produtos premium (Niza, Nino, Lyca)
+  price: string; // Preço único por produto
+  link: string; // Link para pedido via WhatsApp
+  note?: string; // Observações adicionais
 };
 
 // PAVÊS Category
@@ -27,112 +15,45 @@ export const tacasProducts: ProductType[] = [
   {
     id: 1,
     name: "LA CREMA",
-    description: "Nossa receita original que conquistou o paladar dos clientes. Uma combinação perfeita de creme iogurtado e ganache de chocolate que derrete na boca.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/la-crema-trad.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LA%20CREMA%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LA%20CREMA%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LA%20CREMA%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LA%20CREMA%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    description: "Nossa receita original que conquistou o paladar dos clientes. Servido em taça com decoração especial de frutas frescas.",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-23-at-21.10.22.webp",
+    isLaCrema: true,
+    price: "140,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20La%20Crema%20com%20decoração%20de%20frutas%20por%20R$%20140,00."
   },
   {
     id: 2,
     name: "VIBE",
     description: "Uma combinação irresistível de creme de doce de leite, café e ganache de chocolate que vai conquistar seu paladar.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.17.23.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIBE%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIBE%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIBE%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIBE%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20VIBE%20por%20R$%20120,00."
   },
   {
     id: 3,
     name: "NIZA",
     description: "Uma experiência única com o sabor refinado do creme de pistache combinado com ganache de chocolate.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/niza-1.jpg",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NIZA%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NIZA%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NIZA%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NIZA%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    isPremium: true,
+    price: "125,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NIZA%20por%20R$%20125,00."
   },
   {
     id: 4,
     name: "NINO",
     description: "Deliciosa combinação de creme de avelã, ovo maltine e ganache de chocolate que derrete na boca.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/d_nq_np_2x_832569-mlb53040369209_122022-f.webp-2x.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NINO%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NINO%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NINO%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NINO%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    isPremium: true,
+    price: "125,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NINO%20por%20R$%20125,00."
   },
   {
     id: 5,
     name: "MANU",
     description: "Uma tentação para os amantes de chocolate, com creme de chocolate e ganache de chocolates branco e preto.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-19.57.25.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANU%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANU%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANU%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANU%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MANU%20por%20R$%20120,00."
   },
   {
     id: 6,
@@ -183,22 +104,9 @@ export const tacasProducts: ProductType[] = [
     name: "LYCA",
     description: "Uma sobremesa sofisticada com creme de creme brullè, macadâmia e ganache de chocolate para paladares exigentes.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/pilha-de-semente-crua-de-macadamia.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LYCA%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LYCA%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LYCA%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LYCA%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    isPremium: true,
+    price: "125,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LYCA%20por%20R$%20125,00."
   },
   {
     id: 9,

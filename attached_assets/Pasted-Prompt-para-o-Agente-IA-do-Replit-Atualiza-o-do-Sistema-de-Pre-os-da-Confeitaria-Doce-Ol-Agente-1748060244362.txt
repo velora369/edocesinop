@@ -1,0 +1,110 @@
+Prompt para o Agente IA do Replit: Atualização do Sistema de Preços da Confeitaria ÉDoce
+Olá, Agente do Replit! Preciso da sua ajuda para implementar alterações importantes no sistema de preços e apresentação dos produtos no site da confeitaria ÉDoce.
+Alterações Solicitadas
+1. Atualizar o formato e preço do La Crema: Deve ser apresentado como servido em taça com decoração de frutas ao preço de R$ 140,00
+2. Remover o sistema de tamanhos (M e G) para os demais produtos e substituir por um preço único por pote de 1L
+3. Atualizar os preços de acordo com as novas especificações
+4. Atualizar os links de WhatsApp com mensagens personalizadas para cada produto
+Novos Preços e Especificações
+La Crema:
+* Formato: Taça decorada com frutas
+* Preço: R$ 140,00
+* Observação: Único produto que inclui decoração especial com frutas frescas
+Demais Produtos (Pote de 1L):
+* Niza, Nino e Lyca: R$ 125,00
+* Todos os demais sabores: R$ 120,00
+Instruções Detalhadas de Implementação
+1. Atualização do La Crema
+* Mantenha a imagem atual do La Crema que já mostra a taça
+* Defina o preço único de R$ 140,00
+* Adicione à descrição: "Servido em taça com decoração especial de frutas frescas"
+* Remova qualquer opção de tamanho, mostrando apenas a opção de taça
+Exemplo de código para o La Crema:
+html
+
+<div class="produto-container">
+  <h3>La Crema Tradicional</h3>
+  <p>Nossa receita original que conquistou o paladar dos clientes. Servido em taça com decoração especial de frutas frescas.</p>
+  
+  <div class="preco-container">
+    <p>Taça decorada</p>
+    <button class="comprar-btn">Fazer Pedido <span>R$ 140,00</span></button>
+  </div>
+</div>
+2. Atualização dos Demais Produtos
+Para cada produto (exceto La Crema), faça as seguintes alterações:
+* Remova as opções de tamanho (M e G)
+* Substitua por um único botão/opção de compra
+* Atualize o texto para mostrar "Pote 1L" em vez dos tamanhos atuais
+* Atualize os preços conforme a tabela acima
+Exemplo de código para os demais produtos:
+html
+
+<!-- Para Niza, Nino e Lyca (R$ 125,00) -->
+<div class="produto-container">
+  <h3>Niza</h3>
+  <p>Creme de pistache/ganache de chocolate.</p>
+  
+  <div class="preco-container">
+    <p>Pote de 1L</p>
+    <button class="comprar-btn">Fazer Pedido <span>R$ 125,00</span></button>
+  </div>
+</div>
+
+<!-- Para os demais sabores (R$ 120,00) -->
+<div class="produto-container">
+  <h3>Torta Alemã</h3>
+  <p>Creme amanteigado/bolacha champagne/chocolate.</p>
+  
+  <div class="preco-container">
+    <p>Pote de 1L</p>
+    <button class="comprar-btn">Fazer Pedido <span>R$ 120,00</span></button>
+  </div>
+</div>
+3. Atualização dos Links de WhatsApp
+É MUITO IMPORTANTE atualizar os links de redirecionamento para o WhatsApp para refletir o novo sistema de preços. Cada produto deve ter sua própria mensagem personalizada:
+Para La Crema:
+https://wa.me/5566999852299?text=Olá! Gostaria de encomendar uma taça de La Crema com decoração de frutas por R$ 140,00.
+Para Niza, Nino e Lyca:
+https://wa.me/5566999852299?text=Olá! Gostaria de encomendar um pote de 1L de [NOME DO PRODUTO] por R$ 125,00.
+Substitua [NOME DO PRODUTO] pelo nome específico do produto (Niza, Nino ou Lyca ).
+Para os demais produtos:
+https://wa.me/5566999852299?text=Olá! Gostaria de encomendar um pote de 1L de [NOME DO PRODUTO] por R$ 120,00.
+Substitua [NOME DO PRODUTO] pelo nome específico do produto (Torta Alemã, Tiramisù, etc ).
+4. Verificação e Testes
+Após implementar as alterações, verifique:
+* Se o La Crema está sendo apresentado em taça com decoração de frutas a R$ 140,00
+* Se os produtos Niza, Nino e Lyca mostram apenas a opção de pote de 1L a R$ 125,00
+* Se os demais produtos mostram apenas a opção de pote de 1L a R$ 120,00
+* Se os links de WhatsApp estão funcionando corretamente com as mensagens personalizadas para cada produto
+* Se a mensagem de WhatsApp inclui o nome correto do produto e o preço correspondente
+Lista de Produtos por Categoria e Preço
+La Crema em Taça (R$ 140,00)
+* La Crema Tradicional (com decoração de frutas)
+Premium - Pote 1L (R$ 125,00)
+* Niza (creme de pistache/ganache de chocolate)
+* Nino (creme de avelã/ovo maltine/ganache de chocolate)
+* Lyca (creme de creme brullè/macadâmia/ganache de chocolate)
+Padrão - Pote 1L (R$ 120,00)
+* Todos os demais sabores, incluindo:
+    * Manu (creme de chocolate/ganache de chocolates branco e preto)
+    * Nati (creme de coco/ganache de chocolate)
+    * Mango (creme de manga/ganache de chocolate)
+    * Lola (creme de nozes/ganache de chocolate)
+    * Gito (CreamCheese/chocolate branco/frutas vermelhas)
+    * Vic (creme/bolacha champagne/morango/chantilly)
+    * Yas (creme/bolacha champagne/bombom/calda de chocolate/chantiMellow)
+    * Missi (creme/bolacha champagne/abacaxi/coco/chantiMellow)
+    * Nice (creme/bolacha champagne/uva/ganache de chocolate/chantiMellow)
+    * Torta Alemã (creme amanteigado/bolacha champagne/chocolate)
+    * Torta Holandesa (creme amanteigado/baunilha/chocolate)
+    * Tiramisù (creme de queijo mascarpone, chocolate/café/rum)
+    * MaracuNinho (mousse de maracujá c/ninho, coberto c/ ganache de chocolate)
+    * Lemon (mousse de limão c/ ninho, coberto c/ ganache de chocolate)
+    * Mousse de Chocolate
+Observações Importantes
+1. Mantenha o design visual e a identidade da marca
+2. Destaque visualmente que apenas o La Crema é servido em taça com decoração de frutas
+3. Adicione uma observação no final da página: "Todas as sobremesas são congeláveis, COM EXCEÇÃO das cassatas."
+4. Certifique-se de que cada produto tenha seu link de WhatsApp personalizado com a mensagem correta
+Obrigado pela sua ajuda na implementação dessas alterações importantes para o site da confeitaria ÉDoce!

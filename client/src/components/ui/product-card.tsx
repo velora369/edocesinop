@@ -8,8 +8,9 @@ type ProductCardProps = {
 };
 
 export default function ProductCard({ product, type }: ProductCardProps) {
-  // Check if it's the featured La Crema product
-  const isFeatured = product.name.includes("La Crema");
+  // Identificar produtos especiais
+  const isLaCrema = product.isLaCrema;
+  const isPremium = product.isPremium;
   
   return (
     <motion.div 
@@ -20,10 +21,10 @@ export default function ProductCard({ product, type }: ProductCardProps) {
       transition={{ duration: 0.5 }}
     >
       {/* Chocolate drip decoration - only for featured products */}
-      {isFeatured && <div className="chocolate-drip"></div>}
+      {isLaCrema && <div className="chocolate-drip"></div>}
       
       {/* Featured badge */}
-      {isFeatured && (
+      {isLaCrema && (
         <span className="featured-badge">
           Especial
         </span>
@@ -57,84 +58,31 @@ export default function ProductCard({ product, type }: ProductCardProps) {
         )}
         
         <div className="flex flex-col space-y-3">
-          {type === 'taca' ? (
-            <>
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-sm text-gray-500 font-medium">Escolha o tamanho:</span>
-              </div>
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Button 
-                  asChild
-                  className="w-full bg-primary hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden"
-                >
-                  <a href={product.tamaM.link} className="flex justify-between items-center">
-                    <span>Taça M (1,4L)</span>
-                    <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
-                      R$ {product.tamaM.price}
-                    </span>
-                  </a>
-                </Button>
-              </motion.div>
-              
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Button 
-                  asChild
-                  className="w-full bg-secondary hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden"
-                >
-                  <a href={product.tamaG.link} className="flex justify-between items-center">
-                    <span>Taça G (2,4L)</span>
-                    <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
-                      R$ {product.tamaG.price}
-                    </span>
-                  </a>
-                </Button>
-              </motion.div>
-            </>
-          ) : (
-            <>
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-sm text-gray-500 font-medium">Escolha o tamanho:</span>
-              </div>
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Button 
-                  asChild
-                  className="w-full bg-primary hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden"
-                >
-                  <a href={product.poteM.link} className="flex justify-between items-center">
-                    <span>Pote M (500ml)</span>
-                    <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
-                      R$ {product.poteM.price}
-                    </span>
-                  </a>
-                </Button>
-              </motion.div>
-              
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Button 
-                  asChild
-                  className="w-full bg-secondary hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden"
-                >
-                  <a href={product.poteG.link} className="flex justify-between items-center">
-                    <span>Pote G (1L)</span>
-                    <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
-                      R$ {product.poteG.price}
-                    </span>
-                  </a>
-                </Button>
-              </motion.div>
-            </>
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <Button 
+              asChild
+              className={`w-full hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden 
+                ${isLaCrema ? 'bg-primary' : isPremium ? 'bg-accent' : 'bg-secondary'}`}
+            >
+              <a href={product.link} className="flex justify-between items-center">
+                <span>
+                  {isLaCrema ? 'Taça decorada com frutas' : 'Pote de 1L'}
+                </span>
+                <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
+                  R$ {product.price}
+                </span>
+              </a>
+            </Button>
+          </motion.div>
+          
+          {isLaCrema && (
+            <div className="mt-2 text-sm text-center text-green-600 font-medium">
+              <i className="fas fa-star mr-1"></i>
+              Único produto com decoração especial de frutas frescas
+            </div>
           )}
         </div>
       </div>
