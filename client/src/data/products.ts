@@ -180,7 +180,7 @@ export const potesProducts: ProductType[] = [
     id: 5,
     name: "LEMON",
     description: "Refrescante mousse de limão com ninho, coberta com ganache de chocolate. Perfeita combinação entre acidez e doçura.",
-    image: "https://images.unsplash.com/photo-1528252899556-261345a47a7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/mousse-de-limao.webp",
     price: "120,00",
     link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LEMON%20por%20R$%20120,00.",
     note: "É congelável"
@@ -189,7 +189,7 @@ export const potesProducts: ProductType[] = [
     id: 6,
     name: "MOUSSE DE CHOCOLATE",
     description: "Clássica mousse de chocolate com textura aveludada e sabor intenso. Um prazer para os amantes de chocolate.",
-    image: "https://images.unsplash.com/photo-1611292779156-d80ef5bd3339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/mousse-de-chocolate.webp",
     price: "120,00",
     link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MOUSSE%20DE%20CHOCOLATE%20por%20R$%20120,00.",
     note: "É congelável"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 
 type ImageModalProps = {
@@ -12,11 +12,19 @@ type ImageModalProps = {
 export function ImageModal({ isOpen, onClose, imageUrl, altText = "Product image" }: ImageModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-[90vw] max-h-[90vh] p-0 overflow-hidden bg-transparent border-none">
+      <DialogContent 
+        className="max-w-[90vw] max-h-[90vh] p-0 overflow-hidden bg-transparent border-none"
+        aria-describedby="image-viewer-description"
+      >
+        <DialogTitle className="sr-only">Visualização da imagem</DialogTitle>
+        <div id="image-viewer-description" className="sr-only">
+          Visualização ampliada da imagem do produto para melhor visualização de detalhes.
+        </div>
+        
         <button 
           onClick={onClose} 
           className="absolute top-2 right-2 z-50 p-2 rounded-full bg-white/80 text-black hover:bg-white/100 transition-colors"
-          aria-label="Close"
+          aria-label="Fechar imagem"
         >
           <X size={24} />
         </button>
