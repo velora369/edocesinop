@@ -25,7 +25,7 @@ export const tacasProducts: ProductType[] = [
     id: 2,
     name: "VIBE",
     description: "Uma combinação irresistível de creme de doce de leite, café e ganache de chocolate que vai conquistar seu paladar.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.17.23.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-24-as-02.49.33.webp",
     price: "120,00",
     link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20VIBE%20por%20R$%20120,00."
   },
