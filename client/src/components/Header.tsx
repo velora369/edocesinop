@@ -121,7 +121,7 @@ export default function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, type: "spring", stiffness: 300, damping: 25 }}
-            className="md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-100 px-4 py-2 overflow-hidden shadow-xl"
+            className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100 px-4 py-2 overflow-hidden shadow-[var(--shadow-lg)] rounded-b-3xl"
           >
             <nav className="flex flex-col space-y-4 py-3">
               {[
@@ -134,7 +134,7 @@ export default function Header() {
                 <motion.a 
                   key={item.href}
                   href={item.href} 
-                  className="font-montserrat font-medium hover:text-primary transition-all duration-300 flex items-center p-2 rounded-lg hover:bg-gray-50"
+                  className="font-montserrat font-medium hover:text-primary transition-all duration-300 flex items-center p-3 rounded-xl hover:bg-gradient-to-r hover:from-white hover:to-gray-50 hover:shadow-[var(--shadow-sm)] group"
                   onClick={(e) => {
                     e.preventDefault();
                     handleMobileNavigation(item.href);
@@ -144,8 +144,10 @@ export default function Header() {
                   transition={{ delay: index * 0.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <i className={`${item.icon} w-6 text-secondary`}></i>
-                  <span className="ml-2">{item.label}</span>
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3 group-hover:bg-primary/20 transition-all duration-300">
+                    <i className={`${item.icon} text-primary`}></i>
+                  </div>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300">{item.label}</span>
                 </motion.a>
               ))}
               <div className="pt-3">
@@ -156,11 +158,12 @@ export default function Header() {
                 >
                   <Button
                     asChild
-                    className="w-full bg-green-500 hover:bg-green-600 text-white rounded-full py-6 shadow-md"
+                    className="w-full bg-gradient-to-r from-green-500 to-green-400 hover:shadow-[0_0_12px_rgba(74,194,107,0.5)] hover:from-green-400 hover:to-green-500 text-white rounded-full py-6 overflow-hidden relative group"
                   >
-                    <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido">
+                    <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido" className="flex items-center justify-center">
+                      <span className="absolute w-0 h-0 transition-all duration-300 bg-white rounded-full opacity-20 group-hover:w-64 group-hover:h-64 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></span>
                       <i className="fab fa-whatsapp mr-2 text-xl"></i>
-                      Fazer Pedido
+                      <span className="group-hover:scale-105 transition-transform duration-300">Fazer Pedido</span>
                     </a>
                   </Button>
                 </motion.div>
