@@ -6,9 +6,6 @@ export default function Footer() {
       {/* Separador suave antes do footer */}
       <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent w-full max-w-6xl mx-auto opacity-70 my-4"></div>
       
-      {/* Borda decorativa tipo glacê */}
-      <div className="frosting-border w-full"></div>
-      
       <footer className="bg-chocolate text-white py-12 relative overflow-hidden">
         {/* Elementos decorativos */}
         <div className="absolute -top-12 -right-12 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>

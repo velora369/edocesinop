@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { TabsEdoce, TabsEdoceContent, TabsEdoceTrigger } from "@/components/ui/tabs-edoce";
 import ProductCard from "@/components/ui/product-card";
@@ -8,49 +8,8 @@ import { Button } from "@/components/ui/button";
 export default function Products() {
   const [activeTab, setActiveTab] = useState("tacas");
 
-  // Add confetti sprinkles to the page
-  useEffect(() => {
-    const colors = ['#F03D87', '#00A9A5', '#4B2E1F', '#44CFC6', '#FFD700'];
-    const rotations = ['15deg', '30deg', '45deg', '60deg', '75deg', '90deg'];
-    const productSection = document.getElementById('produtos');
-    
-    if (productSection) {
-      // Create 20 sprinkles and distribute them around the product section
-      for (let i = 0; i < 20; i++) {
-        const sprinkle = document.createElement('div');
-        sprinkle.className = 'confetti-sprinkle';
-        
-        // Random position
-        const top = Math.floor(Math.random() * 100);
-        const left = Math.floor(Math.random() * 100);
-        
-        // Random style
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        const rotation = rotations[Math.floor(Math.random() * rotations.length)];
-        const delay = Math.random() * 5;
-        
-        // Apply styles
-        sprinkle.style.setProperty('--color', color);
-        sprinkle.style.setProperty('--rotation', rotation);
-        sprinkle.style.top = `${top}%`;
-        sprinkle.style.left = `${left}%`;
-        sprinkle.style.animationDelay = `${delay}s`;
-        
-        productSection.appendChild(sprinkle);
-      }
-    }
-    
-    // Cleanup function
-    return () => {
-      if (productSection) {
-        const sprinkles = productSection.querySelectorAll('.confetti-sprinkle');
-        sprinkles.forEach(sprinkle => sprinkle.remove());
-      }
-    };
-  }, []);
-
   return (
-    <section id="produtos" className="py-20 relative overflow-hidden">
+    <section id="produtos" className="py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -185,12 +144,9 @@ export default function Products() {
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossos pavês são verdadeiras obras de arte, elaborados com ingredientes selecionados e muito amor. Perfeitos para momentos especiais ou para se deliciar em casa.
                 </p>
-                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-8">
+                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-10">
                   <span className="font-montserrat">Taça decorada com frutas - R$ 140,00</span>
                 </div>
-                
-                {/* Decorative cream divider */}
-                <div className="cream-divider"></div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -211,13 +167,10 @@ export default function Products() {
                 <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-6">
                   <span className="font-montserrat">Pote de 1 litro - R$ 120,00</span>
                 </div>
-                <div className="bg-yellow-50 border border-yellow-100 text-yellow-800 rounded-lg py-2 px-4 inline-block mt-2 mb-8">
+                <div className="bg-yellow-50 border border-yellow-100 text-yellow-800 rounded-lg py-2 px-4 inline-block mt-2 mb-10">
                   <i className="fas fa-info-circle mr-2"></i>
                   <span className="text-sm font-medium">As cassatas não são congeláveis</span>
                 </div>
-                
-                {/* Decorative cream divider */}
-                <div className="cream-divider"></div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -238,13 +191,10 @@ export default function Products() {
                 <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-6">
                   <span className="font-montserrat">Pote de 1 litro - R$ 120,00</span>
                 </div>
-                <div className="bg-green-50 border border-green-100 text-green-800 rounded-lg py-2 px-4 inline-block mt-2 mb-8">
+                <div className="bg-green-50 border border-green-100 text-green-800 rounded-lg py-2 px-4 inline-block mt-2 mb-10">
                   <i className="fas fa-check-circle mr-2"></i>
                   <span className="text-sm font-medium">Todas as sobremesas desta categoria são congeláveis</span>
                 </div>
-                
-                {/* Decorative cream divider */}
-                <div className="cream-divider"></div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

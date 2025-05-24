@@ -37,15 +37,15 @@ export default function Header() {
     }, 100);
   };
 
-  const headerClasses = `fixed w-full top-0 z-50 transition-all duration-500 ${
+  const headerClasses = `fixed w-full top-0 z-50 transition-all duration-300 ${
     scrolled 
-      ? "bg-white/95 backdrop-blur-sm shadow-lg translate-y-0 py-1" 
-      : "bg-white/90 py-3"
+      ? "bg-white shadow-lg translate-y-0" 
+      : "bg-white/95"
   }`;
 
   return (
-    <header className={`${headerClasses} chocolate-border-top`}>
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center relative">
+    <header className={headerClasses}>
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <motion.a 
           href="#" 
           className="relative"
