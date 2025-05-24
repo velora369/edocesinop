@@ -247,30 +247,37 @@ export default function Products() {
             onValueChange={setActiveTab}
             className="w-full"
           >
-            <div className="mb-8 flex justify-center">
-              <div className="flex flex-wrap justify-center max-w-3xl w-full">
+            <div className="mb-12 flex justify-center">
+              <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 p-2 inline-flex flex-wrap gap-1">
                 {[
-                  { value: "tacas", label: "Pavês" },
-                  { value: "cassatas", label: "Cassatas" },
-                  { value: "potes", label: "Sobremesas" },
-                  { value: "bolos", label: "Bolos" }
+                  { value: "tacas", label: "Pavês", icon: "🥄", color: "from-pink-500 to-rose-400" },
+                  { value: "cassatas", label: "Cassatas", icon: "🍓", color: "from-emerald-500 to-teal-400" },
+                  { value: "potes", label: "Sobremesas", icon: "🍯", color: "from-amber-500 to-orange-400" },
+                  { value: "bolos", label: "Bolos", icon: "🎂", color: "from-purple-500 to-indigo-400" }
                 ].map((tab, index) => (
                   <TabsEdoceTrigger 
                     key={tab.value}
                     value={tab.value} 
-                    className={`relative px-6 sm:px-8 py-3 sm:py-4 transition-all duration-300 text-sm sm:text-base font-medium
+                    className={`relative px-4 sm:px-6 py-3 sm:py-4 transition-all duration-300 text-sm sm:text-base font-semibold rounded-xl group min-w-[120px] sm:min-w-[140px]
                       ${activeTab === tab.value 
-                        ? "text-secondary" 
-                        : "text-gray-600 hover:text-gray-800"
+                        ? `text-white bg-gradient-to-r ${tab.color} shadow-lg transform scale-105` 
+                        : "text-gray-600 hover:text-gray-800 hover:bg-gray-50"
                       }
                     `}
                   >
-                    <span>{tab.label}</span>
+                    <div className="flex items-center justify-center gap-2">
+                      <span className={`text-lg transition-transform ${activeTab === tab.value ? 'scale-110' : 'group-hover:scale-105'}`}>
+                        {tab.icon}
+                      </span>
+                      <span className="hidden sm:inline">{tab.label}</span>
+                      <span className="sm:hidden text-xs font-medium">{tab.label}</span>
+                    </div>
                     {activeTab === tab.value && (
                       <motion.div
-                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary"
-                        layoutId="activeTabIndicator"
+                        className="absolute inset-0 rounded-xl bg-gradient-to-r opacity-20"
+                        layoutId="activeTabBackground"
                         initial={false}
+                        transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                       />
                     )}
                   </TabsEdoceTrigger>
