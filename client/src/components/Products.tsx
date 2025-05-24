@@ -9,45 +9,120 @@ export default function Products() {
   const [activeTab, setActiveTab] = useState("tacas");
 
   return (
-    <section id="produtos" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="produtos" className="py-24 relative">
+      {/* Elementos decorativos de fundo */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent z-10"></div>
+      <motion.div 
+        className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full bg-primary/5 blur-3xl"
+        animate={{ 
+          scale: [1, 1.1, 1],
+          opacity: [0.05, 0.08, 0.05] 
+        }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      ></motion.div>
+      <motion.div 
+        className="absolute bottom-1/4 left-1/4 w-60 h-60 rounded-full bg-secondary/5 blur-3xl"
+        animate={{ 
+          scale: [1, 1.15, 1],
+          opacity: [0.05, 0.07, 0.05] 
+        }}
+        transition={{
+          duration: 7,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 2
+        }}
+      ></motion.div>
+        
+      <div className="container mx-auto px-4 relative z-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
+          className="mb-12"
         >
-          <h2 className="section-title text-center">
-            Nossos <span className="section-highlight">Produtos</span>
-          </h2>
+          <div className="flex flex-col items-center">
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-chocolate mb-3 text-center">
+              Nossos <span className="text-secondary">Produtos</span>
+            </h2>
+            <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+            <p className="text-gray-600 max-w-2xl text-center mt-4">
+              Descubra nossas criações artesanais, feitas com ingredientes selecionados para momentos especiais
+            </p>
+          </div>
         </motion.div>
         
         {/* Featured Product - La Crema */}
         <motion.div 
-          className="bg-gradient-to-r from-primary to-accent rounded-2xl overflow-hidden mb-16 text-white shadow-2xl relative"
+          className="bg-gradient-to-r from-primary via-primary/95 to-accent rounded-3xl overflow-hidden mb-16 text-white shadow-[var(--shadow-xl)] relative"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          {/* Decorative elements */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-          <div className="absolute bottom-0 left-0 w-24 h-24 bg-secondary/20 rounded-full blur-xl"></div>
+          {/* Decorative elements animados */}
+          <motion.div 
+            className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-2xl"
+            animate={{
+              scale: [1, 1.2, 1],
+              opacity: [0.1, 0.15, 0.1]
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          ></motion.div>
+          <motion.div 
+            className="absolute -bottom-12 -left-12 w-48 h-48 bg-secondary/20 rounded-full blur-xl"
+            animate={{
+              scale: [1, 1.3, 1],
+              opacity: [0.15, 0.2, 0.15]
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1
+            }}
+          ></motion.div>
+          
+          {/* Padrão decorativo */}
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0aDEydjEySDM2eiIvPjxwYXRoIGQ9Ik0xMiAxMmgxMnYxMkgxMnoiLz48cGF0aCBkPSJNMzYgMTJoMTJ2MTJIMTZ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
           
           <div className="flex flex-col md:flex-row items-center gap-8 p-4 md:p-8 relative z-10">
             <div className="md:w-1/3 relative">
-              <div className="absolute -top-4 -right-4 bg-secondary text-white px-4 py-1 rounded-full transform rotate-3 font-dancing text-lg font-bold shadow-lg z-20">
-                Favorito!
+              <div className="absolute -top-4 -right-4 bg-secondary text-white px-5 py-2 rounded-full transform rotate-3 font-dancing text-lg font-bold shadow-[var(--shadow-md)] z-20 flex items-center gap-1.5">
+                <span className="animate-pulse">★</span> Favorito!
               </div>
               <motion.div
                 whileHover={{ scale: 1.03, rotate: -1 }}
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                className="relative group"
               >
+                {/* Borda decorativa */}
+                <div className="absolute -inset-1.5 bg-white/20 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
                 <img 
                   src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-23-at-21.10.22.webp" 
                   alt="La Crema - O carro-chefe da casa" 
-                  className="rounded-lg shadow-lg border-4 border-white/30"
+                  className="rounded-xl shadow-[var(--shadow-lg)] border-4 border-white/40 relative z-10 transition-all duration-300 group-hover:shadow-[var(--shadow-highlight-secondary)]"
                 />
+                
+                {/* Badge decorativo que aparece no hover */}
+                <motion.div 
+                  className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-md text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 0 }}
+                  whileHover={{ opacity: 1, y: 0 }}
+                >
+                  <span className="mr-1 text-yellow-500">✨</span> <span className="text-secondary">Premium</span>
+                </motion.div>
               </motion.div>
             </div>
             
@@ -57,17 +132,59 @@ export default function Products() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <h3 className="font-dancing text-3xl md:text-5xl mb-3">La Crema - O carro-chefe da casa!</h3>
-                <div className="flex mb-2">
+                <div className="relative inline-block mb-1">
+                  <motion.span 
+                    className="absolute -top-10 -right-8 text-4xl transform rotate-12 opacity-0"
+                    animate={{ 
+                      opacity: [0, 1, 0],
+                      y: [0, -20, -10],
+                      rotate: [12, 6, 12]
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      repeatDelay: 5
+                    }}
+                  >
+                    ✨
+                  </motion.span>
+                  <h3 className="font-dancing text-3xl md:text-5xl mb-3 relative">
+                    La Crema - <span className="relative inline-block">
+                      <span className="relative z-10">O carro-chefe da casa!</span>
+                      <motion.div 
+                        className="absolute bottom-1 left-0 h-3 bg-white/20 rounded-full z-0"
+                        initial={{ width: 0 }}
+                        whileInView={{ width: "100%" }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.9 }}
+                      ></motion.div>
+                    </span>
+                  </h3>
+                </div>
+                
+                <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-yellow-300">
-                      <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
-                    </svg>
+                    <motion.div 
+                      key={i}
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.5 + (i * 0.1) }}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-yellow-300 drop-shadow-md">
+                        <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
+                      </svg>
+                    </motion.div>
                   ))}
                 </div>
-                <p className="mb-6 text-white text-lg leading-relaxed">
+                
+                <motion.p 
+                  className="mb-6 text-white text-lg leading-relaxed backdrop-blur-[2px] p-4 rounded-xl bg-white/5 border border-white/10 shadow-inner"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                >
                   Nosso doce mais amado pelos clientes! A verdadeira obra-prima da confeitaria com combinação perfeita de texturas e sabores que conquistou o paladar de todos. Experimente esta sensação única de prazer em cada colherada.
-                </p>
+                </motion.p>
               </motion.div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
