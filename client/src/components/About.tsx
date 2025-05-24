@@ -65,7 +65,6 @@ export default function About() {
                   ></motion.div>
                 </span>
               </h2>
-              <div className="h-1 w-12 bg-gradient-to-r from-primary to-secondary rounded-full mt-4"></div>
             </motion.div>
             
             <motion.div
