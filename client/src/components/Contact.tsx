@@ -165,22 +165,7 @@ export default function Contact() {
                   
                   <span className="relative z-10 tracking-wide">Seguir no Instagram</span>
                   
-                  {/* Animated gradient border */}
-                  <motion.div
-                    className="absolute inset-0 rounded-2xl"
-                    style={{
-                      background: "linear-gradient(90deg, transparent, rgba(131,58,180,0.3), rgba(253,29,29,0.3), rgba(252,175,69,0.3), transparent)",
-                      backgroundSize: "300% 100%",
-                    }}
-                    animate={{
-                      backgroundPosition: ["300% 0%", "-300% 0%"],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "linear",
-                    }}
-                  />
+
                 </a>
               </Button>
             </motion.div>
