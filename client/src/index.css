@@ -66,8 +66,12 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply font-sans antialiased bg-background text-foreground scroll-smooth;
+    @apply font-sans antialiased bg-background text-foreground;
   }
 
   /* Custom font classes */
@@ -437,6 +441,79 @@
 .product-card:hover .drip-animation::after {
   height: 20px;
   opacity: 0.7;
+}
+
+/* Elementos decorativos de confeitaria */
+.sugar-sprinkles {
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  bottom: 0;
+  left: 0;
+  background-image: 
+    radial-gradient(circle at 10% 10%, #F03D87 3px, transparent 3px),
+    radial-gradient(circle at 20% 50%, #00A9A5 2px, transparent 2px),
+    radial-gradient(circle at 30% 20%, #FFD700 4px, transparent 4px),
+    radial-gradient(circle at 40% 80%, #F03D87 3px, transparent 3px),
+    radial-gradient(circle at 50% 40%, #00A9A5 2px, transparent 2px),
+    radial-gradient(circle at 60% 10%, #FFD700 4px, transparent 4px),
+    radial-gradient(circle at 70% 30%, #F03D87 3px, transparent 3px),
+    radial-gradient(circle at 80% 70%, #00A9A5 2px, transparent 2px),
+    radial-gradient(circle at 90% 40%, #FFD700 4px, transparent 4px);
+  opacity: 0.7;
+  z-index: 5;
+}
+
+.frosting-border {
+  position: relative;
+}
+
+.frosting-border::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: 
+    radial-gradient(circle at 16.67% 50%, white 12px, transparent 12px),
+    radial-gradient(circle at 50% 50%, white 12px, transparent 12px),
+    radial-gradient(circle at 83.33% 50%, white 12px, transparent 12px);
+  background-size: 60px 20px;
+  background-repeat: repeat-x;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+}
+
+.chocolate-border-top {
+  position: relative;
+}
+
+.chocolate-border-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #4B2E1F 25%, transparent 25%, transparent 50%, #4B2E1F 50%, #4B2E1F 75%, transparent 75%);
+  background-size: 40px 6px;
+}
+
+/* Efeito de pulsação para CTA */
+.pulse-animation {
+  animation: pulse-effect 2s infinite;
+}
+
+@keyframes pulse-effect {
+  0% {
+    box-shadow: 0 0 0 0 rgba(240, 61, 135, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(240, 61, 135, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(240, 61, 135, 0);
+  }
 }
 
 /* Custom scrollbar */

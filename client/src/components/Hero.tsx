@@ -13,6 +13,34 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary opacity-10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl"></div>
       
+      {/* Sprinkles decoration */}
+      <div className="sugar-sprinkles absolute top-20 left-0 w-full"></div>
+      
+      {/* Animated floating decorations */}
+      {[...Array(10)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute rounded-full opacity-70 z-10"
+          style={{
+            background: i % 3 === 0 ? '#F03D87' : i % 3 === 1 ? '#00A9A5' : '#4B2E1F',
+            width: Math.random() * 10 + 5 + 'px',
+            height: Math.random() * 10 + 5 + 'px',
+            top: Math.random() * 80 + 10 + '%',
+            left: Math.random() * 80 + 10 + '%',
+          }}
+          animate={{
+            y: [0, -20, 0],
+            x: [0, Math.random() * 20 - 10, 0],
+            rotate: [0, 360],
+          }}
+          transition={{
+            duration: Math.random() * 5 + 5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+      
       <div className="container mx-auto px-4 py-16 md:py-24 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -55,11 +83,15 @@ export default function Hero() {
             <Button 
               asChild
               size="lg" 
-              className="bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-10 py-7 text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative overflow-hidden group"
+              className="bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-10 py-7 text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative overflow-hidden group pulse-animation"
             >
               <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido" className="flex items-center gap-2">
-                <span className="relative z-10">Fazer Pedido Agora</span>
-                <span className="relative z-10">→</span>
+                <span className="relative z-10 mr-1">Fazer Pedido Agora</span>
+                <motion.span 
+                  className="relative z-10"
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ repeat: Infinity, duration: 1.5 }}
+                >→</motion.span>
                 <span className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               </a>
             </Button>
