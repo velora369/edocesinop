@@ -4,7 +4,10 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section 
-      className="min-h-screen pt-20 flex items-center relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100" 
+      className="min-h-screen pt-20 bg-cover bg-center flex items-center relative overflow-hidden" 
+      style={{ 
+        backgroundImage: "linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url('https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')"
+      }}
     >
       {/* Enhanced decorative elements with animation */}
       <motion.div 
@@ -58,7 +61,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl text-gray-800 mb-8 leading-tight">
+            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl text-white mb-8 leading-tight">
               Você não pode comprar felicidade, mas pode comprar 
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
@@ -67,9 +70,9 @@ export default function Hero() {
                 className="relative inline-block mx-2"
               >
                 <span className="relative z-10 font-dancing">
-                  <span className="text-[#00A9A5]">É</span>
-                  <span className="text-[#4B2E1F]">Do</span>
-                  <span className="text-[#00A9A5]">ce</span>
+                  <span className="text-[#00A9A5] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">É</span>
+                  <span className="text-[#F03D87] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">Do</span>
+                  <span className="text-[#00A9A5] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">ce</span>
                 </span>
 
               </motion.div>, que é quase a mesma coisa!
@@ -77,7 +80,7 @@ export default function Hero() {
           </motion.div>
           
           <motion.p 
-            className="font-montserrat text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto"
+            className="font-montserrat text-lg md:text-xl text-white mb-10 max-w-3xl mx-auto opacity-95"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -85,7 +88,7 @@ export default function Hero() {
             <span className="relative inline-block">
               <span className="relative z-10">Confeitaria artesanal com ingredientes selecionados com excelência para tornar seus momentos especiais inesquecíveis</span>
               <motion.span
-                className="absolute bottom-0 left-0 h-[6px] bg-gradient-to-r from-transparent via-primary/30 to-transparent rounded-full"
+                className="absolute bottom-0 left-0 h-[6px] bg-gradient-to-r from-transparent via-white/30 to-transparent rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
                 transition={{ delay: 1.8, duration: 1.2 }}
