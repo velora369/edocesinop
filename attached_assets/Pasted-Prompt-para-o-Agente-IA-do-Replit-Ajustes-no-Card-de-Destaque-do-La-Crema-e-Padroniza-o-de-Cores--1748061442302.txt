@@ -1,0 +1,133 @@
+Prompt para o Agente IA do Replit: Ajustes no Card de Destaque do La Crema e Padronização de Cores
+
+Olá, Agente do Replit! Preciso da sua ajuda para implementar duas alterações importantes no site da confeitaria ÉDoce:
+Modificar o card de destaque do La Crema no início da seção "Nossos Produtos"
+Padronizar as cores dos cards de preço em todo o site
+1. Modificação do Card de Destaque do La Crema
+
+Situação Atual
+
+Atualmente, o card de destaque do La Crema (fundo turquesa com a imagem da taça) no início da seção "Nossos Produtos" mostra quatro opções de tamanho:
+Taça M (1,4L): R$ 149,90
+Taça G (2,4L): R$ 249,90
+Pote M (500ml): R$ 44,90
+Pote G (1L): R$ 99,90
+Alterações Necessárias
+
+Remover as quatro opções de tamanho existentes no card de destaque
+Substituir por apenas duas opções:
+Taça com decoração de frutas: R$ 140,00
+Pote de 1L: R$ 120,00
+Manter o título "La Crema - O carro-chefe da casa!"
+Manter a descrição atual
+Manter a informação de que apenas a versão em taça inclui decoração especial de frutas frescas
+Exemplo de Código para o Card de Destaque do La Crema
+
+html
+<!-- Mantenha o card turquesa e a imagem da taça como estão atualmente -->
+<div class="produto-destaque">
+  <div class="favorito">Favorito!</div>
+  <img src="imagem-atual-da-taca.jpg" alt="La Crema">
+  
+  <h2>La Crema - O carro-chefe da casa!</h2>
+  <div class="estrelas">★★★★★</div>
+  
+  <p>Nosso doce mais amado pelos clientes! A verdadeira obra-prima da confeitaria com combinação perfeita de texturas e sabores que conquistou o paladar de todos. Experimente esta sensação única de prazer em cada colherada.</p>
+  
+  <!-- Substitua as quatro opções atuais por estas duas novas opções -->
+  <div class="opcoes-container">
+    <!-- Opção de Taça -->
+    <button class="preco-btn rosa">
+      <i class="icone-taca"></i> Taça decorada com frutas
+      <span class="preco">R$ 140,00</span>
+    </button>
+    
+    <!-- Opção de Pote -->
+    <button class="preco-btn rosa">
+      <i class="icone-pote"></i> Pote de 1L
+      <span class="preco">R$ 120,00</span>
+    </button>
+  </div>
+</div>
+Links de WhatsApp para o La Crema
+
+Atualize os links de redirecionamento para o WhatsApp para cada opção no card de destaque:
+<!-- Para La Crema em taça -->
+https://wa.me/5566999852299?text=Olá! Gostaria de encomendar uma taça de La Crema com decoração de frutas por R$ 140,00.
+
+<!-- Para La Crema em pote -->
+https://wa.me/5566999852299?text=Olá! Gostaria de encomendar um pote de 1L de La Crema por R$ 120,00.
+2. Padronização das Cores dos Cards de Preço
+
+Situação Atual
+
+Os cards de preço estão com cores inconsistentes pelo site. Alguns são azul/ciano, outros são rosa.
+Alterações Necessárias
+
+Padronizar TODOS os cards de preço para a cor rosa (#F03D87 )
+Garantir que a cor rosa seja mantida tanto no estado normal quanto no hover/clique
+Aplicar esta padronização em todos os produtos do site
+Código CSS para Padronização das Cores
+
+css
+/* Estilo base para todos os botões de preço */
+.preco-btn, 
+.tamanho-btn, 
+.comprar-btn,
+button[class*="preco"],
+button[class*="tamanho"],
+button[class*="comprar"] {
+  background-color: #F03D87 !important; /* Rosa-chiclete */
+  color: white !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+/* Estilo para hover e active (quando clicado) */
+.preco-btn:hover, 
+.tamanho-btn:hover, 
+.comprar-btn:hover,
+button[class*="preco"]:hover,
+button[class*="tamanho"]:hover,
+button[class*="comprar"]:hover,
+.preco-btn:active, 
+.tamanho-btn:active, 
+.comprar-btn:active,
+button[class*="preco"]:active,
+button[class*="tamanho"]:active,
+button[class*="comprar"]:active,
+.preco-btn:focus, 
+.tamanho-btn:focus, 
+.comprar-btn:focus,
+button[class*="preco"]:focus,
+button[class*="tamanho"]:focus,
+button[class*="comprar"]:focus {
+  background-color: #F03D87 !important; /* Mantém rosa mesmo no hover/active */
+  opacity: 0.9; /* Apenas reduz levemente a opacidade para feedback visual */
+  color: white !important;
+  box-shadow: 0 0 8px rgba(240, 61, 135, 0.5) !important; /* Adiciona um sutil efeito de brilho */
+}
+
+/* Classe específica para botões rosa (caso seja necessário aplicar diretamente) */
+.rosa {
+  background-color: #F03D87 !important;
+  color: white !important;
+}
+Verificação Final
+
+Após implementar as alterações, verifique:
+Para o card de destaque do La Crema:
+Se apenas as duas opções (taça decorada e pote de 1L) estão sendo exibidas
+Se os preços estão corretos (R$ 140,00 para taça e R$ 120,00 para pote)
+Se o restante do card (título, descrição, imagem) permanece inalterado
+Se os links de WhatsApp estão funcionando corretamente com as mensagens personalizadas
+Para a padronização de cores:
+Se TODOS os botões de preço em todo o site estão na cor rosa (#F03D87)
+Se a cor rosa é mantida mesmo quando o mouse passa por cima ou quando clicado
+Se a aparência é consistente em diferentes navegadores e tamanhos de tela
+Importante
+
+Estas alterações se aplicam APENAS ao card de destaque do La Crema no início da seção "Nossos Produtos" e à padronização de cores dos botões
+NÃO modifique a listagem geral de produtos, onde o La Crema já está configurado corretamente
+Mantenha todos os outros elementos e funcionalidades do site intactos
+Obrigado pela sua ajuda na implementação dessas alterações importantes para o site da confeitaria ÉDoce!
