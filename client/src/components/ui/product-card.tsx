@@ -101,29 +101,54 @@ export default function ProductCard({ product, type }: ProductCardProps) {
         
         <div className="flex flex-col space-y-3">
           <motion.div
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             <Button 
               asChild
-              className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_8px_rgba(240,61,135,0.5)] rounded-lg shadow-sm group relative overflow-hidden"
+              className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_12px_rgba(240,61,135,0.6)] rounded-lg shadow-md group relative overflow-hidden"
             >
               <a href={product.link} className="flex justify-between items-center">
-                <span>
-                  {isLaCrema ? 'Taça decorada com frutas' : 'Pote de 1L'}
-                </span>
-                <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 3 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 10 }}
+                  className="flex items-center"
+                >
+                  {isLaCrema ? (
+                    <>
+                      <i className="fas fa-glass-martini mr-2 opacity-70 group-hover:opacity-100"></i>
+                      <span>Taça decorada com frutas</span>
+                    </>
+                  ) : (
+                    <>
+                      <i className="fas fa-box mr-2 opacity-70 group-hover:opacity-100"></i>
+                      <span>Pote de 1L</span>
+                    </>
+                  )}
+                </motion.span>
+                <motion.span 
+                  className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 500, damping: 17 }}
+                >
                   R$ {product.price}
-                </span>
+                </motion.span>
               </a>
             </Button>
           </motion.div>
           
           {isLaCrema && (
-            <div className="mt-2 text-sm text-center text-green-600 font-medium">
+            <motion.div 
+              className="mt-2 text-sm text-center text-green-600 font-medium float-animation"
+              initial={{ y: 0 }}
+              animate={{ y: [0, -3, 0] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            >
               <i className="fas fa-star mr-1"></i>
               Produto com decoração especial de frutas frescas
-            </div>
+            </motion.div>
           )}
         </div>
       </div>
