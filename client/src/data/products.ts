@@ -60,44 +60,16 @@ export const tacasProducts: ProductType[] = [
     name: "NATI",
     description: "Uma combinação tropical de creme de coco e ganache de chocolate que transporta você para um paraíso de sabores.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.20.52.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NATI%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NATI%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NATI%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NATI%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NATI%20por%20R$%20120,00."
   },
   {
     id: 7,
     name: "MANGO",
     description: "A doçura exótica da manga combinada com ganache de chocolate, uma experiência refrescante e sofisticada.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.22.37.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANGO%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANGO%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANGO%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MANGO%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MANGO%20por%20R$%20120,00."
   },
   {
     id: 8,
@@ -113,44 +85,16 @@ export const tacasProducts: ProductType[] = [
     name: "LOLA",
     description: "O sabor marcante do creme de nozes combinado com ganache de chocolate, uma sobremesa rica e saborosa.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/vista-superior-de-nozes-em-uma-tigela-no-rustico.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LOLA%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LOLA%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LOLA%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20LOLA%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LOLA%20por%20R$%20120,00."
   },
   {
     id: 10,
     name: "GITO",
     description: "Uma harmonia perfeita de CreamCheese, chocolate branco e frutas vermelhas que proporcionam uma experiência inesquecível.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bagas-misturadas-close-up.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20GITO%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20GITO%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20GITO%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20GITO%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    }
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20GITO%20por%20R$%20120,00."
   }
 ];
 
@@ -161,22 +105,8 @@ export const cassatasProducts: ProductType[] = [
     name: "VIC",
     description: "Uma sobremesa refrescante com camadas de creme, bolacha champagne e morangos frescos, finalizada com chantilly.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/cassata-de-morango-.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIC%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIC%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIC%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20VIC%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    },
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20VIC%20por%20R$%20120,00.",
     note: "Não é congelável"
   },
   {
@@ -184,22 +114,8 @@ export const cassatasProducts: ProductType[] = [
     name: "YAS",
     description: "Uma combinação deliciosa de creme, bolacha champagne, bombom, calda de chocolate e chantiMellow.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/de-bombons.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20YAS%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20YAS%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20YAS%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20YAS%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    },
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20YAS%20por%20R$%20120,00.",
     note: "Não é congelável"
   },
   {
@@ -207,22 +123,8 @@ export const cassatasProducts: ProductType[] = [
     name: "MISSI",
     description: "Uma sobremesa tropical com camadas de creme, bolacha champagne, abacaxi, coco e chantiMellow.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/deliciosa-natureza-morta-de-abacaxi.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MISSI%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MISSI%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MISSI%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20MISSI%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    },
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MISSI%20por%20R$%20120,00.",
     note: "Não é congelável"
   },
   {
@@ -230,22 +132,8 @@ export const cassatasProducts: ProductType[] = [
     name: "NICE",
     description: "Uma combinação sofisticada de creme, bolacha champagne, uva, ganache de chocolate e chantiMellow.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/cassata-de-uva.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NICE%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NICE%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NICE%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20NICE%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    },
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NICE%20por%20R$%20120,00.",
     note: "Não é congelável"
   }
 ];
@@ -257,22 +145,8 @@ export const potesProducts: ProductType[] = [
     name: "TORTA ALEMÃ",
     description: "Camadas de biscoito e creme amanteigado com chocolate, uma receita tradicional que nunca sai de moda.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/torta-alema-11.webp",
-    tamaM: {
-      price: "149,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20TORTA%20ALEMÃ%20tamanho%20M%20por%20R$%20149,90."
-    },
-    tamaG: {
-      price: "249,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20TORTA%20ALEMÃ%20tamanho%20G%20por%20R$%20249,90."
-    },
-    poteM: {
-      price: "44,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20TORTA%20ALEMÃ%20tamanho%20Pote%20M%20por%20R$%2044,90."
-    },
-    poteG: {
-      price: "99,90",
-      link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um(a)%20TORTA%20ALEMÃ%20tamanho%20Pote%20G%20por%20R$%2099,90."
-    },
+    price: "120,00",
+    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20TORTA%20ALEMÃ%20por%20R$%20120,00.",
     note: "É congelável"
   },
   {
