@@ -19,26 +19,68 @@ export default function ProductCard({ product, type }: ProductCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
+      whileHover={{ 
+        y: -8, 
+        boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" 
+      }}
     >
       {/* Chocolate drip decoration - only for featured products */}
       {isLaCrema && <div className="chocolate-drip"></div>}
       
       {/* Featured badge */}
       {isLaCrema && (
-        <span className="featured-badge">
+        <motion.span 
+          className="featured-badge"
+          whileHover={{ scale: 1.1, rotate: 0 }}
+          initial={{ rotate: 5 }}
+          transition={{ type: "spring", stiffness: 300, damping: 10 }}
+        >
           Especial
-        </span>
+        </motion.span>
       )}
       
       <div className="relative overflow-hidden">
-        <motion.img 
-          src={product.image} 
-          alt={product.name} 
-          className="w-full h-56 object-cover transition-transform"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.4 }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60"></div>
+        <motion.div
+          className="relative"
+          whileHover="hover"
+          initial="initial"
+        >
+          <motion.img 
+            src={product.image} 
+            alt={product.name} 
+            className="w-full h-56 object-cover transition-transform"
+            variants={{
+              initial: { scale: 1, filter: "brightness(1)" },
+              hover: { scale: 1.08, filter: "brightness(1.1)" }
+            }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          />
+          <motion.div 
+            className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+            variants={{
+              initial: { opacity: 0.6 },
+              hover: { opacity: 0.4 }
+            }}
+            transition={{ duration: 0.3 }}
+          />
+          
+          {/* Add floating animation elements for featured products */}
+          {(isLaCrema || isPremium) && (
+            <motion.div 
+              className="absolute top-2 right-2 w-8 h-8 rounded-full bg-secondary flex items-center justify-center drip-animation"
+              initial={{ scale: 0, rotate: -45 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 260, 
+                damping: 20, 
+                delay: 0.2 
+              }}
+            >
+              <i className="fas fa-star text-white text-xs"></i>
+            </motion.div>
+          )}
+        </motion.div>
       </div>
       
       <div className="p-6 relative">
