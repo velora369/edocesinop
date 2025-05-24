@@ -1,0 +1,64 @@
+Quero que você crie ou modernize uma landing page ou site completo seguindo estas diretrizes obrigatórias e universais de design, UX e UI.
+Independentemente do nicho, o objetivo é sempre entregar um site altamente atrativo, moderno, fluido, responsivo e com excelente desempenho.
+
+1. Navegação e Experiência do Usuário (UX):
+Crie uma navegação ultra fluida, com menus intuitivos e transições suaves entre seções.
+Use scroll suave, âncoras internas e uma barra de navegação sticky para facilitar a movimentação pelo conteúdo.
+Garanta uma experiência natural, sem pontos de fricção, minimizando cliques desnecessários.
+A arquitetura da informação deve ser clara, lógica e hierárquica.
+2. Interface de Usuário (UI) Moderna e Contemporânea:
+Estilo visual: minimalista, limpo e elegante, inspirado em tendências de design futurista suave.
+Utilize espaços em branco estrategicamente para promover clareza, foco e conforto visual.
+Empregue elementos arredondados, sombras suaves e gradientes discretos para adicionar profundidade e sofisticação.
+Visual global: transmitir inovação, confiança, proteção e alta qualidade.
+3. Ícones e Ilustrações Personalizadas:
+Criar ou utilizar ícones 3D interativos e personalizados, relacionados ao conteúdo e contexto do site.
+Estilo sugerido: glassmorphism, low poly futurista ou high-tech brilhante — conforme melhor se encaixar na proposta visual.
+Implementar animações leves (hover, microinterações) para enriquecer a experiência.
+A paleta de cores dos ícones deve ser harmonizada com a identidade visual da marca.
+4. Emoticons e Elementos Gráficos Exclusivos:
+Desenvolver emoticons únicos e personalizados com base na paleta oficial da marca.
+Estilo: futurista e minimalista, evitando excesso de brilho e mantendo consistência visual.
+Incorporar SVGs ou assets vetoriais sempre que possível para garantir leveza e performance.
+5. Responsividade e Desempenho:
+O design deve ser 100% responsivo, adaptando-se perfeitamente a celulares, tablets e desktops.
+Garantir carregamento rápido, com imagens otimizadas, uso eficiente de lazy loading e minificação de arquivos.
+Layout adaptável: reorganizar elementos para preservar estética e funcionalidade em telas menores.
+Código limpo, semanticamente correto e otimizado para SEO básico (meta tags, alt texts, headings adequados).
+6. Paleta de Cores e Identidade Visual:
+Aplicar de forma consistente a paleta oficial da marca em todos os elementos: tipografia, botões, backgrounds, ícones e gráficos.
+Criar ou ajustar variações da paleta para estados como hover, seleções e animações.
+Caso não exista paleta definida, sugira uma combinação moderna e harmoniosa, adequada ao segmento.
+7. Tipografia Moderna e Legível:
+Escolher fontes contemporâneas e legíveis (ex.: Inter, Poppins, Lato, Montserrat).
+Criar uma hierarquia visual clara: títulos grandes e impactantes, subtítulos destacados e corpo de texto confortável.
+Assegurar contraste forte entre textos e fundos, promovendo acessibilidade.
+8. Elementos Animados e Microinterações:
+Aplicar animações suaves (fade-in, slide-up) para entradas de seções e cards, utilizando técnicas como Intersection Observer ou Framer Motion.
+Botões e links devem possuir microinterações: hover effects, leves alterações de cor, escala ou brilho.
+Priorizar transições CSS suaves (transition-all duration-300 ease-in-out) para uma experiência fluida.
+9. Estrutura de Seções Recomendadas:
+Hero Section: imagem ou ilustração impactante + CTA claro.
+Benefícios e Diferenciais: destacados em cards animados.
+Recursos: apresentados com ícones 3D ilustrativos.
+Depoimentos e Prova Social: visual dinâmico e atrativo.
+Planos e Preços: estruturados em cards com animações de hover.
+FAQ: com transições suaves de abertura.
+Rodapé: elegante, funcional, com links úteis e informações de contato.
+10. Performance e Acessibilidade:
+Otimizar todas as imagens e recursos.
+Garantir compatibilidade cross-browser.
+Implementar boas práticas de acessibilidade (alt text, ARIA roles).
+SEO técnico básico: estrutura correta de headings, títulos otimizados e metadata.
+Notas Finais:
+Evitar poluição visual; priorizar a clareza e coesão.
+Garantir storytelling visual consistente em todas as seções.
+Sempre utilizar código limpo e otimizado, aplicando princípios de desempenho e escalabilidade.
+Validar responsividade em múltiplos dispositivos e tamanhos de tela.
+Se possível, usar componentização para facilitar manutenção e reuso de elementos.
+✅ Resumo da Abordagem:
+Crie uma interface que:
+→ seja moderna, intuitiva e agradável;
+→ priorize fluidez, responsividade e alto desempenho;
+→ adapte-se perfeitamente a qualquer nicho, mantendo consistência estética e experiência de usuário premium.
+

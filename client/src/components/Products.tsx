@@ -9,36 +9,8 @@ export default function Products() {
   const [activeTab, setActiveTab] = useState("tacas");
 
   return (
-    <section id="produtos" className="py-24 relative">
-      {/* Elementos decorativos de fundo */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent z-10"></div>
-      <motion.div 
-        className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full bg-primary/5 blur-3xl"
-        animate={{ 
-          scale: [1, 1.1, 1],
-          opacity: [0.05, 0.08, 0.05] 
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      ></motion.div>
-      <motion.div 
-        className="absolute bottom-1/4 left-1/4 w-60 h-60 rounded-full bg-secondary/5 blur-3xl"
-        animate={{ 
-          scale: [1, 1.15, 1],
-          opacity: [0.05, 0.07, 0.05] 
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2
-        }}
-      ></motion.div>
-        
-      <div className="container mx-auto px-4 relative z-20">
+    <section id="produtos" className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
