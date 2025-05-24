@@ -157,8 +157,7 @@ export default function Products() {
                   Nossos pavês são verdadeiras obras de arte, elaborados com ingredientes selecionados e muito amor. Perfeitos para momentos especiais ou para se deliciar em casa.
                 </p>
                 <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-10">
-                  <span className="font-montserrat mr-4">Taça M (1,4 litros) - R$ 149,90</span>
-                  <span className="font-montserrat">Taça G (2,4 litros) - R$ 249,90</span>
+                  <span className="font-montserrat">Taça decorada com frutas - R$ 140,00</span>
                 </div>
               </div>
               
