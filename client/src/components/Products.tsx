@@ -44,7 +44,7 @@ export default function Products() {
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
               >
                 <img 
-                  src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/la-crema-4.webp" 
+                  src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-23-at-21.10.22.webp" 
                   alt="La Crema - O carro-chefe da casa" 
                   className="rounded-lg shadow-lg border-4 border-white/30"
                 />
