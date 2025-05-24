@@ -331,7 +331,7 @@ export default function Products() {
                 transition={{ duration: 0.5 }}
                 className="text-center mb-12"
               >
-                <h3 className="font-dancing text-3xl text-primary mb-3">Bolos Artesanais ÉDoce</h3>
+                <h3 className="font-dancing text-3xl mb-3">Bolos Artesanais <span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span></h3>
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossos bolos são feitos com massa tipo pão de ló e decorados artesanalmente para cada ocasião.
                 </p>

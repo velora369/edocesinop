@@ -54,7 +54,7 @@ export default function About() {
               <h2 className="font-playfair text-4xl md:text-5xl relative inline-block">
                 Sobre a <span className="relative">
                   <span className="relative z-10 font-dancing">
-                    <span className="text-primary">É</span><span className="text-secondary">Do</span><span className="text-primary">ce</span>
+                    <span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span>
                   </span>
 
                 </span>
@@ -76,7 +76,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                A <span className="text-primary font-medium">ÉDoce</span> nasceu da paixão por transformar ingredientes de qualidade em experiências sensoriais únicas. Cada doce é preparado artesanalmente, com ingredientes cuidadosamente selecionados para garantir sabor incomparável e momentos de pura felicidade.
+                A <span className="font-medium font-dancing"><span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span></span> nasceu da paixão por transformar ingredientes de qualidade em experiências sensoriais únicas. Cada doce é preparado artesanalmente, com ingredientes cuidadosamente selecionados para garantir sabor incomparável e momentos de pura felicidade.
               </motion.p>
               
               <motion.p 
