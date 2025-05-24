@@ -108,7 +108,7 @@ export default function Contact() {
             <Button
               asChild
               size="lg"
-              className="bg-white border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-montserrat font-semibold rounded-full transition-all duration-300 shadow-md"
+              className="bg-white border-2 border-accent text-accent hover:bg-accent hover:text-white font-montserrat font-semibold rounded-full transition-all duration-300 shadow-md"
             >
               <a 
                 href="https://www.instagram.com/edocesinop" 

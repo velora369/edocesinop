@@ -1,0 +1,95 @@
+Prompt para o Agente IA do Replit: Modernização UX/UI do Site ÉDoce
+
+Olá, Agente do Replit! Preciso da sua ajuda para modernizar o site da confeitaria ÉDoce, criando uma experiência digital tão deliciosa quanto os produtos oferecidos. Siga estas diretrizes específicas para criar um site que desperte o apetite visual dos visitantes e os converta em clientes.
+1. Navegação e Experiência do Usuário (UX) Adocicada
+
+Crie uma navegação fluida como uma calda de caramelo, com menus intuitivos e transições suaves entre seções
+Implemente scroll suave e uma barra de navegação sticky com visual delicado (possivelmente com detalhes que lembrem confeitos ou glacê)
+Garanta uma experiência sem fricção, como uma colherada perfeita de sobremesa
+Organize a arquitetura da informação de forma clara e hierárquica, agrupando produtos por categorias (Taças, Potes, Bolos, etc.)
+Adicione um botão de "Fazer Pedido" sempre visível, como um convite constante à degustação
+2. Interface de Usuário (UI) Delicada e Apetitosa
+
+Estilo visual: clean e elegante, mas com toques lúdicos que remetam ao universo da confeitaria
+Utilize espaços em branco estrategicamente para destacar as imagens dos doces (como uma apresentação de prato em confeitaria fina)
+Empregue elementos arredondados (como taças e potes), sombras suaves e gradientes discretos que lembrem texturas de sobremesas
+Visual global: transmitir artesanalidade, frescor, qualidade premium e irresistibilidade
+3. Ícones e Ilustrações Personalizadas
+
+Criar ou utilizar ícones personalizados relacionados à confeitaria: colheres, taças, frutas, confeitos
+Estilo sugerido: ilustrações delicadas com toques de glassmorphism ou aquarela digital
+Implementar microanimações sutis nos ícones (como um leve balanço de colher ou frutas caindo suavemente)
+A paleta de cores dos ícones deve harmonizar com a identidade visual da ÉDoce (rosa-chiclete, azul-petróleo, marrom-chocolate)
+4. Elementos Gráficos Exclusivos
+
+Desenvolver elementos decorativos que remetam a confeitos, caldas, frutas ou texturas de sobremesas
+Criar separadores de seção que lembrem fitas de confeitaria ou ondulações de chantilly
+Incorporar pequenos detalhes animados como "cereja do bolo" em pontos estratégicos da página
+Utilizar SVGs para garantir leveza e performance, especialmente em elementos decorativos
+5. Responsividade e Desempenho
+
+Design 100% responsivo, adaptando-se perfeitamente a todos os dispositivos
+Otimizar imagens de produtos para carregamento rápido, preservando a qualidade visual das sobremesas
+Implementar lazy loading para as galerias de produtos
+Garantir que as fotos dos doces sejam o destaque em qualquer tamanho de tela
+Código limpo e otimizado para SEO, com descrições apetitosas nos meta dados
+6. Paleta de Cores e Identidade Visual
+
+Aplicar consistentemente a paleta da ÉDoce:
+Rosa-chiclete (#F03D87) como cor principal para botões e destaques
+Azul-petróleo (#00A9A5) para elementos secundários e detalhes
+Marrom-chocolate (#4B2E1F) para textos e alguns elementos decorativos
+Branco (#FFFFFF) para fundos e espaços de respiro
+Criar variações sutis dessas cores para estados hover e animações
+Adicionar toques de cores que remetam a ingredientes (vermelho-morango, amarelo-maracujá, verde-pistache) em detalhes pontuais
+7. Tipografia Apetitosa e Legível
+
+Combinar duas fontes complementares:
+Para títulos: uma fonte com personalidade que remeta à confeitaria artesanal (sugestões: Pacifico, Satisfy, Dancing Script)
+Para corpo de texto: fonte clean e legível (sugestões: Poppins, Montserrat, Lato)
+Criar hierarquia visual clara, com títulos grandes e impactantes
+Garantir contraste adequado, especialmente nos cards de produtos
+8. Animações e Microinterações Deliciosas
+
+Aplicar animações suaves de entrada para as imagens dos produtos (como se estivessem sendo "servidos" na tela)
+Criar efeitos hover nos cards de produtos que deem sensação de "aproximação" ou "destaque"
+Implementar transições suaves entre seções, como se o usuário estivesse "passeando" por um buffet de sobremesas
+Adicionar pequenas animações nos botões de "Fazer Pedido" para incentivar a conversão
+9. Estrutura de Seções Recomendadas
+
+Hero Section: Imagem impactante de uma sobremesa premium + slogan + CTA "Fazer Pedido"
+Nossos Produtos: Categorias bem definidas com navegação intuitiva
+Carro-Chefe: Destaque especial para o La Crema com suas opções
+Sobre Nós: História da confeitaria com elementos visuais aconchegantes
+Depoimentos: Cards elegantes com feedback de clientes satisfeitos
+Como Encomendar: Processo simplificado em 3-4 passos com ícones ilustrativos
+Perguntas Frequentes: Seção expansível com informações sobre entregas, conservação, etc.
+Contato: Formulário simples + WhatsApp + mapa de localização (se aplicável)
+Rodapé: Elegante, com links úteis, redes sociais e informações de contato
+10. Performance e Acessibilidade
+
+Otimizar todas as imagens de produtos para manter qualidade visual com tamanho reduzido
+Garantir que os textos descritivos dos produtos sejam tão apetitosos quanto as imagens
+Implementar alt text detalhado para todas as imagens de produtos
+Estruturar corretamente os headings para SEO e acessibilidade
+Elementos Específicos para Confeitaria
+
+Galeria de Produtos: Cards elegantes com imagens de alta qualidade, descrição apetitosa e botão de pedido
+Badges Especiais: Indicadores visuais para produtos mais vendidos, novidades ou sazonais
+Indicadores de Ingredientes: Ícones sutis para informações importantes (contém glúten, lactose, etc.)
+Contador de Tempo para Encomendas: Elemento visual que indique o prazo necessário para pedidos especiais
+Botão de WhatsApp Flutuante: Sempre visível para facilitar o contato direto
+Notas Finais
+
+Evitar excessos visuais que possam "competir" com as imagens dos produtos
+Garantir que o site seja tão irresistível quanto as sobremesas oferecidas
+Priorizar a experiência mobile, já que muitos clientes acessarão pelo celular
+Manter o foco na conversão: facilitar ao máximo o processo de pedido
+Validar a responsividade em múltiplos dispositivos
+✅ Resumo da Abordagem:
+Crie uma interface que:
+→ seja visualmente apetitosa e irresistível como as sobremesas da ÉDoce;
+→ transmita a qualidade artesanal e o cuidado nos detalhes dos produtos;
+→ facilite e incentive o processo de pedido;
+→ mantenha a identidade visual da marca de forma consistente e elegante.
+Obrigado pela sua ajuda na modernização do site da confeitaria ÉDoce!
