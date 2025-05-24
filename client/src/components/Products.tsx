@@ -452,11 +452,12 @@ export default function Products() {
 
                 {/* Bolo para Festa Infantil */}
                 <motion.div 
-                  className="relative overflow-hidden group rounded-xl shadow-md"
+                  className="relative overflow-hidden group rounded-xl shadow-md cursor-pointer"
                   whileHover={{ y: -5 }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.5 }}
+                  onClick={() => imageModal.openModal("https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-naruto-.webp", "Bolo para Festa Infantil ÉDoce")}
                 >
                   <img 
                     src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-naruto-.webp" 
@@ -464,7 +465,14 @@ export default function Products() {
                     className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div 
+                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+                  >
+                    <div className="bg-white/80 p-3 rounded-full">
+                      <Search className="text-gray-800" size={24} />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
                     <p className="text-white font-montserrat font-medium text-center">Bolo para Festa Infantil</p>
                   </div>
                 </motion.div>
