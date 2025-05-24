@@ -73,27 +73,15 @@ export default function Products() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   {
-                    label: "Taça M (1,4L)",
-                    price: "149,90",
-                    link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20na%20Taça%20M%20(1,4L )%20por%20R$%20149,90.",
+                    label: "Taça decorada com frutas",
+                    price: "140,00",
+                    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20La%20Crema%20com%20decoração%20de%20frutas%20por%20R$%20140,00.",
                     icon: "fas fa-glass-martini"
                   },
                   {
-                    label: "Taça G (2,4L)",
-                    price: "249,90",
-                    link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20na%20Taça%20G%20(2,4L )%20por%20R$%20249,90.",
-                    icon: "fas fa-glass-martini"
-                  },
-                  {
-                    label: "Pote M (500ml)",
-                    price: "44,90",
-                    link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20no%20Pote%20M%20(500ml )%20por%20R$%2044,90.",
-                    icon: "fas fa-box"
-                  },
-                  {
-                    label: "Pote G (1L)",
-                    price: "99,90",
-                    link: "https://wa.me/5566999852299?text=Olá,%20tenho%20interesse%20no%20La%20Crema%20no%20Pote%20G%20(1L )%20por%20R$%2099,90.",
+                    label: "Pote de 1L",
+                    price: "120,00",
+                    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20La%20Crema%20por%20R$%20120,00.",
                     icon: "fas fa-box-open"
                   }
                 ].map((option, index) => (
@@ -105,13 +93,13 @@ export default function Products() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Button asChild variant="secondary" className="w-full bg-white text-primary hover:bg-gray-50 font-medium shadow-md group">
+                    <Button asChild variant="secondary" className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_8px_rgba(240,61,135,0.5)] font-medium shadow-md group">
                       <a href={option.link} className="flex items-center justify-between">
                         <div className="flex items-center">
-                          <i className={`${option.icon} mr-2 group-hover:text-secondary transition-colors`}></i>
+                          <i className={`${option.icon} mr-2 group-hover:text-white transition-colors`}></i>
                           <span>{option.label}</span>
                         </div>
-                        <span className="bg-primary/10 px-2 py-1 rounded-full font-bold text-secondary">
+                        <span className="bg-white/20 px-2 py-1 rounded-full font-bold group-hover:bg-white/30">
                           R$ {option.price}
                         </span>
                       </a>

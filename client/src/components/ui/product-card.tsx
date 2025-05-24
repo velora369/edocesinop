@@ -64,8 +64,7 @@ export default function ProductCard({ product, type }: ProductCardProps) {
           >
             <Button 
               asChild
-              className={`w-full hover:bg-opacity-90 text-white rounded-lg shadow-sm group relative overflow-hidden 
-                ${isLaCrema ? 'bg-primary' : isPremium ? 'bg-accent' : 'bg-secondary'}`}
+              className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_8px_rgba(240,61,135,0.5)] rounded-lg shadow-sm group relative overflow-hidden"
             >
               <a href={product.link} className="flex justify-between items-center">
                 <span>
