@@ -88,38 +88,102 @@ export default function Contact() {
           </motion.div>
           
           <motion.div 
-            className="flex flex-col sm:flex-row justify-center gap-4"
+            className="flex flex-col sm:flex-row justify-center gap-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <Button
-              asChild
-              size="lg"
-              className="bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full transition transform hover:scale-105 border-2 border-white"
+            {/* WhatsApp Button */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative group"
             >
-              <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido.">
-                <i className="fab fa-whatsapp text-xl mr-2"></i>
-                Fazer Pedido via WhatsApp
-              </a>
-            </Button>
-            
-            <Button
-              asChild
-              size="lg"
-              className="instagram-button bg-white text-[#00A9A5] border-2 border-[#00A9A5] hover:bg-[#44CFC6] hover:text-white font-montserrat font-semibold rounded-full transition-all duration-300 shadow-md"
-            >
-              <a 
-                href="https://www.instagram.com/edocesinop" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center"
+              <Button
+                asChild
+                size="lg"
+                className="relative overflow-hidden bg-white/10 backdrop-blur-xl text-white font-montserrat font-semibold rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-all duration-500 px-8 py-4"
               >
-                <i className="fab fa-instagram text-xl mr-2"></i>
-                <span>Seguir no Instagram</span>
-              </a>
-            </Button>
+                <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido." className="flex items-center gap-3">
+                  {/* Gradient background overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#25D366]/20 to-[#25D366]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Icon with glow effect */}
+                  <div className="relative z-10 w-6 h-6 flex items-center justify-center">
+                    <i className="fab fa-whatsapp text-xl text-[#25D366] group-hover:text-white transition-colors duration-300"></i>
+                    <div className="absolute inset-0 bg-[#25D366]/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  
+                  <span className="relative z-10 tracking-wide">Fazer Pedido via WhatsApp</span>
+                  
+                  {/* Animated border */}
+                  <motion.div
+                    className="absolute inset-0 rounded-2xl"
+                    style={{
+                      background: "linear-gradient(90deg, transparent, rgba(37,211,102,0.3), transparent)",
+                      backgroundSize: "200% 100%",
+                    }}
+                    animate={{
+                      backgroundPosition: ["200% 0%", "-200% 0%"],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                  />
+                </a>
+              </Button>
+            </motion.div>
+            
+            {/* Instagram Button */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative group"
+            >
+              <Button
+                asChild
+                size="lg"
+                className="relative overflow-hidden bg-white/10 backdrop-blur-xl text-white font-montserrat font-semibold rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-all duration-500 px-8 py-4"
+              >
+                <a 
+                  href="https://www.instagram.com/edocesinop" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3"
+                >
+                  {/* Instagram gradient background overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#FCAF45]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Icon with gradient glow effect */}
+                  <div className="relative z-10 w-6 h-6 flex items-center justify-center">
+                    <i className="fab fa-instagram text-xl bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] bg-clip-text text-transparent group-hover:text-white transition-colors duration-300"></i>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#FCAF45]/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  
+                  <span className="relative z-10 tracking-wide">Seguir no Instagram</span>
+                  
+                  {/* Animated gradient border */}
+                  <motion.div
+                    className="absolute inset-0 rounded-2xl"
+                    style={{
+                      background: "linear-gradient(90deg, transparent, rgba(131,58,180,0.3), rgba(253,29,29,0.3), rgba(252,175,69,0.3), transparent)",
+                      backgroundSize: "300% 100%",
+                    }}
+                    animate={{
+                      backgroundPosition: ["300% 0%", "-300% 0%"],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                  />
+                </a>
+              </Button>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
