@@ -74,12 +74,7 @@ export default function Hero() {
                   <span className="text-[#F03D87] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">Do</span>
                   <span className="text-[#00A9A5] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">ce</span>
                 </span>
-                <motion.div 
-                  className="absolute -bottom-3 left-0 w-full h-2 bg-gradient-to-r from-[#00A9A5] via-[#F03D87] to-[#00A9A5] rounded-full opacity-70"
-                  initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
-                  transition={{ delay: 1.6, duration: 0.8 }}
-                ></motion.div>
+
               </motion.div>, que é quase a mesma coisa!
             </h1>
           </motion.div>
