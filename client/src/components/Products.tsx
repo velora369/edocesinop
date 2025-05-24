@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { TabsEdoce, TabsEdoceContent, TabsEdoceTrigger } from "@/components/ui/tabs-edoce";
 import ProductCard from "@/components/ui/product-card";
 import { tacasProducts, cassatasProducts, potesProducts } from "@/data/products";
 import { Button } from "@/components/ui/button";
@@ -241,111 +240,104 @@ export default function Products() {
         </motion.div>
         
         {/* Product Tabs */}
-        <div>
-          <TabsEdoce
-            value={activeTab}
-            onValueChange={setActiveTab}
-            className="w-full"
-          >
-            <div className="mb-12 flex justify-center">
-              <motion.div 
-                className="relative bg-white/60 backdrop-blur-xl rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.06)] border border-white/20 p-2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                {/* Gradient background overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5 rounded-2xl"></div>
-                
-                <div className="relative flex flex-wrap justify-center gap-1">
-                  {[
-                    { value: "tacas", label: "Pavês" },
-                    { value: "cassatas", label: "Cassatas" },
-                    { value: "potes", label: "Sobremesas" },
-                    { value: "bolos", label: "Bolos" }
-                  ].map((tab, index) => (
-                    <motion.div
-                      key={tab.value}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      <TabsEdoceTrigger 
-                        value={tab.value} 
-                        className={`relative px-8 py-4 rounded-xl transition-all duration-500 text-sm font-medium border-0 hover:shadow-lg group overflow-hidden cursor-pointer
-                          ${activeTab === tab.value 
-                            ? "bg-gradient-to-r from-primary to-secondary text-white shadow-[0_4px_20px_rgba(240,61,135,0.3)]" 
-                            : "text-gray-600 hover:text-gray-800 hover:bg-white/50"
-                          }
-                        `}
-                      >
-                        {/* Hover effect background */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        
-                        {/* Label */}
-                        <span className="relative z-10 font-medium tracking-wide">
-                          {tab.label}
-                        </span>
-                        
-                        {/* Active indicator with glow */}
-                        {activeTab === tab.value && (
-                          <>
-                            <motion.div
-                              className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl"
-                              layoutId="activeTabBackground"
-                              initial={false}
-                              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                            />
-                            <motion.div
-                              className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl blur-xl opacity-30"
-                              layoutId="activeTabGlow"
-                              initial={false}
-                              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                            />
-                          </>
-                        )}
-                        
-                        {/* Subtle animation particles */}
-                        {activeTab === tab.value && (
-                          <motion.div
-                            className="absolute top-1/2 left-1/2 w-1 h-1 bg-white/30 rounded-full"
-                            animate={{
-                              scale: [0, 1, 0],
-                              opacity: [0, 1, 0],
-                            }}
-                            transition={{
-                              duration: 2,
-                              repeat: Infinity,
-                              delay: index * 0.2,
-                            }}
-                          />
-                        )}
-                      </TabsEdoceTrigger>
-                    </motion.div>
-                  ))}
-                </div>
-                
-                {/* Subtle border shimmer effect */}
-                <motion.div
-                  className="absolute inset-0 rounded-2xl"
-                  style={{
-                    background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
-                    backgroundSize: "200% 100%",
-                  }}
-                  animate={{
-                    backgroundPosition: ["200% 0%", "-200% 0%"],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                />
-              </motion.div>
-            </div>
-            
-            {/* Pavês Tab Content */}
-            <TabsEdoceContent value="tacas">
+        <div className="w-full">
+          <div className="mb-12 flex justify-center">
+            <motion.div 
+              className="relative bg-white/60 backdrop-blur-xl rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.06)] border border-white/20 p-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              {/* Gradient background overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5 rounded-2xl"></div>
+              
+              <div className="relative flex flex-wrap justify-center gap-1">
+                {[
+                  { value: "tacas", label: "Pavês" },
+                  { value: "cassatas", label: "Cassatas" },
+                  { value: "potes", label: "Sobremesas" },
+                  { value: "bolos", label: "Bolos" }
+                ].map((tab, index) => (
+                  <motion.button
+                    key={tab.value}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={() => setActiveTab(tab.value)}
+                    className={`relative px-8 py-4 rounded-xl transition-all duration-500 text-sm font-medium border-0 hover:shadow-lg group overflow-hidden cursor-pointer
+                      ${activeTab === tab.value 
+                        ? "bg-gradient-to-r from-primary to-secondary text-white shadow-[0_4px_20px_rgba(240,61,135,0.3)]" 
+                        : "text-gray-600 hover:text-gray-800 hover:bg-white/50"
+                      }
+                    `}
+                  >
+                    {/* Hover effect background */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    {/* Label */}
+                    <span className="relative z-10 font-medium tracking-wide">
+                      {tab.label}
+                    </span>
+                    
+                    {/* Active indicator with glow */}
+                    {activeTab === tab.value && (
+                      <>
+                        <motion.div
+                          className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl"
+                          layoutId="activeTabBackground"
+                          initial={false}
+                          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                        />
+                        <motion.div
+                          className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl blur-xl opacity-30"
+                          layoutId="activeTabGlow"
+                          initial={false}
+                          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                        />
+                      </>
+                    )}
+                    
+                    {/* Subtle animation particles */}
+                    {activeTab === tab.value && (
+                      <motion.div
+                        className="absolute top-1/2 left-1/2 w-1 h-1 bg-white/30 rounded-full"
+                        animate={{
+                          scale: [0, 1, 0],
+                          opacity: [0, 1, 0],
+                        }}
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity,
+                          delay: index * 0.2,
+                        }}
+                      />
+                    )}
+                  </motion.button>
+                ))}
+              </div>
+              
+              {/* Subtle border shimmer effect */}
+              <motion.div
+                className="absolute inset-0 rounded-2xl"
+                style={{
+                  background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
+                  backgroundSize: "200% 100%",
+                }}
+                animate={{
+                  backgroundPosition: ["200% 0%", "-200% 0%"],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              />
+            </motion.div>
+          </div>
+          
+          {/* Tab Content */}
+          {activeTab === "tacas" && (
+            <div>
               <div className="mb-8 text-center">
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossos pavês são verdadeiras obras de arte, elaborados com ingredientes selecionados e muito amor. Perfeitos para momentos especiais ou para se deliciar em casa.
@@ -362,10 +354,11 @@ export default function Products() {
                   </div>
                 ))}
               </div>
-            </TabsEdoceContent>
-            
-            {/* Cassatas Tab Content */}
-            <TabsEdoceContent value="cassatas">
+            </div>
+          )}
+          
+          {activeTab === "cassatas" && (
+            <div>
               <div className="mb-8 text-center">
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossas cassatas combinam cremosidade, sabor e uma apresentação impecável. Cada uma é preparada com carinho em nosso atelier.
@@ -386,20 +379,17 @@ export default function Products() {
                   </div>
                 ))}
               </div>
-            </TabsEdoceContent>
-            
-            {/* Demais Sobremesas Tab Content */}
-            <TabsEdoceContent value="potes">
+            </div>
+          )}
+          
+          {activeTab === "potes" && (
+            <div>
               <div className="mb-8 text-center">
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossas sobremesas são preparadas com ingredientes selecionados e recheios diferenciados, garantindo experiências únicas a cada colherada.
                 </p>
-                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-6">
+                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-10">
                   <span className="font-montserrat">Pote de 1 litro - R$ 120,00</span>
-                </div>
-                <div className="bg-green-50 border border-green-100 text-green-800 rounded-lg py-2 px-4 inline-block mt-2 mb-10">
-                  <i className="fas fa-check-circle mr-2"></i>
-                  <span className="text-sm font-medium">Todas as sobremesas desta categoria são congeláveis</span>
                 </div>
               </div>
               
@@ -410,16 +400,12 @@ export default function Products() {
                   </div>
                 ))}
               </div>
-            </TabsEdoceContent>
-            
-            {/* Bolos Tab Content */}
-            <TabsEdoceContent value="bolos">
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="text-center mb-12"
-              >
+            </div>
+          )}
+          
+          {activeTab === "bolos" && (
+            <div className="text-center">
+              <div className="mb-12">
                 <h3 className="font-dancing text-3xl mb-3">Bolos Artesanais <span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span></h3>
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossos bolos são feitos com massa tipo pão de ló e decorados artesanalmente para cada ocasião.
@@ -438,167 +424,30 @@ export default function Products() {
                     </li>
                     <li className="flex items-start">
                       <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
-                      <span className="text-gray-700">No momento do pedido, enviar data de entrega e foto de referência</span>
+                      <span className="text-gray-700">Encomendas com pelo menos 48h de antecedência</span>
                     </li>
                     <li className="flex items-start">
                       <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
-                      <span className="text-gray-700">Pedidos apenas pelo WhatsApp: (66) 99985-2299</span>
+                      <span className="text-gray-700">Fazemos bolos de todos os tamanhos e formatos</span>
                     </li>
                   </ul>
-                  
-                  <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="mt-8">
-                    <Button 
-                      asChild
-                      className="mt-8 bg-secondary hover:bg-opacity-90 text-white font-montserrat font-semibold rounded-full px-4 sm:px-8 py-4 sm:py-6 shadow-md w-full sm:w-auto"
-                    >
-                      <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20bolo%20personalizado.%20Tenho%20interesse%20no%20sabor%20[PREENCHER]%20para%20o%20dia%20[PREENCHER]." className="flex items-center justify-center">
-                        <i className="fab fa-whatsapp mr-2 text-xl"></i>
-                        <span className="text-sm sm:text-base">Solicitar orçamento</span>
-                      </a>
-                    </Button>
-                  </motion.div>
                 </div>
-              </motion.div>
-              
-              {/* Gallery Heading */}
-              <h3 className="font-dancing text-3xl text-center mb-6">Galeria de Bolos</h3>
-              
-              {/* Gallery with captions */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                {/* Bolo de Kit Kat com Carrossel */}
-                <motion.div 
-                  className="relative overflow-hidden group rounded-xl shadow-md cursor-pointer"
-                  whileHover={{ y: -5 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1, duration: 0.5 }}
-                >
-                  <div className="relative w-full h-64">
-                    {[
-                      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-kitkat.webp",
-                      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/kit-kat-bolo.webp"
-                    ].map((src, i) => (
-                      <motion.img 
-                        key={i}
-                        src={src} 
-                        alt="Bolo de Kit Kat ÉDoce"
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                        initial={{ opacity: i === 0 ? 1 : 0 }}
-                        animate={{ 
-                          opacity: [0, 1, 1, 0], 
-                          zIndex: i === 0 ? [1, 1, 0, 0] : [0, 0, 1, 1] 
-                        }}
-                        transition={{ 
-                          duration: 6, 
-                          times: [0, 0.3, 0.7, 1],
-                          repeat: Infinity, 
-                          repeatDelay: 2,
-                          delay: i === 0 ? 0 : 3 
-                        }}
-                        onClick={() => imageModal.openModal(src, "Bolo de Kit Kat ÉDoce")}
-                      />
-                    ))}
-                  </div>
-                  <div 
-                    className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"
-                    onClick={() => imageModal.openModal("https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-kitkat.webp", "Bolo de Kit Kat ÉDoce")}
-                  ></div>
-                  <div 
-                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
-                    onClick={() => imageModal.openModal("https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-kitkat.webp", "Bolo de Kit Kat ÉDoce")}
-                  >
-                    <div className="bg-white/80 p-3 rounded-full">
-                      <Search className="text-gray-800" size={24} />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
-                    <p className="text-white font-montserrat font-medium text-center">Bolo de Kit Kat</p>
-                  </div>
-                </motion.div>
-
-                {/* Bolo para Festa Infantil */}
-                <motion.div 
-                  className="relative overflow-hidden group rounded-xl shadow-md cursor-pointer"
-                  whileHover={{ y: -5 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2, duration: 0.5 }}
-                  onClick={() => imageModal.openModal("https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-naruto-.webp", "Bolo para Festa Infantil ÉDoce")}
-                >
-                  <img 
-                    src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-naruto-.webp" 
-                    alt="Bolo para Festa Infantil ÉDoce" 
-                    className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                  <div 
-                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
-                  >
-                    <div className="bg-white/80 p-3 rounded-full">
-                      <Search className="text-gray-800" size={24} />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
-                    <p className="text-white font-montserrat font-medium text-center">Bolo para Festa Infantil</p>
-                  </div>
-                </motion.div>
-
-                {/* Espatulados em Chantininho */}
-                <motion.div 
-                  className="relative overflow-hidden group rounded-xl shadow-md cursor-pointer"
-                  whileHover={{ y: -5 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3, duration: 0.5 }}
-                  onClick={() => imageModal.openModal("https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-3.webp", "Espatulados em Chantininho ÉDoce")}
-                >
-                  <img 
-                    src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-3.webp" 
-                    alt="Espatulados em Chantininho ÉDoce" 
-                    className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                  <div 
-                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
-                  >
-                    <div className="bg-white/80 p-3 rounded-full">
-                      <Search className="text-gray-800" size={24} />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
-                    <p className="text-white font-montserrat font-medium text-center">Espatulados em Chantininho</p>
-                  </div>
-                </motion.div>
-
-                {/* Minimalista texturizado */}
-                <motion.div 
-                  className="relative overflow-hidden group rounded-xl shadow-md cursor-pointer"
-                  whileHover={{ y: -5 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4, duration: 0.5 }}
-                  onClick={() => imageModal.openModal("https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-2.webp", "Minimalista Texturizado ÉDoce")}
-                >
-                  <img 
-                    src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-2.webp" 
-                    alt="Minimalista texturizado ÉDoce" 
-                    className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                  <div 
-                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
-                  >
-                    <div className="bg-white/80 p-3 rounded-full">
-                      <Search className="text-gray-800" size={24} />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
-                    <p className="text-white font-montserrat font-medium text-center">Minimalista Texturizado</p>
-                  </div>
-                </motion.div>
               </div>
-            </TabsEdoceContent>
-          </TabsEdoce>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+              >
+                <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 hover:shadow-[0_0_12px_rgba(240,61,135,0.4)] font-montserrat font-semibold rounded-full transition-all duration-300 px-8 py-4">
+                  <a href="https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20personalizado.%20Pode%20me%20dar%20mais%20informações%20sobre%20preços%20e%20opções%20disponíveis?">
+                    <i className="fab fa-whatsapp text-xl mr-2"></i>
+                    Solicitar Orçamento para Bolo
+                  </a>
+                </Button>
+              </motion.div>
+            </div>
+          )}
         </div>
       </div>
     </section>
