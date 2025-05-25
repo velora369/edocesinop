@@ -202,8 +202,8 @@ export default function Products() {
                 {[
                   {
                     label: "Taça decorada com frutas",
-                    price: "140,00",
-                    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20La%20Crema%20com%20decoração%20de%20frutas%20por%20R$%20140,00.",
+                    price: "145,00/kg",
+                    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20La%20Crema%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.",
                     icon: "fas fa-glass-martini"
                   },
                   {
