@@ -54,14 +54,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-5xl mx-auto backdrop-blur-md bg-gradient-to-br from-black/20 to-black/40 rounded-3xl p-8 md:p-12 shadow-[var(--shadow-xl)] border border-white/10"
+          className="max-w-5xl mx-auto backdrop-blur-md bg-white rounded-3xl p-8 md:p-12 shadow-[var(--shadow-xl)] border border-white/20"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl text-white mb-8 leading-tight">
+            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl text-gray-800 mb-8 leading-tight">
               Você não pode comprar felicidade, mas pode comprar 
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
@@ -80,7 +80,7 @@ export default function Hero() {
           </motion.div>
           
           <motion.p 
-            className="font-montserrat text-lg md:text-xl text-white mb-10 max-w-3xl mx-auto opacity-95"
+            className="font-montserrat text-lg md:text-xl text-gray-700 mb-10 max-w-3xl mx-auto opacity-95"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
