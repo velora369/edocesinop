@@ -71,7 +71,7 @@ export default function About() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Criadora e alma da ÉDoceSinop, Giselle transformou sua paixão em arte que encanta toda a região. Com técnicas refinadas e olhar especial para detalhes, desenvolve receitas exclusivas que combinam tradição e inovação.
+                Criadora e alma da ÉDoce, Giselle transformou sua paixão em arte que encanta toda a região. Com técnicas refinadas e olhar especial para detalhes, desenvolve receitas exclusivas que combinam tradição e inovação.
               </p>
             </div>
 
