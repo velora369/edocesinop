@@ -29,7 +29,7 @@ export default function Footer() {
               >
                 <div className="footer-logo-container w-[90px] h-[90px] rounded-full overflow-hidden border-2 border-[#F03D87] shadow-lg flex items-center justify-center bg-[#00A9A5] mx-auto md:mx-0">
                   <img 
-                    src="/src/assets/logo.png" 
+                    src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/logo.png" 
                     alt="Logo ÉDoce Confeitaria Artesanal" 
                     className="w-full h-full object-cover object-center"
                   />
