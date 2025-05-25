@@ -1,0 +1,68 @@
+Prompts para Agente IA do Replit - Atualizações Site ÉDoce
+Instrução Geral: Aplique cada prompt de forma independente. O código-fonte do site deve ser modificado para refletir estas alterações.
+Prompt 1: Adição do Produto "Manu"
+
+    Tarefa: Adicione um novo produto chamado "Manu" ao catálogo. Inclua as opções de compra:
+        Pote de 1L: Preço R$ 125,00.
+        Taça (sem decoração): Preço R$ 125,00/kg.
+        Taça (com decoração de frutas): Preço R$ 145,00/kg.
+    Detalhes: Crie um card de produto para "Manu", seguindo o padrão visual dos demais. Se possível, utilize uma imagem placeholder ou solicite uma imagem apropriada. Posicione-o na categoria correta (informe a categoria se souber, caso contrário, coloque em "Demais sobremesas" temporariamente).
+
+Prompt 2: Atualização da Estrutura de Produtos (Potes e Taças)
+
+    Tarefa: Modifique a estrutura de todos os produtos existentes no site para oferecer explicitamente as seguintes opções de compra, cada uma com seu respectivo preço:
+        Pote de 1L.
+        Taça (sem decoração - raspas/cereja) - Preço por KG.
+        Taça (com decoração de frutas) - Preço por KG.
+    Detalhes: Atualize os cards de produto para exibir claramente essas três opções e seus preços correspondentes. Se um produto já tinha opção de pote ou taça, ajuste para refletir ambas as opções de taça (com e sem decoração) e a opção de pote 1L.
+
+Prompt 3: Atualização de Preços - Potes de 1L
+
+    Tarefa: Atualize os preços da opção "Pote de 1L" para todos os produtos conforme a seguir:
+        Nino, Niza, Manu, Lyca: R$ 125,00.
+        Todos os demais produtos (incluindo La Crema): R$ 120,00.
+    Detalhes: Certifique-se de que o preço exibido nos cards de produto para a opção "Pote de 1L" esteja correto para cada item.
+
+Prompt 4: Atualização de Preços - Taças por KG
+
+    Tarefa: Atualize os preços das opções de "Taça" para todos os produtos, exibindo o preço por KG:
+        Taça SEM decoração (raspas/cereja): R$ 125,00/kg.
+        Taça COM decoração de frutas: R$ 145,00/kg.
+    Detalhes: Garanta que os cards de produto mostrem claramente "R$ 125,00/kg" para a opção sem decoração e "R$ 145,00/kg" para a opção com decoração.
+
+Prompt 5: Reorganização em Categorias
+
+    Tarefa: Organize (ou reorganize) todos os produtos visíveis no site nas seguintes categorias: PAVÊS, CASSATAS, Demais sobremesas.
+    Detalhes: Certifique-se de que cada produto esteja na categoria apropriada. Use divisores visuais claros (como o estilo "chantilly" mencionado anteriormente, se já implementado) entre as categorias.
+
+Prompt 6: Ajuste do Card de Destaque - La Crema
+
+    Tarefa: Modifique o card de destaque do produto La Crema (geralmente no início da seção de produtos).
+    Detalhes: Mantenha o título e a descrição que o destacam. Substitua as opções de compra atuais pelas seguintes:
+        Opção 1: Taça (Exibir "R$ 125,00/kg sem decoração" e "R$ 145,00/kg com decoração").
+        Opção 2: Pote 1L (Exibir "R$ 120,00").
+        Certifique-se de que os botões ou links associados a essas opções funcionem corretamente (serão atualizados em prompts posteriores).
+
+Prompt 7: Estilo do Botão WhatsApp
+
+    Tarefa: Adicione uma borda branca sólida (ex: border: 2px solid white;) ao botão "Fazer Pedido via WhatsApp" localizado na seção "Faça seu pedido e adoce seu dia".
+
+Prompt 8: Links WhatsApp - Potes Premium (Nino, Niza, Manu, Lyca)
+
+    Tarefa: Para os produtos Nino, Niza, Manu e Lyca, configure o link do WhatsApp associado à opção "Pote de 1L" para gerar a seguinte mensagem: "Olá! Gostaria de encomendar um pote de 1L de [NOME DO PRODUTO] por R$ 125,00."
+    Detalhes: Substitua [NOME DO PRODUTO] pelo nome correto do produto em cada link.
+
+Prompt 9: Links WhatsApp - Potes Demais Produtos
+
+    Tarefa: Para todos os outros produtos (exceto Nino, Niza, Manu, Lyca), configure o link do WhatsApp associado à opção "Pote de 1L" para gerar a seguinte mensagem: "Olá! Gostaria de encomendar um pote de 1L de [NOME DO PRODUTO] por R$ 120,00."
+    Detalhes: Substitua [NOME DO PRODUTO] pelo nome correto do produto em cada link.
+
+Prompt 10: Links WhatsApp - Taças Sem Decoração
+
+    Tarefa: Para todos os produtos, configure o link do WhatsApp associado à opção "Taça SEM decoração" para gerar a seguinte mensagem: "Olá! Gostaria de encomendar uma taça de [NOME DO PRODUTO] (sem decoração) por R$ 125,00/kg."
+    Detalhes: Substitua [NOME DO PRODUTO] pelo nome correto do produto em cada link.
+
+Prompt 11: Links WhatsApp - Taças Com Decoração
+
+    Tarefa: Para todos os produtos, configure o link do WhatsApp associado à opção "Taça COM decoração de frutas" para gerar a seguinte mensagem: "Olá! Gostaria de encomendar uma taça de [NOME DO PRODUTO] com decoração de frutas por R$ 145,00/kg."
+    Detalhes: Substitua [NOME DO PRODUTO] pelo nome correto do produto em cada link.
