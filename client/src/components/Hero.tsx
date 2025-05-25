@@ -61,7 +61,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl text-black font-bold mb-8 leading-tight">
+            <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl text-gray-800 mb-8 leading-tight">
               Você não pode comprar felicidade, mas pode comprar 
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
