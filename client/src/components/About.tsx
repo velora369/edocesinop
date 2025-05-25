@@ -2,126 +2,114 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="quem-somos" className="section py-24 bg-gradient-to-b from-gray-50 to-white relative">
-      {/* Elementos decorativos sutis */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent z-10"></div>
-      <div className="absolute -top-5 left-1/4 w-24 h-24 rounded-full bg-primary/5 blur-3xl"></div>
-      <div className="absolute top-1/3 right-1/4 w-32 h-32 rounded-full bg-secondary/5 blur-3xl"></div>
+    <section id="quem-somos" className="section py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+      {/* Background decorativo */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmMGZkZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0aDEydjEySDM2eiIvPjwvZz48L2c+PC9zdmc+')] opacity-40"></div>
       
-      <div className="container mx-auto px-4 md:px-8 relative z-20">
-        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Header da Seção */}
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="font-playfair text-4xl md:text-5xl text-gray-800 mb-4">
+            Conheça a <span className="font-dancing text-5xl md:text-6xl">
+              <span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span>
+            </span>
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+        </motion.div>
+
+        {/* Grid Principal */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Imagem */}
           <motion.div 
-            className="md:w-1/2"
+            className="order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8 }}
           >
-            <div className="relative overflow-hidden rounded-3xl shadow-[var(--shadow-lg)] group">
-              {/* Bordas decorativas */}
-              <div className="absolute -inset-0.5 bg-gradient-to-tr from-primary via-secondary to-accent opacity-20 rounded-3xl blur-sm group-hover:opacity-40 transition-opacity duration-700 z-0"></div>
-              
-              <div className="relative overflow-hidden rounded-3xl z-10">
-                <img 
-                  src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/foto-giselle-.webp" 
-                  alt="Confeitaria ÉDoce em ação" 
-                  className="w-full h-auto transition-all duration-700 group-hover:scale-105 group-hover:rotate-1"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                
-
-              </div>
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+              <img 
+                src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/foto-giselle-.webp" 
+                alt="Giselle Esposito - Confeiteira ÉDoceSinop" 
+                className="relative rounded-2xl shadow-2xl w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+              />
             </div>
           </motion.div>
-          
+
+          {/* Conteúdo */}
           <motion.div 
-            className="md:w-1/2"
+            className="order-1 lg:order-2 space-y-8"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <motion.div
-              className="relative mb-10"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <h2 className="font-playfair text-4xl md:text-5xl relative inline-block">
-                Sobre a <span className="relative">
-                  <span className="relative z-10 font-dancing">
-                    <span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span>
-                  </span>
+            {/* Card principal */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <h3 className="font-playfair text-2xl font-semibold text-gray-800 mb-4">Nossa História</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                A <span className="font-dancing text-xl text-primary">ÉDoceSinop</span> nasceu da paixão por transformar ingredientes premium em experiências gastronômicas únicas. Cada doce é preparado artesanalmente, priorizando qualidade e sabor em cada criação.
+              </p>
+            </div>
 
-                </span>
-              </h2>
-              <div className="h-1 w-12 bg-gradient-to-r from-primary to-secondary rounded-full mt-4"></div>
-            </motion.div>
-            
-            <motion.div
-              className="space-y-6"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <motion.p 
-                className="text-gray-700 text-lg leading-relaxed"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-              >
-                A <span className="font-medium font-dancing"><span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span></span> nasceu da paixão por transformar ingredientes de qualidade em experiências sensoriais únicas. Cada doce é preparado artesanalmente, com ingredientes cuidadosamente selecionados para garantir sabor incomparável e momentos de pura felicidade.
-              </motion.p>
-              
-              <motion.div 
-                className="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-xl border-l-4 border-primary mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.45 }}
-              >
-                <h3 className="font-playfair text-xl font-semibold text-primary mb-3">Giselle Esposito - Confeiteira Artesanal</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Criadora e alma da ÉDoceSinop, Giselle Esposito transformou sua paixão pela confeitaria em uma arte que encanta Sinop e região. 
-                  Com técnicas aprimoradas e um olhar especial para os detalhes, ela desenvolve receitas exclusivas que combinam tradição e inovação, 
-                  sempre priorizando ingredientes de primeira qualidade para oferecer experiências gastronômicas únicas e inesquecíveis.
+            {/* Card da Giselle */}
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/20">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                  <span className="text-white font-semibold text-lg">G</span>
+                </div>
+                <div>
+                  <h3 className="font-playfair text-xl font-semibold text-gray-800">Giselle Esposito</h3>
+                  <p className="text-primary font-medium">Confeiteira Artesanal</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Criadora e alma da ÉDoceSinop, Giselle transformou sua paixão em arte que encanta toda a região. Com técnicas refinadas e olhar especial para detalhes, desenvolve receitas exclusivas que combinam tradição e inovação.
+              </p>
+            </div>
+
+            {/* Destaque */}
+            <div className="relative">
+              <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+              <div className="pl-6">
+                <p className="font-dancing text-2xl text-primary italic">
+                  "Cada doce conta uma história de dedicação e amor pela confeitaria artesanal"
                 </p>
-              </motion.div>
-              
-              <motion.p 
-                className="text-gray-700 text-lg leading-relaxed mb-8"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-              >
-                Nossa confeitaria se destaca pela dedicação aos detalhes e pelo compromisso com a excelência em cada criação, sempre buscando superar expectativas e adoçar momentos especiais.
-              </motion.p>
-              
-              <motion.div 
-                className="relative bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-[var(--shadow-md)] border border-gray-100 hover:shadow-[var(--shadow-lg)] transition-all duration-500 overflow-hidden group"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                whileHover={{ y: -5 }}
-              >
-                {/* Elementos decorativos */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-xl"></div>
-                <div className="absolute bottom-0 left-0 w-20 h-20 bg-secondary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-xl"></div>
-                
-                <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-primary via-secondary to-primary opacity-70"></div>
-                
-                <p className="font-dancing text-2xl md:text-3xl relative z-10 text-primary drop-shadow-sm group-hover:tracking-wide transition-all duration-300">
-                  "Ingredientes premium cuidadosamente selecionados para sabores que encantam todos os paladares"
-                </p>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </motion.div>
         </div>
+
+        {/* Cards de valores */}
+        <motion.div 
+          className="grid md:grid-cols-3 gap-6 mt-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          {[
+            { title: "Qualidade Premium", desc: "Ingredientes selecionados para garantir sabor excepcional" },
+            { title: "Técnica Artesanal", desc: "Cada doce preparado com cuidado e dedicação únicos" },
+            { title: "Experiência Única", desc: "Momentos especiais criados através de sabores marcantes" }
+          ].map((item, index) => (
+            <motion.div 
+              key={index}
+              className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+              whileHover={{ y: -5 }}
+            >
+              <h4 className="font-playfair text-lg font-semibold text-gray-800 mb-3">{item.title}</h4>
+              <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
