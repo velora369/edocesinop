@@ -76,6 +76,21 @@ export default function About() {
                 A <span className="font-medium font-dancing"><span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span></span> nasceu da paixão por transformar ingredientes de qualidade em experiências sensoriais únicas. Cada doce é preparado artesanalmente, com ingredientes cuidadosamente selecionados para garantir sabor incomparável e momentos de pura felicidade.
               </motion.p>
               
+              <motion.div 
+                className="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-xl border-l-4 border-primary mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.45 }}
+              >
+                <h3 className="font-playfair text-xl font-semibold text-primary mb-3">Giselle Esposito - Confeiteira Artesanal</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Criadora e alma da ÉDoceSinop, Giselle Esposito transformou sua paixão pela confeitaria em uma arte que encanta Sinop e região. 
+                  Com técnicas aprimoradas e um olhar especial para os detalhes, ela desenvolve receitas exclusivas que combinam tradição e inovação, 
+                  sempre priorizando ingredientes de primeira qualidade para oferecer experiências gastronômicas únicas e inesquecíveis.
+                </p>
+              </motion.div>
+              
               <motion.p 
                 className="text-gray-700 text-lg leading-relaxed mb-8"
                 initial={{ opacity: 0, y: 20 }}
@@ -83,7 +98,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                Nossa confeitaria se destaca pela dedicação aos detalhes e pelo compromisso com a excelência em cada criação.
+                Nossa confeitaria se destaca pela dedicação aos detalhes e pelo compromisso com a excelência em cada criação, sempre buscando superar expectativas e adoçar momentos especiais.
               </motion.p>
               
               <motion.div 
