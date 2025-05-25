@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/ui/product-card";
-import { tacasProducts, cassatasProducts, potesProducts } from "@/data/products";
+import { tacasProducts, cassatasProducts, potesProducts, bolosProducts } from "@/data/products";
 import { Button } from "@/components/ui/button";
 import { ImageModal } from "@/components/ui/image-modal";
 import { useImageModal } from "@/hooks/use-image-modal";
@@ -327,11 +327,10 @@ export default function Products() {
           )}
           
           {activeTab === "bolos" && (
-            <div className="text-center">
-              <div className="mb-12">
-                <h3 className="font-dancing text-3xl mb-3">Bolos Artesanais <span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span></h3>
+            <div>
+              <div className="mb-8 text-center">
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
-                  Nossos bolos são feitos com massa tipo pão de ló e decorados artesanalmente para cada ocasião.
+                  Nossos bolos são feitos com massa tipo pão de ló e decorados artesanalmente para cada ocasião. Confira alguns dos nossos sabores especiais:
                 </p>
                 
                 <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-3xl mx-auto mb-12 border border-gray-100">
@@ -357,18 +356,13 @@ export default function Products() {
                 </div>
               </div>
               
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-              >
-                <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 hover:shadow-[0_0_12px_rgba(240,61,135,0.4)] font-montserrat font-semibold rounded-full transition-all duration-300 px-8 py-4">
-                  <a href="https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20personalizado.%20Pode%20me%20dar%20mais%20informações%20sobre%20preços%20e%20opções%20disponíveis?">
-                    <i className="fab fa-whatsapp text-xl mr-2"></i>
-                    Solicitar Orçamento para Bolo
-                  </a>
-                </Button>
-              </motion.div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {bolosProducts.map((product, index) => (
+                  <div key={product.id}>
+                    <ProductCard product={product} type="bolo" />
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </div>

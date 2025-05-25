@@ -94,6 +94,12 @@ export default function ProductCard({ product, type }: ProductCardProps) {
                     ? 'bg-[#F03D87] hover:bg-[#F03D87] hover:shadow-[0_0_8px_rgba(240,61,135,0.5)]'
                     : option.type === 'taca_sem_decoracao'
                     ? 'bg-[#8B4F8B] hover:bg-[#8B4F8B] hover:shadow-[0_0_8px_rgba(139,79,139,0.5)]'
+                    : option.type === 'bolo_pequeno'
+                    ? 'bg-[#4B2E1F] hover:bg-[#4B2E1F] hover:shadow-[0_0_8px_rgba(75,46,31,0.5)]'
+                    : option.type === 'bolo_medio'
+                    ? 'bg-[#5D3924] hover:bg-[#5D3924] hover:shadow-[0_0_8px_rgba(93,57,36,0.5)]'
+                    : option.type === 'bolo_grande'
+                    ? 'bg-[#6F442A] hover:bg-[#6F442A] hover:shadow-[0_0_8px_rgba(111,68,42,0.5)]'
                     : 'bg-[#6B4F8B] hover:bg-[#6B4F8B] hover:shadow-[0_0_8px_rgba(107,79,139,0.5)]'
                 }`}
               >
