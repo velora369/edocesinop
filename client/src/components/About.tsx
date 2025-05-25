@@ -55,7 +55,7 @@ export default function About() {
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
               <h3 className="font-playfair text-2xl font-semibold text-gray-800 mb-4">Nossa História</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                A <span className="font-dancing text-xl text-primary">ÉDoceSinop</span> nasceu da paixão por transformar ingredientes premium em experiências gastronômicas únicas. Cada doce é preparado artesanalmente, priorizando qualidade e sabor em cada criação.
+                A <span className="font-dancing text-xl text-primary">ÉDoce</span> nasceu da paixão por transformar ingredientes premium em experiências gastronômicas únicas. Cada doce é preparado artesanalmente, priorizando qualidade e sabor em cada criação.
               </p>
             </div>
 
