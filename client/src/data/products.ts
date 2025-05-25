@@ -156,7 +156,7 @@ export const tacasProducts: ProductType[] = [
     id: 6,
     name: "NATI",
     description: "Uma combinação tropical de creme de coco e ganache de chocolate que transporta você para um paraíso de sabores.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.15.17.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.20.52.webp",
     priceOptions: [
       {
         type: 'pote',
@@ -372,7 +372,7 @@ export const cassatasProducts: ProductType[] = [
     id: 4,
     name: "NICE",
     description: "Uma combinação sofisticada de creme, bolacha champagne, uva, ganache de chocolate e chantiMellow.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/cassata-de-uva.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-25-as-19.37.38.webp",
     priceOptions: [
       {
         type: 'pote',
