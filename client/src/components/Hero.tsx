@@ -71,7 +71,7 @@ export default function Hero() {
               >
                 <span className="relative z-10 font-dancing">
                   <span className="text-[#00A9A5] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">É</span>
-                  <span className="text-[#F03D87] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">Do</span>
+                  <span className="text-[#4B2E1F] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">Do</span>
                   <span className="text-[#00A9A5] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">ce</span>
                 </span>
 
