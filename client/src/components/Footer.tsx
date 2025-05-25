@@ -152,9 +152,10 @@ export default function Footer() {
           
           {/* Copyright Section with subtle separator */}
           <div className="border-t border-gray-700/50 pt-6 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} ÉDoce Confeitaria Artesanal. Todos os direitos reservados.
-            </p>
+            <div className="text-gray-400 text-sm mb-4 md:mb-0 text-center md:text-left">
+              <p>© {new Date().getFullYear()} ÉDoceSinop Confeitaria Artesanal. Todos os direitos reservados.</p>
+              <p className="text-gray-500 text-xs mt-1">Por Giselle Esposito</p>
+            </div>
             
             {/* Botão Voltar ao Topo */}
             <motion.button
