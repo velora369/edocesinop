@@ -58,22 +58,22 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           }}
         >
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl flex items-center justify-center bg-white/10 backdrop-blur-sm">
-            <motion.span
-              className="text-4xl font-bold text-white"
+            <motion.img
+              src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/logo.png"
+              alt="ÉDoce Logo"
+              className="w-24 h-24 object-contain"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
-            >
-              ÉDoce
-            </motion.span>
+            />
           </div>
         </motion.div>
 
         {/* Subtitle */}
         <motion.p
-          className="text-white/90 text-lg font-light mb-12 tracking-wide"
+          className="text-white/50 text-lg font-light mb-12 tracking-wide"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 0.5, y: 0 }}
           transition={{ delay: 1 }}
         >
           Por Giselle Esposito
