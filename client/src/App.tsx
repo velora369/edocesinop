@@ -7,6 +7,8 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import { AnimatePresence } from "framer-motion";
 import ColorInvertProvider from "@/components/ColorInvertProvider";
+import Preloader from "@/components/Preloader";
+import { useState, useEffect } from "react";
 
 function Router() {
   return (
@@ -20,12 +22,24 @@ function Router() {
 }
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handlePreloaderComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <ColorInvertProvider />
         <Toaster />
-        <Router />
+        <AnimatePresence mode="wait">
+          {isLoading ? (
+            <Preloader onComplete={handlePreloaderComplete} />
+          ) : (
+            <Router />
+          )}
+        </AnimatePresence>
       </TooltipProvider>
     </QueryClientProvider>
   );
