@@ -103,7 +103,7 @@ export default function Contact() {
               <Button
                 asChild
                 size="lg"
-                className="relative overflow-hidden bg-white/10 backdrop-blur-xl text-white font-montserrat font-semibold rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-all duration-500 px-8 py-4"
+                className="relative overflow-hidden bg-white/10 backdrop-blur-xl text-white font-montserrat font-semibold rounded-2xl border-2 border-white shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-all duration-500 px-8 py-4"
               >
                 <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido." className="flex items-center gap-3">
                   {/* Gradient background overlay */}

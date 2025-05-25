@@ -80,30 +80,39 @@ export default function ProductCard({ product, type }: ProductCardProps) {
           </div>
         )}
         
-        <div className="flex flex-col space-y-3">
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <Button 
-              asChild
-              className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_8px_rgba(240,61,135,0.5)] rounded-lg shadow-sm group relative overflow-hidden"
+        <div className="flex flex-col space-y-2">
+          {product.priceOptions.map((option, index) => (
+            <motion.div
+              key={option.type}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <a href={product.link} className="flex justify-between items-center">
-                <span>
-                  {isLaCrema ? 'Taça decorada com frutas' : 'Pote de 1L'}
-                </span>
-                <span className="font-bold bg-white/20 py-1 px-3 rounded-full flex items-center transition-all group-hover:bg-white/30">
-                  R$ {product.price}
-                </span>
-              </a>
-            </Button>
-          </motion.div>
+              <Button 
+                asChild
+                className={`w-full text-white hover:opacity-90 rounded-lg shadow-sm group relative overflow-hidden ${
+                  option.type === 'pote' 
+                    ? 'bg-[#F03D87] hover:bg-[#F03D87] hover:shadow-[0_0_8px_rgba(240,61,135,0.5)]'
+                    : option.type === 'taca_sem_decoracao'
+                    ? 'bg-[#8B4F8B] hover:bg-[#8B4F8B] hover:shadow-[0_0_8px_rgba(139,79,139,0.5)]'
+                    : 'bg-[#6B4F8B] hover:bg-[#6B4F8B] hover:shadow-[0_0_8px_rgba(107,79,139,0.5)]'
+                }`}
+              >
+                <a href={option.link} className="flex justify-between items-center py-3">
+                  <span className="text-sm font-medium">
+                    {option.label}
+                  </span>
+                  <span className="font-bold bg-white/20 py-1 px-2 rounded-full text-xs transition-all group-hover:bg-white/30">
+                    {option.price}
+                  </span>
+                </a>
+              </Button>
+            </motion.div>
+          ))}
           
           {isLaCrema && (
             <div className="mt-2 text-sm text-center text-green-600 font-medium">
               <i className="fas fa-star mr-1"></i>
-              Produto com decoração especial de frutas frescas
+              Produto destaque com opções especiais
             </div>
           )}
         </div>
