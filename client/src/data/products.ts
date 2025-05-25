@@ -563,110 +563,41 @@ export const potesProducts: ProductType[] = [
   }
 ];
 
-// BOLOS Category
-export const bolosProducts: ProductType[] = [
+// BOLOS Gallery - Galeria de bolos para inspiração
+export type BoloGalleryItem = {
+  id: number;
+  name: string;
+  images: string[];
+};
+
+export const bolosGallery: BoloGalleryItem[] = [
   {
     id: 1,
-    name: "BOLO DE CHOCOLATE",
-    description: "Bolo de massa pão de ló com recheio de brigadeiro e cobertura de ganache. Decoração artesanal personalizada.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-de-chocolate-com-ganache.webp",
-    priceOptions: [
-      {
-        type: 'bolo_pequeno',
-        price: 'A partir de R$ 80,00',
-        label: 'Bolo Pequeno (até 10 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20chocolate%20pequeno%20(até%2010%20pessoas).'
-      },
-      {
-        type: 'bolo_medio',
-        price: 'A partir de R$ 120,00',
-        label: 'Bolo Médio (até 20 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20chocolate%20médio%20(até%2020%20pessoas).'
-      },
-      {
-        type: 'bolo_grande',
-        price: 'A partir de R$ 180,00',
-        label: 'Bolo Grande (até 30 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20chocolate%20grande%20(até%2030%20pessoas).'
-      }
+    name: "Bolo de Kit Kat",
+    images: [
+      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-kitkat.webp",
+      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/kit-kat-bolo.webp"
     ]
   },
   {
     id: 2,
-    name: "BOLO DE MORANGO",
-    description: "Delicioso bolo de massa pão de ló com recheio de creme e morangos frescos. Cobertura de chantilly e decoração especial.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-de-morango-com-chantilly.webp",
-    priceOptions: [
-      {
-        type: 'bolo_pequeno',
-        price: 'A partir de R$ 85,00',
-        label: 'Bolo Pequeno (até 10 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20morango%20pequeno%20(até%2010%20pessoas).'
-      },
-      {
-        type: 'bolo_medio',
-        price: 'A partir de R$ 130,00',
-        label: 'Bolo Médio (até 20 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20morango%20médio%20(até%2020%20pessoas).'
-      },
-      {
-        type: 'bolo_grande',
-        price: 'A partir de R$ 190,00',
-        label: 'Bolo Grande (até 30 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20morango%20grande%20(até%2030%20pessoas).'
-      }
+    name: "Bolo para festa infantil",
+    images: [
+      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-naruto-.webp"
     ]
   },
   {
     id: 3,
-    name: "BOLO DE PRESTÍGIO",
-    description: "Bolo especial com massa de chocolate, recheio de coco e cobertura de chocolate. Uma combinação irresistível e sofisticada.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-de-prestigio-artesanal.webp",
-    priceOptions: [
-      {
-        type: 'bolo_pequeno',
-        price: 'A partir de R$ 90,00',
-        label: 'Bolo Pequeno (até 10 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20prestígio%20pequeno%20(até%2010%20pessoas).'
-      },
-      {
-        type: 'bolo_medio',
-        price: 'A partir de R$ 140,00',
-        label: 'Bolo Médio (até 20 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20prestígio%20médio%20(até%2020%20pessoas).'
-      },
-      {
-        type: 'bolo_grande',
-        price: 'A partir de R$ 200,00',
-        label: 'Bolo Grande (até 30 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20de%20prestígio%20grande%20(até%2030%20pessoas).'
-      }
+    name: "Espatulados em Chantininho",
+    images: [
+      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-3.webp"
     ]
   },
   {
     id: 4,
-    name: "BOLO RED VELVET",
-    description: "Clássico bolo vermelho americano com massa aveludada e cream cheese. Decoração elegante e sabor marcante.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-red-velvet-elegante.webp",
-    priceOptions: [
-      {
-        type: 'bolo_pequeno',
-        price: 'A partir de R$ 95,00',
-        label: 'Bolo Pequeno (até 10 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20red%20velvet%20pequeno%20(até%2010%20pessoas).'
-      },
-      {
-        type: 'bolo_medio',
-        price: 'A partir de R$ 145,00',
-        label: 'Bolo Médio (até 20 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20red%20velvet%20médio%20(até%2020%20pessoas).'
-      },
-      {
-        type: 'bolo_grande',
-        price: 'A partir de R$ 210,00',
-        label: 'Bolo Grande (até 30 pessoas)',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20red%20velvet%20grande%20(até%2030%20pessoas).'
-      }
+    name: "Minimalista texturizado",
+    images: [
+      "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bolo-2.webp"
     ]
   }
 ];

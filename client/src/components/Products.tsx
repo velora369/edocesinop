@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/ui/product-card";
-import { tacasProducts, cassatasProducts, potesProducts, bolosProducts } from "@/data/products";
+import BoloGalleryItemCard from "@/components/ui/bolo-gallery-item";
+import { tacasProducts, cassatasProducts, potesProducts, bolosGallery } from "@/data/products";
 import { Button } from "@/components/ui/button";
 import { ImageModal } from "@/components/ui/image-modal";
 import { useImageModal } from "@/hooks/use-image-modal";
@@ -357,9 +358,9 @@ export default function Products() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {bolosProducts.map((product, index) => (
-                  <div key={product.id}>
-                    <ProductCard product={product} type="bolo" />
+                {bolosGallery.map((item) => (
+                  <div key={item.id}>
+                    <BoloGalleryItemCard item={item} />
                   </div>
                 ))}
               </div>
