@@ -57,7 +57,7 @@ export default function Header() {
         >
           <div className="logo-container w-[60px] h-[60px] md:w-[60px] md:h-[60px] sm:w-[45px] sm:h-[45px] rounded-full overflow-hidden border-2 border-[#F03D87] shadow-[var(--shadow-md)] flex items-center justify-center bg-gradient-to-br from-[#00A9A5] to-[#44CFC6] transition-all duration-300 hover:shadow-[var(--shadow-highlight)] hover:scale-105">
             <img 
-              src="/src/assets/logo.png" 
+              src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/logo.png" 
               alt="Logo ÉDoce Confeitaria Artesanal" 
               className="w-full h-full object-cover object-center"
             />
