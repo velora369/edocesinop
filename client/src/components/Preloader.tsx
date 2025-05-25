@@ -61,7 +61,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             <motion.img
               src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/logo.png"
               alt="ÉDoce Logo"
-              className="w-24 h-24 object-cover rounded-full"
+              className="w-full h-full object-cover rounded-full"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
