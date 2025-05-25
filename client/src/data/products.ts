@@ -403,7 +403,7 @@ export const potesProducts: ProductType[] = [
     id: 1,
     name: "TORTA ALEMÃ",
     description: "Camadas de biscoito e creme amanteigado com chocolate, uma receita tradicional que nunca sai de moda.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/torta-alema-11.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-25-at-19.18.58.webp",
     priceOptions: [
       {
         type: 'pote',
@@ -430,7 +430,7 @@ export const potesProducts: ProductType[] = [
     id: 2,
     name: "TORTA HOLANDESA",
     description: "A combinação perfeita de creme amanteigado com notas de baunilha e cobertura de chocolate. Uma sobremesa tradicional com toque especial.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/de-bombons.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-25-at-19.18.28.webp",
     priceOptions: [
       {
         type: 'pote',
@@ -557,6 +557,33 @@ export const potesProducts: ProductType[] = [
         price: 'R$ 145,00/kg',
         label: 'Taça com decoração',
         link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MOUSSE%20DE%20CHOCOLATE%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+      }
+    ],
+    note: "É congelável"
+  },
+  {
+    id: 7,
+    name: "BANOFFEE",
+    description: "Uma deliciosa combinação de doce de leite cremoso, banana fresca, creme de natas e cobertura de chocolate. Uma sobremesa irresistível e equilibrada.",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-25-at-19.19.09.webp",
+    priceOptions: [
+      {
+        type: 'pote',
+        price: 'R$ 120,00',
+        label: 'Pote 1L',
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20BANOFFEE%20por%20R$%20120,00.'
+      },
+      {
+        type: 'taca_sem_decoracao',
+        price: 'R$ 125,00/kg',
+        label: 'Taça sem decoração',
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20BANOFFEE%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+      },
+      {
+        type: 'taca_com_decoracao',
+        price: 'R$ 145,00/kg',
+        label: 'Taça com decoração',
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20BANOFFEE%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
       }
     ],
     note: "É congelável"
