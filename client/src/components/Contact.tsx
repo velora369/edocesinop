@@ -98,41 +98,18 @@ export default function Contact() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="relative group"
             >
               <Button
                 asChild
                 size="lg"
-                className="relative overflow-hidden bg-white/10 backdrop-blur-xl text-white font-montserrat font-semibold rounded-2xl border-2 border-white shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-all duration-500 px-8 py-4"
+                className="bg-[#25D366] hover:bg-[#20B958] text-white font-montserrat font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-4 border-0"
               >
-                <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido." className="flex items-center gap-3">
-                  {/* Gradient background overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#25D366]/20 to-[#25D366]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
-                  {/* Icon with glow effect */}
-                  <div className="relative z-10 w-6 h-6 flex items-center justify-center">
-                    <i className="fab fa-whatsapp text-xl text-[#25D366] group-hover:text-white transition-colors duration-300"></i>
-                    <div className="absolute inset-0 bg-[#25D366]/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  
-                  <span className="relative z-10 tracking-wide">Fazer Pedido via WhatsApp</span>
-                  
-                  {/* Animated border */}
-                  <motion.div
-                    className="absolute inset-0 rounded-2xl"
-                    style={{
-                      background: "linear-gradient(90deg, transparent, rgba(37,211,102,0.3), transparent)",
-                      backgroundSize: "200% 100%",
-                    }}
-                    animate={{
-                      backgroundPosition: ["200% 0%", "-200% 0%"],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: "linear",
-                    }}
-                  />
+                <a 
+                  href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido." 
+                  className="flex items-center gap-3"
+                >
+                  <i className="fab fa-whatsapp text-xl"></i>
+                  <span className="tracking-wide">Fazer Pedido via WhatsApp</span>
                 </a>
               </Button>
             </motion.div>
