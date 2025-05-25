@@ -271,9 +271,7 @@ export default function Products() {
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossos pavês são verdadeiras obras de arte, elaborados com ingredientes selecionados e muito amor. Perfeitos para momentos especiais ou para se deliciar em casa.
                 </p>
-                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-10">
-                  <span className="font-montserrat">Taça decorada com frutas - R$ 140,00</span>
-                </div>
+
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -292,9 +290,7 @@ export default function Products() {
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossas cassatas combinam cremosidade, sabor e uma apresentação impecável. Cada uma é preparada com carinho em nosso atelier.
                 </p>
-                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-6">
-                  <span className="font-montserrat">Pote de 1 litro - R$ 120,00</span>
-                </div>
+
                 <div className="bg-yellow-50 border border-yellow-100 text-yellow-800 rounded-lg py-2 px-4 inline-block mt-2 mb-10">
                   <i className="fas fa-info-circle mr-2"></i>
                   <span className="text-sm font-medium">As cassatas não são congeláveis</span>
@@ -317,9 +313,7 @@ export default function Products() {
                 <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
                   Nossas sobremesas são preparadas com ingredientes selecionados e recheios diferenciados, garantindo experiências únicas a cada colherada.
                 </p>
-                <div className="bg-gray-100 inline-block py-2 px-6 rounded-full mb-10">
-                  <span className="font-montserrat">Pote de 1 litro - R$ 120,00</span>
-                </div>
+
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
