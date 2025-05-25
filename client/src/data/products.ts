@@ -484,7 +484,7 @@ export const potesProducts: ProductType[] = [
     id: 4,
     name: "MARACUNINHO",
     description: "Deliciosa mousse de maracujá com ninho, coberta com ganache de chocolate. Uma combinação perfeita de sabores.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/goiaba-deliciosa-close-up-pronta-para-ser-servida.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-20.56.06.webp",
     priceOptions: [
       {
         type: 'pote',
