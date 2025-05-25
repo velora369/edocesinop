@@ -2,126 +2,167 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="quem-somos" className="section py-24 bg-gradient-to-b from-gray-50 to-white relative">
-      {/* Elementos decorativos sutis */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent z-10"></div>
-      <div className="absolute -top-5 left-1/4 w-24 h-24 rounded-full bg-primary/5 blur-3xl"></div>
-      <div className="absolute top-1/3 right-1/4 w-32 h-32 rounded-full bg-secondary/5 blur-3xl"></div>
+    <section id="quem-somos" className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+      {/* Background futurista */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,_rgba(0,169,165,0.1)_0%,_transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(240,61,135,0.1)_0%,_transparent_50%)]"></div>
       
-      <div className="container mx-auto px-4 md:px-8 relative z-20">
-        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          <motion.div 
-            className="md:w-1/2"
+      {/* Grid pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Header moderno */}
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div
+            className="inline-block"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+              Quem Somos
+            </h2>
+            <div className="h-1 w-24 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto rounded-full"></div>
+          </motion.div>
+        </motion.div>
+
+        {/* Layout em grid moderno */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          
+          {/* Card da Giselle */}
+          <motion.div
+            className="relative"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8 }}
           >
-            <div className="relative overflow-hidden rounded-3xl shadow-[var(--shadow-lg)] group">
-              {/* Bordas decorativas */}
-              <div className="absolute -inset-0.5 bg-gradient-to-tr from-primary via-secondary to-accent opacity-20 rounded-3xl blur-sm group-hover:opacity-40 transition-opacity duration-700 z-0"></div>
+            <div className="relative group">
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
               
-              <div className="relative overflow-hidden rounded-3xl z-10">
-                <img 
-                  src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/foto-giselle-.webp" 
-                  alt="Confeitaria ÉDoce em ação" 
-                  className="w-full h-auto transition-all duration-700 group-hover:scale-105 group-hover:rotate-1"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-slate-800/80 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">GE</span>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-2xl font-bold text-white mb-1">Giselle Esposito</h3>
+                    <p className="text-cyan-400 font-medium">Confeiteira Artesanal</p>
+                  </div>
+                </div>
                 
-
+                <p className="text-slate-300 leading-relaxed mb-6">
+                  Criadora e alma da ÉDoceSinop. Transformou sua paixão pela confeitaria em uma arte que encanta 
+                  Sinop e região, desenvolvendo receitas exclusivas que combinam tradição e inovação.
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {['Artesanal', 'Premium', 'Inovação', 'Tradição'].map((tag) => (
+                    <span key={tag} className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 text-cyan-300 rounded-full text-sm border border-cyan-500/30">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>
-          
-          <motion.div 
-            className="md:w-1/2"
+
+          {/* Informações da empresa */}
+          <motion.div
+            className="space-y-8"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <motion.div
-              className="relative mb-10"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <h2 className="font-playfair text-4xl md:text-5xl relative inline-block">
-                Sobre a <span className="relative">
-                  <span className="relative z-10 font-dancing">
-                    <span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span>
-                  </span>
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 rounded-xl blur"></div>
+              <div className="relative bg-slate-800/60 backdrop-blur-xl rounded-xl p-6 border border-slate-700/50">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-cyan-400 to-purple-500 flex items-center justify-center">
+                    <span className="text-white text-xl">🎯</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white ml-4">Nossa Missão</h3>
+                </div>
+                <p className="text-slate-300">
+                  Transformar ingredientes premium em experiências sensoriais únicas, 
+                  criando momentos especiais através da confeitaria artesanal.
+                </p>
+              </div>
+            </div>
 
-                </span>
-              </h2>
-              <div className="h-1 w-12 bg-gradient-to-r from-primary to-secondary rounded-full mt-4"></div>
-            </motion.div>
-            
-            <motion.div
-              className="space-y-6"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <motion.p 
-                className="text-gray-700 text-lg leading-relaxed"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-              >
-                A <span className="font-medium font-dancing"><span className="text-[#00A9A5]">É</span><span className="text-[#4B2E1F]">Do</span><span className="text-[#00A9A5]">ce</span></span> nasceu da paixão por transformar ingredientes de qualidade em experiências sensoriais únicas. Cada doce é preparado artesanalmente, com ingredientes cuidadosamente selecionados para garantir sabor incomparável e momentos de pura felicidade.
-              </motion.p>
-              
-              <motion.div 
-                className="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-xl border-l-4 border-primary mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.45 }}
-              >
-                <h3 className="font-playfair text-xl font-semibold text-primary mb-3">Giselle Esposito - Confeiteira Artesanal</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Criadora e alma da ÉDoceSinop, Giselle Esposito transformou sua paixão pela confeitaria em uma arte que encanta Sinop e região. 
-                  Com técnicas aprimoradas e um olhar especial para os detalhes, ela desenvolve receitas exclusivas que combinam tradição e inovação, 
-                  sempre priorizando ingredientes de primeira qualidade para oferecer experiências gastronômicas únicas e inesquecíveis.
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl blur"></div>
+              <div className="relative bg-slate-800/60 backdrop-blur-xl rounded-xl p-6 border border-slate-700/50">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                    <span className="text-white text-xl">⭐</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white ml-4">Nossos Valores</h3>
+                </div>
+                <p className="text-slate-300">
+                  Qualidade premium, técnicas artesanais, ingredientes selecionados 
+                  e dedicação aos detalhes em cada criação.
                 </p>
-              </motion.div>
-              
-              <motion.p 
-                className="text-gray-700 text-lg leading-relaxed mb-8"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-              >
-                Nossa confeitaria se destaca pela dedicação aos detalhes e pelo compromisso com a excelência em cada criação, sempre buscando superar expectativas e adoçar momentos especiais.
-              </motion.p>
-              
-              <motion.div 
-                className="relative bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-[var(--shadow-md)] border border-gray-100 hover:shadow-[var(--shadow-lg)] transition-all duration-500 overflow-hidden group"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                whileHover={{ y: -5 }}
-              >
-                {/* Elementos decorativos */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-xl"></div>
-                <div className="absolute bottom-0 left-0 w-20 h-20 bg-secondary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-xl"></div>
-                
-                <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-primary via-secondary to-primary opacity-70"></div>
-                
-                <p className="font-dancing text-2xl md:text-3xl relative z-10 text-primary drop-shadow-sm group-hover:tracking-wide transition-all duration-300">
-                  "Ingredientes premium cuidadosamente selecionados para sabores que encantam todos os paladares"
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-pink-500/20 to-cyan-400/20 rounded-xl blur"></div>
+              <div className="relative bg-slate-800/60 backdrop-blur-xl rounded-xl p-6 border border-slate-700/50">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-pink-500 to-cyan-400 flex items-center justify-center">
+                    <span className="text-white text-xl">🚀</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white ml-4">Nossa Visão</h3>
+                </div>
+                <p className="text-slate-300">
+                  Ser referência em confeitaria artesanal, levando inovação e sabores 
+                  excepcionais para toda a região de Sinop.
                 </p>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </motion.div>
         </div>
+
+        {/* Stats futuristas */}
+        <motion.div 
+          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          {[
+            { number: "100%", label: "Artesanal" },
+            { number: "Premium", label: "Ingredientes" },
+            { number: "15+", label: "Sabores Únicos" },
+            { number: "5★", label: "Avaliação" }
+          ].map((stat, index) => (
+            <motion.div 
+              key={index}
+              className="text-center group"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-lg blur opacity-30 group-hover:opacity-60 transition duration-300"></div>
+                <div className="relative bg-slate-800/80 backdrop-blur-xl rounded-lg p-6 border border-slate-700/50">
+                  <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-2">
+                    {stat.number}
+                  </div>
+                  <div className="text-slate-400 text-sm font-medium">{stat.label}</div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
