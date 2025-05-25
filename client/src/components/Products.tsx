@@ -242,7 +242,7 @@ export default function Products() {
         {/* Product Tabs - Simplified */}
         <div className="w-full">
           <div className="mb-12 flex justify-center">
-            <div className="bg-white rounded-xl shadow-lg p-1 flex flex-wrap gap-1">
+            <div className="bg-white rounded-xl shadow-lg p-1 flex flex-wrap gap-1 justify-center">
               {[
                 { value: "tacas", label: "Pavês" },
                 { value: "cassatas", label: "Cassatas" },
