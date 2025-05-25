@@ -53,57 +53,27 @@ export default function SpecialDates() {
           {specialDatesData.map((item, index) => (
             <motion.div
               key={item.id}
-              className={`rounded-lg shadow-md overflow-hidden transform transition duration-300 ${
-                item.status === 'unavailable' || item.status === 'soon' 
-                  ? 'bg-gray-100 hover:shadow-lg' 
-                  : 'bg-white hover:-translate-y-2'
-              }`}
+              className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <div className="relative">
-                <img 
-                  src={item.image} 
-                  alt={`Produtos de ${item.title} ÉDoce`} 
-                  className={`w-full h-48 object-cover ${
-                    item.status === 'unavailable' || item.status === 'soon' 
-                      ? 'filter grayscale opacity-60' 
-                      : ''
-                  }`}
-                />
-                {item.status === 'unavailable' && (
-                  <div className="absolute inset-0 bg-gray-500 bg-opacity-40 flex items-center justify-center">
-                    <span className="text-white font-semibold text-lg">Fora de Temporada</span>
-                  </div>
-                )}
-                {item.status === 'soon' && (
-                  <div className="absolute inset-0 bg-blue-500 bg-opacity-20 flex items-center justify-center">
-                    <span className="text-white font-semibold text-lg">Em Breve</span>
-                  </div>
-                )}
-              </div>
+              <img 
+                src={item.image} 
+                alt={`Produtos de ${item.title} ÉDoce`} 
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
-                <h3 className={`font-montserrat font-semibold text-xl mb-3 ${
-                  item.status === 'unavailable' || item.status === 'soon' 
-                    ? 'text-gray-500' 
-                    : 'text-gray-800'
-                }`}>{item.title}</h3>
-                <p className={`mb-5 ${
-                  item.status === 'unavailable' || item.status === 'soon' 
-                    ? 'text-gray-400' 
-                    : 'text-gray-600'
-                }`}>
+                <h3 className="font-montserrat font-semibold text-xl mb-3">{item.title}</h3>
+                <p className="text-gray-600 mb-5">
                   {item.description}
                 </p>
                 <Button 
                   disabled={item.status === 'unavailable' || item.status === 'soon'}
-                  className={`py-2 px-6 rounded-full transition cursor-default ${
-                    item.status === 'unavailable' 
-                      ? 'bg-gray-400 text-gray-600 hover:bg-gray-400 cursor-not-allowed' 
-                      : item.status === 'soon'
-                      ? 'bg-gray-500 text-white hover:bg-gray-500 cursor-not-allowed'
+                  className={`py-2 px-6 rounded-full transition ${
+                    item.status === 'unavailable' || item.status === 'soon'
+                      ? 'bg-gray-400 text-gray-700 hover:bg-gray-400 cursor-not-allowed' 
                       : 'bg-primary hover:bg-opacity-90 text-white'
                   }`}
                 >
