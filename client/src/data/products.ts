@@ -22,7 +22,7 @@ export const tacasProducts: ProductType[] = [
     id: 1,
     name: "LA CREMA",
     description: "Nossa receita original que conquistou o paladar dos clientes. Servido em taça com decoração especial de frutas frescas.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-23-at-21.10.22.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.00.30.webp",
     isLaCrema: true,
     priceOptions: [
       {
@@ -49,7 +49,7 @@ export const tacasProducts: ProductType[] = [
     id: 2,
     name: "VIBE",
     description: "Uma combinação irresistível de creme de doce de leite, café e ganache de chocolate que vai conquistar seu paladar.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-24-as-02.49.33.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-20.58.15.webp",
     priceOptions: [
       {
         type: 'pote',
@@ -75,7 +75,7 @@ export const tacasProducts: ProductType[] = [
     id: 3,
     name: "NIZA",
     description: "Uma experiência única com o sabor refinado do creme de pistache combinado com ganache de chocolate.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/niza-1.jpg",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.01.27.webp",
     isPremium: true,
     priceOptions: [
       {
@@ -102,7 +102,7 @@ export const tacasProducts: ProductType[] = [
     id: 4,
     name: "NINO",
     description: "Deliciosa combinação de creme de avelã, ovo maltine e ganache de chocolate que derrete na boca.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/d_nq_np_2x_832569-mlb53040369209_122022-f.webp-2x.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-20.58.54.webp",
     isPremium: true,
     priceOptions: [
       {
@@ -129,7 +129,7 @@ export const tacasProducts: ProductType[] = [
     id: 5,
     name: "MANU",
     description: "Uma tentação para os amantes de chocolate, com creme de chocolate e ganache de chocolates branco e preto.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-19.57.25.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-20.56.28.webp",
     isPremium: true,
     priceOptions: [
       {
@@ -156,7 +156,7 @@ export const tacasProducts: ProductType[] = [
     id: 6,
     name: "NATI",
     description: "Uma combinação tropical de creme de coco e ganache de chocolate que transporta você para um paraíso de sabores.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.20.52.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.15.17.webp",
     priceOptions: [
       {
         type: 'pote',
@@ -182,7 +182,7 @@ export const tacasProducts: ProductType[] = [
     id: 7,
     name: "MANGO",
     description: "A doçura exótica da manga combinada com ganache de chocolate, uma experiência refrescante e sofisticada.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-20.22.37.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.06.22.webp",
     priceOptions: [
       {
         type: 'pote',
@@ -291,7 +291,7 @@ export const cassatasProducts: ProductType[] = [
     id: 1,
     name: "VIC",
     description: "Uma sobremesa refrescante com camadas de creme, bolacha champagne e morangos frescos, finalizada com chantilly.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/cassata-de-morango-.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.05.25.webp",
     priceOptions: [
       {
         type: 'pote',
@@ -318,7 +318,7 @@ export const cassatasProducts: ProductType[] = [
     id: 2,
     name: "YAS",
     description: "Uma combinação deliciosa de creme, bolacha champagne, bombom, calda de chocolate e chantiMellow.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/de-bombons.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.13.02.webp",
     priceOptions: [
       {
         type: 'pote',
@@ -345,7 +345,7 @@ export const cassatasProducts: ProductType[] = [
     id: 3,
     name: "MISSI",
     description: "Uma sobremesa tropical com camadas de creme, bolacha champagne, abacaxi, coco e chantiMellow.",
-    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/deliciosa-natureza-morta-de-abacaxi.webp",
+    image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.24.42.webp",
     priceOptions: [
       {
         type: 'pote',
