@@ -141,12 +141,11 @@ export default function Contact() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="relative group"
             >
               <Button
                 asChild
                 size="lg"
-                className="relative overflow-hidden bg-white/10 backdrop-blur-xl text-white font-montserrat font-semibold rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] transition-all duration-500 px-8 py-4"
+                className="bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white font-montserrat font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-4 border-0"
               >
                 <a 
                   href="https://www.instagram.com/edocesinop" 
@@ -154,18 +153,8 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3"
                 >
-                  {/* Instagram gradient background overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#FCAF45]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
-                  {/* Icon with gradient glow effect */}
-                  <div className="relative z-10 w-6 h-6 flex items-center justify-center">
-                    <i className="fab fa-instagram text-xl bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] bg-clip-text text-transparent group-hover:text-white transition-colors duration-300"></i>
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#FCAF45]/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  
-                  <span className="relative z-10 tracking-wide">Seguir no Instagram</span>
-                  
-
+                  <i className="fab fa-instagram text-xl"></i>
+                  <span className="tracking-wide">Seguir no Instagram</span>
                 </a>
               </Button>
             </motion.div>
