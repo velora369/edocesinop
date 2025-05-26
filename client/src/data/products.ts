@@ -21,7 +21,7 @@ export const tacasProducts: ProductType[] = [
   {
     id: 1,
     name: "LA CREMA",
-    description: "Nossa receita original que conquistou o paladar dos clientes. Servido em taça com decoração especial de frutas frescas.",
+    description: "pavê de creme iogurtado com cobertura de ganache de chocolate belga, decorado com frutas secas.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.00.30.webp",
     isLaCrema: true,
     priceOptions: [
@@ -265,9 +265,9 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 125,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20GITO%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20GITO%20por%20R$%20125,00.'
       },
       {
         type: 'taca_sem_decoracao',
@@ -586,7 +586,7 @@ export const potesProducts: ProductType[] = [
         link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20BANOFFEE%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
       }
     ],
-    note: "É congelável"
+    note: "Não é congelável"
   }
 ];
 
