@@ -21,7 +21,7 @@ export const tacasProducts: ProductType[] = [
   {
     id: 1,
     name: "LA CREMA",
-    description: "pavê de creme iogurtado com cobertura de ganache de chocolate belga, decorado com frutas secas.",
+    description: "Pavê de creme iogurtado com cobertura de ganache de chocolate belga, decorado com frutas secas.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.00.30.webp",
     isLaCrema: true,
     priceOptions: [
