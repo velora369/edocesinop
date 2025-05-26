@@ -265,9 +265,9 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 125,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20GITO%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20GITO%20por%20R$%20125,00.'
       },
       {
         type: 'taca_sem_decoracao',
@@ -564,7 +564,7 @@ export const potesProducts: ProductType[] = [
   {
     id: 7,
     name: "BANOFFEE",
-    description: "Uma deliciosa combinação de doce de leite cremoso, banana fresca, creme de natas e cobertura de chocolate. Uma sobremesa irresistível e equilibrada.",
+    description: "Pavê de creme iogurtado com cobertura de ganache de chocolate belga, decorado com frutas secas.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-25-at-19.19.09.webp",
     priceOptions: [
       {
@@ -586,7 +586,7 @@ export const potesProducts: ProductType[] = [
         link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20BANOFFEE%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
       }
     ],
-    note: "É congelável"
+    note: "Não é congelável"
   }
 ];
 
