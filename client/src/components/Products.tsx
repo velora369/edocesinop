@@ -339,19 +339,15 @@ export default function Products() {
                   <ul className="space-y-4 text-left">
                     <li className="flex items-start">
                       <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
-                      <span className="text-gray-700">Trabalhamos somente com massas tipo pão de ló</span>
+                      <span className="text-gray-700">Nossos bolos são cobrados por tamanho (P, M e G)</span>
                     </li>
                     <li className="flex items-start">
                       <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
-                      <span className="text-gray-700">Nossos bolos são cobrados por tamanho, sabor e decoração</span>
+                      <span className="text-gray-700">Trabalhamos somente com massas tipo pão de ló e com dois tipos de cobertura: chantininho e ganache de chantilly</span>
                     </li>
                     <li className="flex items-start">
                       <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
-                      <span className="text-gray-700">Encomendas com pelo menos 48h de antecedência</span>
-                    </li>
-                    <li className="flex items-start">
-                      <i className="fas fa-check-circle text-secondary mt-1 mr-3 text-lg"></i>
-                      <span className="text-gray-700">Fazemos bolos de todos os tamanhos e formatos</span>
+                      <span className="text-gray-700">Encomendas com pelo menos 48hs de antecedência</span>
                     </li>
                   </ul>
                 </div>
