@@ -155,17 +155,6 @@ export default function Footer() {
             <div className="text-gray-400 text-sm mb-4 md:mb-0 text-center md:text-left">
               <p>© {new Date().getFullYear()} ÉDoceSinop Confeitaria Artesanal. Todos os direitos reservados.</p>
               <p className="text-gray-500 text-xs mt-1">Por Giselle Esposito</p>
-              <p className="text-gray-500 text-xs mt-2 opacity-60">
-                Design by{' '}
-                <a 
-                  href="https://www.instagram.com/meusitexpress?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors duration-300 underline hover:no-underline"
-                >
-                  MeuSiteXpress
-                </a>
-              </p>
             </div>
             
             {/* Botão Voltar ao Topo */}
