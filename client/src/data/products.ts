@@ -27,21 +27,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LA%20CREMA%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LA%20CREMA%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LA%20CREMA%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LA%20CREMA%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LA%20CREMA%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LA%20CREMA%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -53,21 +53,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20VIBE%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20VIBE%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20VIBE%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20VIBE%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20VIBE%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20VIBE%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -80,21 +80,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 125,00',
+        price: 'R$ 135,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NIZA%20por%20R$%20125,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NIZA%20por%20R$%20135,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NIZA%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NIZA%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NIZA%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NIZA%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -107,21 +107,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 125,00',
+        price: 'R$ 135,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NINO%20por%20R$%20125,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NINO%20por%20R$%20135,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NINO%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NINO%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NINO%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NINO%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -134,21 +134,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 125,00',
+        price: 'R$ 135,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MANU%20por%20R$%20125,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MANU%20por%20R$%20135,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MANU%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MANU%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MANU%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MANU%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -160,21 +160,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NATI%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NATI%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NATI%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NATI%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NATI%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NATI%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -186,21 +186,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MANGO%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MANGO%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MANGO%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MANGO%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MANGO%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MANGO%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -213,21 +213,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 125,00',
+        price: 'R$ 135,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LYCA%20por%20R$%20125,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LYCA%20por%20R$%20135,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LYCA%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LYCA%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LYCA%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LYCA%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -239,21 +239,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LOLA%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LOLA%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LOLA%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LOLA%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LOLA%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LOLA%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },
@@ -265,21 +265,21 @@ export const tacasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 125,00',
+        price: 'R$ 135,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20GITO%20por%20R$%20125,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20GITO%20por%20R$%20135,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20GITO%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20GITO%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20GITO%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20GITO%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   }
@@ -295,21 +295,21 @@ export const cassatasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20VIC%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20VIC%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20VIC%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20VIC%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20VIC%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20VIC%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "Não é congelável"
@@ -322,21 +322,21 @@ export const cassatasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20YAS%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20YAS%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20YAS%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20YAS%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20YAS%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20YAS%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "Não é congelável"
@@ -349,21 +349,21 @@ export const cassatasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MISSI%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MISSI%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MISSI%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MISSI%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MISSI%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MISSI%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "Não é congelável"
@@ -376,21 +376,21 @@ export const cassatasProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NICE%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20NICE%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NICE%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NICE%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NICE%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20NICE%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "Não é congelável"
@@ -407,21 +407,21 @@ export const potesProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20TORTA%20ALEMÃ%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20TORTA%20ALEMÃ%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TORTA%20ALEMÃ%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TORTA%20ALEMÃ%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TORTA%20ALEMÃ%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TORTA%20ALEMÃ%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "É congelável"
@@ -434,21 +434,21 @@ export const potesProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20TORTA%20HOLANDESA%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20TORTA%20HOLANDESA%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TORTA%20HOLANDESA%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TORTA%20HOLANDESA%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TORTA%20HOLANDESA%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TORTA%20HOLANDESA%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "É congelável"
@@ -461,21 +461,21 @@ export const potesProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20TIRAMISÙ%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20TIRAMISÙ%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TIRAMISÙ%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TIRAMISÙ%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TIRAMISÙ%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20TIRAMISÙ%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "É congelável"
@@ -488,21 +488,21 @@ export const potesProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MARACUNINHO%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MARACUNINHO%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MARACUNINHO%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MARACUNINHO%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MARACUNINHO%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MARACUNINHO%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "É congelável"
@@ -515,21 +515,21 @@ export const potesProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LEMON%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LEMON%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LEMON%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LEMON%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LEMON%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20LEMON%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "É congelável"
@@ -542,21 +542,21 @@ export const potesProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MOUSSE%20DE%20CHOCOLATE%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20MOUSSE%20DE%20CHOCOLATE%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MOUSSE%20DE%20CHOCOLATE%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MOUSSE%20DE%20CHOCOLATE%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MOUSSE%20DE%20CHOCOLATE%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20MOUSSE%20DE%20CHOCOLATE%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "É congelável"
@@ -569,21 +569,21 @@ export const potesProducts: ProductType[] = [
     priceOptions: [
       {
         type: 'pote',
-        price: 'R$ 120,00',
+        price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20BANOFFEE%20por%20R$%20120,00.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20BANOFFEE%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
-        price: 'R$ 125,00/kg',
+        price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20BANOFFEE%20(sem%20decoração)%20por%20R$%20125,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20BANOFFEE%20(sem%20decoração)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
-        price: 'R$ 145,00/kg',
+        price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20BANOFFEE%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20BANOFFEE%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ],
     note: "Não é congelável"
