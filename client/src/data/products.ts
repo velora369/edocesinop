@@ -29,19 +29,19 @@ export const tacasProducts: ProductType[] = [
         type: 'pote',
         price: 'R$ 130,00',
         label: 'Pote 1L',
-        link: 'https://wa.me/5566999852299?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LA%20CREMA%20por%20R$%20130,00.'
+        link: 'https://wa.me/5566999852299?text=Ola!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20LA%20CREMA%20por%20R$%20130,00.'
       },
       {
         type: 'taca_sem_decoracao',
         price: 'R$ 135,00/kg',
         label: 'Taça sem decoração',
-        link: 'https://wa.me/5566999852299?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20uma%20ta%C3%A7a%20de%20LA%20CREMA%20(sem%20decora%C3%A7%C3%A3o)%20por%20R$%20135,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Ola!%20Gostaria%20de%20encomendar%20uma%20taca%20de%20LA%20CREMA%20(sem%20decoracao)%20por%20R$%20135,00/kg.'
       },
       {
         type: 'taca_com_decoracao',
         price: 'R$ 155,00/kg',
         label: 'Taça com decoração',
-        link: 'https://wa.me/5566999852299?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20uma%20ta%C3%A7a%20de%20LA%20CREMA%20com%20decora%C3%A7%C3%A3o%20de%20frutas%20por%20R$%20155,00/kg.'
+        link: 'https://wa.me/5566999852299?text=Ola!%20Gostaria%20de%20encomendar%20uma%20taca%20de%20LA%20CREMA%20com%20decoracao%20de%20frutas%20por%20R$%20155,00/kg.'
       }
     ]
   },

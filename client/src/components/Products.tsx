@@ -204,13 +204,13 @@ export default function Products() {
                   {
                     label: "Taça decorada com frutas",
                     price: "155,00/kg",
-                    link: "https://wa.me/5566999852299?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20uma%20ta%C3%A7a%20de%20La%20Crema%20com%20decora%C3%A7%C3%A3o%20de%20frutas%20por%20R$%20155,00/kg.",
+                    link: "https://wa.me/5566999852299?text=Ola!%20Gostaria%20de%20encomendar%20uma%20taca%20de%20La%20Crema%20com%20decoracao%20de%20frutas%20por%20R$%20155,00/kg.",
                     icon: "fas fa-glass-martini"
                   },
                   {
                     label: "Pote de 1L",
                     price: "130,00",
-                    link: "https://wa.me/5566999852299?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20La%20Crema%20por%20R$%20130,00.",
+                    link: "https://wa.me/5566999852299?text=Ola!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20La%20Crema%20por%20R$%20130,00.",
                     icon: "fas fa-box-open"
                   }
                 ].map((option, index) => (
