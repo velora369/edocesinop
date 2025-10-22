@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ImageModal } from "@/components/ui/image-modal";
 import { useImageModal } from "@/hooks/use-image-modal";
 import { Search } from "lucide-react";
+import { generateWhatsAppLink } from "@/lib/utils";
 
 export default function Products() {
   const [activeTab, setActiveTab] = useState("tacas");
@@ -204,13 +205,13 @@ export default function Products() {
                   {
                     label: "Taça decorada com frutas",
                     price: "155,00/kg",
-                    link: "https://wa.me/5566999852299?text=Ola!%20Gostaria%20de%20encomendar%20uma%20taca%20de%20La%20Crema%20com%20decoracao%20de%20frutas%20por%20R$%20155,00/kg.",
+                    message: "Olá! Gostaria de encomendar uma taça de La Crema com decoração de frutas por R$ 155,00/kg.",
                     icon: "fas fa-glass-martini"
                   },
                   {
                     label: "Pote de 1L",
                     price: "130,00",
-                    link: "https://wa.me/5566999852299?text=Ola!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20La%20Crema%20por%20R$%20130,00.",
+                    message: "Olá! Gostaria de encomendar um pote de 1L de La Crema por R$ 130,00.",
                     icon: "fas fa-box-open"
                   }
                 ].map((option, index) => (
@@ -223,7 +224,7 @@ export default function Products() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Button asChild variant="secondary" className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_8px_rgba(240,61,135,0.5)] font-medium shadow-md group py-6 text-base">
-                      <a href={option.link} className="flex items-center justify-between px-2">
+                      <a href={generateWhatsAppLink("5566999852299", option.message)} className="flex items-center justify-between px-2">
                         <div className="flex items-center flex-1">
                           <i className={`${option.icon} mr-3 text-lg group-hover:text-white transition-colors`}></i>
                           <span className="leading-tight">{option.label}</span>

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ProductType } from "@/data/products";
 import { ImageModal } from "@/components/ui/image-modal";
 import { Search } from "lucide-react";
+import { generateWhatsAppLink } from "@/lib/utils";
 
 type ProductCardProps = {
   product: ProductType;
@@ -17,6 +18,11 @@ export default function ProductCard({ product, type }: ProductCardProps) {
   
   // Estado para controlar a exibição do modal
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  
+  // Gerar mensagem do WhatsApp baseada no produto e opção
+  const generateWhatsAppMessage = (productName: string, optionLabel: string, price: string) => {
+    return `Olá! Gostaria de encomendar ${optionLabel} de ${productName} por ${price}.`;
+  };
   
   return (
     <motion.div 
@@ -105,7 +111,7 @@ export default function ProductCard({ product, type }: ProductCardProps) {
                     : 'bg-[#6B4F8B] hover:bg-[#6B4F8B] hover:shadow-[0_0_8px_rgba(107,79,139,0.5)]'
                 }`}
               >
-                <a href={option.link} className="flex justify-between items-center py-3">
+                <a href={generateWhatsAppLink("5566999852299", generateWhatsAppMessage(product.name, option.label, option.price))} className="flex justify-between items-center py-3">
                   <span className="text-sm font-medium">
                     {option.label}
                   </span>
