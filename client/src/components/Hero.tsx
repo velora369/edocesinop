@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { generateWhatsAppLink } from "@/lib/utils";
 
 export default function Hero() {
   return (
@@ -107,7 +108,7 @@ export default function Hero() {
               size="lg" 
               className="bg-gradient-to-r from-secondary to-secondary/90 hover:shadow-[var(--shadow-highlight-secondary)] text-white font-montserrat font-semibold rounded-full px-10 py-7 text-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group"
             >
-              <a href="https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20fazer%20um%20pedido" className="flex items-center gap-2">
+              <a href={generateWhatsAppLink("5566999852299", "Olá, gostaria de fazer um pedido")} className="flex items-center gap-2">
                 <span className="relative z-10 group-hover:tracking-wider transition-all duration-300">Fazer Pedido Agora</span>
                 <motion.span 
                   className="relative z-10 transition-all duration-300"

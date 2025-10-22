@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { generateWhatsAppLink } from "@/lib/utils";
 
-const specialDatesData = [
+const getSpecialDatesData = () => [
   {
     id: 1,
     title: "Natal",
     description: "Panetones artesanais, tortas natalinas e bolos temáticos que trazem o verdadeiro espírito do Natal para sua mesa.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/caixa-de-presente-vermelha-embaixo-de-uma-arvore-de-natal.webp",
-    link: "https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Natal.",
+    link: generateWhatsAppLink("5566999852299", "Olá, gostaria de informações sobre os produtos especiais de Natal."),
     status: "soon",
     buttonText: "Disponível em breve"
   },
@@ -16,7 +17,7 @@ const specialDatesData = [
     title: "Páscoa",
     description: "Ovos de colher recheados, colombas pascal e outras delícias que transformam a Páscoa em uma celebração inesquecível.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-19.33.13.webp",
-    link: "https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Páscoa.",
+    link: generateWhatsAppLink("5566999852299", "Olá, gostaria de informações sobre os produtos especiais de Páscoa."),
     status: "unavailable",
     buttonText: "Indisponível"
   },
@@ -25,7 +26,7 @@ const specialDatesData = [
     title: "Dia dos Namorados",
     description: "Doces especiais para dois, com opções românticas e irresistíveis para surpreender quem você ama.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/11585069.webp",
-    link: "https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20para%20o%20Dia%20dos%20Namorados.",
+    link: generateWhatsAppLink("5566999852299", "Olá, gostaria de informações sobre os produtos especiais para o Dia dos Namorados."),
     status: "soon",
     buttonText: "Disponível em breve"
   }
@@ -50,7 +51,7 @@ export default function SpecialDates() {
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {specialDatesData.map((item, index) => (
+          {getSpecialDatesData().map((item, index) => (
             <motion.div
               key={item.id}
               className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-2"

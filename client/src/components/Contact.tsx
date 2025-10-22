@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { generateWhatsAppLink } from "@/lib/utils";
 
 export default function Contact() {
   const contactInfo = [
@@ -105,7 +106,7 @@ export default function Contact() {
                 className="bg-[#25D366] hover:bg-[#20B958] text-white font-montserrat font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-4 border-0"
               >
                 <a 
-                  href="https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20fazer%20um%20pedido." 
+                  href={generateWhatsAppLink("5566999852299", "Olá, gostaria de fazer um pedido.")}
                   className="flex items-center gap-3"
                 >
                   <i className="fab fa-whatsapp text-xl"></i>

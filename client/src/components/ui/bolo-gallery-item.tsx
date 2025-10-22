@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Search } from "lucide-react";
 import { BoloGalleryItem } from "@/data/products";
 import { ImageModal } from "@/components/ui/image-modal";
+import { generateWhatsAppLink } from "@/lib/utils";
 
 type BoloGalleryItemProps = {
   item: BoloGalleryItem;
@@ -114,7 +115,7 @@ export default function BoloGalleryItemCard({ item }: BoloGalleryItemProps) {
           className="mt-auto"
         >
           <a
-            href="https://api.whatsapp.com/send?phone=5566999852299&text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20personalizado.%20Pode%20me%20dar%20mais%20informações%20sobre%20preços%20e%20opções%20disponíveis?"
+            href={generateWhatsAppLink("5566999852299", "Olá! Gostaria de encomendar um bolo personalizado. Pode me dar mais informações sobre preços e opções disponíveis?")}
             className="inline-flex items-center justify-center w-full bg-[#4B2E1F] text-white py-3 px-4 rounded-lg font-medium hover:bg-[#5D3924] transition-all duration-300 hover:shadow-[0_0_12px_rgba(75,46,31,0.4)]"
           >
             <i className="fab fa-whatsapp text-lg mr-2"></i>
