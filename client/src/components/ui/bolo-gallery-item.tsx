@@ -24,7 +24,7 @@ export default function BoloGalleryItemCard({ item }: BoloGalleryItemProps) {
   
   return (
     <motion.div 
-      className="gallery-item relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+      className="gallery-item relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -47,14 +47,16 @@ export default function BoloGalleryItemCard({ item }: BoloGalleryItemProps) {
         />
         
         {/* Overlay com botão de zoom */}
-        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-          <button
-            onClick={() => setIsImageModalOpen(true)}
-            className="opacity-0 group-hover:opacity-100 bg-white/90 text-gray-800 p-3 rounded-full transition-all duration-300 hover:bg-white hover:scale-110"
-          >
+        <button
+          type="button"
+          onClick={() => setIsImageModalOpen(true)}
+          className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-white focus:ring-inset"
+          aria-label={`Ampliar imagem de ${item.name}`}
+        >
+          <div className="opacity-0 group-hover:opacity-100 bg-white/90 text-gray-800 p-3 rounded-full transition-all duration-300 hover:bg-white hover:scale-110">
             <Search size={20} />
-          </button>
-        </div>
+          </div>
+        </button>
         
         {/* Controles do carrossel - apenas se houver múltiplas imagens */}
         {hasMultipleImages && (
@@ -92,21 +94,24 @@ export default function BoloGalleryItemCard({ item }: BoloGalleryItemProps) {
       </div>
       
       {/* Conteúdo do card */}
-      <div className="p-6">
+      <div className="p-6 flex-1 flex flex-col">
         <h3 className="font-montserrat font-semibold text-xl mb-2 text-gray-800">
           {item.name}
         </h3>
         
-        {hasMultipleImages && (
-          <p className="text-sm text-gray-500 mb-3">
-            {item.images.length} fotos disponíveis
-          </p>
-        )}
+        <div className="min-h-[1.5rem] mb-3">
+          {hasMultipleImages && (
+            <p className="text-sm text-gray-500">
+              {item.images.length} fotos disponíveis
+            </p>
+          )}
+        </div>
         
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
+          className="mt-auto"
         >
           <a
             href="https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20bolo%20personalizado.%20Pode%20me%20dar%20mais%20informações%20sobre%20preços%20e%20opções%20disponíveis?"
