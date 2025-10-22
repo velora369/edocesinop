@@ -203,14 +203,14 @@ export default function Products() {
                 {[
                   {
                     label: "Taça decorada com frutas",
-                    price: "145,00/kg",
-                    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20La%20Crema%20com%20decoração%20de%20frutas%20por%20R$%20145,00/kg.",
+                    price: "155,00/kg",
+                    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20uma%20taça%20de%20La%20Crema%20com%20decoração%20de%20frutas%20por%20R$%20155,00/kg.",
                     icon: "fas fa-glass-martini"
                   },
                   {
                     label: "Pote de 1L",
-                    price: "120,00",
-                    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20La%20Crema%20por%20R$%20120,00.",
+                    price: "130,00",
+                    link: "https://wa.me/5566999852299?text=Olá!%20Gostaria%20de%20encomendar%20um%20pote%20de%201L%20de%20La%20Crema%20por%20R$%20130,00.",
                     icon: "fas fa-box-open"
                   }
                 ].map((option, index) => (
@@ -222,13 +222,13 @@ export default function Products() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Button asChild variant="secondary" className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_8px_rgba(240,61,135,0.5)] font-medium shadow-md group">
-                      <a href={option.link} className="flex items-center justify-between">
-                        <div className="flex items-center">
-                          <i className={`${option.icon} mr-2 group-hover:text-white transition-colors`}></i>
-                          <span>{option.label}</span>
+                    <Button asChild variant="secondary" className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_8px_rgba(240,61,135,0.5)] font-medium shadow-md group py-6 text-base">
+                      <a href={option.link} className="flex items-center justify-between px-2">
+                        <div className="flex items-center flex-1">
+                          <i className={`${option.icon} mr-3 text-lg group-hover:text-white transition-colors`}></i>
+                          <span className="leading-tight">{option.label}</span>
                         </div>
-                        <span className="bg-white/20 px-2 py-1 rounded-full font-bold group-hover:bg-white/30">
+                        <span className="bg-white/20 px-3 py-2 rounded-full font-bold group-hover:bg-white/30 text-sm whitespace-nowrap ml-2">
                           R$ {option.price}
                         </span>
                       </a>
