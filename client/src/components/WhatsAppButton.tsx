@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function WhatsAppButton() {
   return (
     <motion.a 
-      href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido"
+      href="https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20fazer%20um%20pedido"
       className="btn-whatsapp"
       aria-label="Contact via WhatsApp"
       whileHover={{ scale: 1.05 }}

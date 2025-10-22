@@ -7,7 +7,7 @@ const specialDatesData = [
     title: "Natal",
     description: "Panetones artesanais, tortas natalinas e bolos temáticos que trazem o verdadeiro espírito do Natal para sua mesa.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/caixa-de-presente-vermelha-embaixo-de-uma-arvore-de-natal.webp",
-    link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Natal.",
+    link: "https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Natal.",
     status: "soon",
     buttonText: "Disponível em breve"
   },
@@ -16,7 +16,7 @@ const specialDatesData = [
     title: "Páscoa",
     description: "Ovos de colher recheados, colombas pascal e outras delícias que transformam a Páscoa em uma celebração inesquecível.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/captura-de-tela-2025-05-23-as-19.33.13.webp",
-    link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Páscoa.",
+    link: "https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20de%20Páscoa.",
     status: "unavailable",
     buttonText: "Indisponível"
   },
@@ -25,7 +25,7 @@ const specialDatesData = [
     title: "Dia dos Namorados",
     description: "Doces especiais para dois, com opções românticas e irresistíveis para surpreender quem você ama.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/11585069.webp",
-    link: "https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20para%20o%20Dia%20dos%20Namorados.",
+    link: "https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20informações%20sobre%20os%20produtos%20especiais%20para%20o%20Dia%20dos%20Namorados.",
     status: "soon",
     buttonText: "Disponível em breve"
   }

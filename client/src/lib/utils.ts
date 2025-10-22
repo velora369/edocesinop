@@ -7,5 +7,5 @@ export function cn(...inputs: ClassValue[]) {
 
 export function generateWhatsAppLink(phoneNumber: string, message: string): string {
   const encodedMessage = encodeURIComponent(message);
-  return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  return `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 }

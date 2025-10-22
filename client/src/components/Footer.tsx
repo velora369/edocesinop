@@ -50,7 +50,7 @@ export default function Footer() {
                   <i className="fab fa-instagram text-white text-xl"></i>
                 </motion.a>
                 <motion.a 
-                  href="https://wa.me/5566999852299" 
+                  href="https://api.whatsapp.com/send?phone=5566999852299" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-[#25D366] p-2.5 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300"
@@ -92,7 +92,7 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li>
                   <a 
-                    href="https://wa.me/5566999852299" 
+                    href="https://api.whatsapp.com/send?phone=5566999852299" 
                     className="group flex items-center hover:text-secondary transition-all duration-300 hover:bg-secondary/10 px-3 py-2 rounded-lg"
                     target="_blank" 
                     rel="noopener noreferrer"
@@ -137,7 +137,7 @@ export default function Footer() {
                   <i className="fab fa-instagram text-white text-xl"></i>
                 </motion.a>
                 <motion.a 
-                  href="https://wa.me/5566999852299" 
+                  href="https://api.whatsapp.com/send?phone=5566999852299" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-[#25D366] p-3 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300"

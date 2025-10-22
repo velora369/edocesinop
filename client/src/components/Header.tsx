@@ -91,7 +91,7 @@ export default function Header() {
         
         <div className="flex items-center">
           <motion.a 
-            href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido" 
+            href="https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20fazer%20um%20pedido" 
             className="md:flex items-center hidden text-white bg-gradient-to-r from-green-500 to-green-400 hover:shadow-[0_0_12px_rgba(74,194,107,0.5)] hover:from-green-400 hover:to-green-500 transition-all duration-300 px-5 py-2.5 rounded-full font-medium text-sm overflow-hidden relative group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -160,7 +160,7 @@ export default function Header() {
                     asChild
                     className="w-full bg-gradient-to-r from-green-500 to-green-400 hover:shadow-[0_0_12px_rgba(74,194,107,0.5)] hover:from-green-400 hover:to-green-500 text-white rounded-full py-6 overflow-hidden relative group"
                   >
-                    <a href="https://wa.me/5566999852299?text=Olá,%20gostaria%20de%20fazer%20um%20pedido" className="flex items-center justify-center">
+                    <a href="https://api.whatsapp.com/send?phone=5566999852299&text=Olá,%20gostaria%20de%20fazer%20um%20pedido" className="flex items-center justify-center">
                       <span className="absolute w-0 h-0 transition-all duration-300 bg-white rounded-full opacity-20 group-hover:w-64 group-hover:h-64 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></span>
                       <i className="fab fa-whatsapp mr-2 text-xl"></i>
                       <span className="group-hover:scale-105 transition-transform duration-300">Fazer Pedido</span>
