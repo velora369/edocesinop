@@ -115,11 +115,11 @@ export default function BoloGalleryItemCard({ item }: BoloGalleryItemProps) {
           className="mt-auto"
         >
           <a
-            href={generateWhatsAppLink("5566999852299", "Olá! Gostaria de encomendar um bolo personalizado. Pode me dar mais informações sobre preços e opções disponíveis?")}
-            className="inline-flex items-center justify-center w-full bg-[#4B2E1F] text-white py-3 px-4 rounded-lg font-medium hover:bg-[#5D3924] transition-all duration-300 hover:shadow-[0_0_12px_rgba(75,46,31,0.4)]"
+            href={generateWhatsAppLink("5566999852299", "Olá! Gostaria de consultar sobre bolos.")}
+            className="inline-flex items-center justify-center w-full bg-[#25D366] text-white py-3 px-4 rounded-lg font-medium hover:bg-[#20BD5A] transition-all duration-300 hover:shadow-[0_0_12px_rgba(37,211,102,0.4)]"
           >
             <i className="fab fa-whatsapp text-lg mr-2"></i>
-            Solicitar Orçamento
+            Consultar no WhatsApp
           </a>
         </motion.div>
       </div>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import ProductCard from "@/components/ui/product-card";
 import BoloGalleryItemCard from "@/components/ui/bolo-gallery-item";
-import { tacasProducts, cassatasProducts, potesProducts, bolosGallery } from "@/data/products";
+import { tacasProducts, cassatasProducts, potesProducts, bolosGallery, PRICE_NOTICE } from "@/data/products";
 import { Button } from "@/components/ui/button";
 import { ImageModal } from "@/components/ui/image-modal";
 import { useImageModal } from "@/hooks/use-image-modal";
@@ -67,6 +67,14 @@ export default function Products() {
             <p className="text-gray-600 max-w-2xl text-center mt-4">
               Descubra nossas criações artesanais, feitas com ingredientes selecionados para momentos especiais
             </p>
+            {/* Aviso de forma de cobrança */}
+            <div className="mt-6 w-full max-w-3xl mx-auto px-4 sm:px-6">
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 sm:p-5 text-center">
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  {PRICE_NOTICE}
+                </p>
+              </div>
+            </div>
           </div>
         </motion.div>
         
@@ -200,43 +208,26 @@ export default function Products() {
                 </motion.p>
               </motion.div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  {
-                    label: "Taça decorada com frutas",
-                    price: "155,00/kg",
-                    message: "Olá! Gostaria de encomendar uma taça de La Crema com decoração de frutas por R$ 155,00/kg.",
-                    icon: "fas fa-glass-martini"
-                  },
-                  {
-                    label: "Pote de 1L",
-                    price: "130,00",
-                    message: "Olá! Gostaria de encomendar um pote de 1L de La Crema por R$ 130,00.",
-                    icon: "fas fa-box-open"
-                  }
-                ].map((option, index) => (
-                  <motion.div
-                    key={option.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 + (index * 0.1) }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+              <p className="text-white/90 font-medium mb-4">
+                Vendido por KG/L – valor base R$150.
+              </p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Button asChild className="w-full sm:max-w-xs bg-[#25D366] text-white hover:bg-[#20BD5A] hover:opacity-90 font-medium shadow-md py-6 text-base">
+                  <a
+                    href={generateWhatsAppLink("5566999852299", "Olá! Gostaria de consultar sobre La Crema.")}
+                    className="flex items-center justify-center gap-2"
                   >
-                    <Button asChild variant="secondary" className="w-full bg-[#F03D87] text-white hover:bg-[#F03D87] hover:opacity-90 hover:shadow-[0_0_8px_rgba(240,61,135,0.5)] font-medium shadow-md group py-6 text-base">
-                      <a href={generateWhatsAppLink("5566999852299", option.message)} className="flex items-center justify-between px-2">
-                        <div className="flex items-center flex-1">
-                          <i className={`${option.icon} mr-3 text-lg group-hover:text-white transition-colors`}></i>
-                          <span className="leading-tight">{option.label}</span>
-                        </div>
-                        <span className="bg-white/20 px-3 py-2 rounded-full font-bold group-hover:bg-white/30 text-sm whitespace-nowrap ml-2">
-                          R$ {option.price}
-                        </span>
-                      </a>
-                    </Button>
-                  </motion.div>
-                ))}
-              </div>
+                    <i className="fab fa-whatsapp text-xl"></i>
+                    Consultar no WhatsApp
+                  </a>
+                </Button>
+              </motion.div>
             </div>
           </div>
         </motion.div>

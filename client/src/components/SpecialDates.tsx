@@ -10,7 +10,7 @@ const getSpecialDatesData = () => [
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/caixa-de-presente-vermelha-embaixo-de-uma-arvore-de-natal.webp",
     link: generateWhatsAppLink("5566999852299", "Olá, gostaria de informações sobre os produtos especiais de Natal."),
     status: "soon",
-    buttonText: "Disponível em breve"
+    buttonText: "Indisponível"
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const getSpecialDatesData = () => [
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/11585069.webp",
     link: generateWhatsAppLink("5566999852299", "Olá, gostaria de informações sobre os produtos especiais para o Dia dos Namorados."),
     status: "soon",
-    buttonText: "Disponível em breve"
+    buttonText: "Indisponível"
   }
 ];
 
