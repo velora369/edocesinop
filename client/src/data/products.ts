@@ -10,6 +10,7 @@ export type ProductType = {
   image: string;
   isLaCrema?: boolean;
   isPremium?: boolean;
+  isNew?: boolean;
   note?: string;
 };
 
@@ -21,6 +22,13 @@ export const tacasProducts: ProductType[] = [
     description: "Pavê de creme iogurtado com cobertura de ganache de chocolate belga, decorado com frutas secas.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.00.30.webp",
     isLaCrema: true,
+  },
+  {
+    id: 11,
+    name: "DIGUE",
+    description: "Sobremesa autoral com creme premium de amendoim, bolachas delicadas e ganache de chocolate blend. Cremosa, crocante e surpreendente.",
+    image: "/images/digue.webp",
+    isNew: true,
   },
   {
     id: 2,
@@ -79,12 +87,6 @@ export const tacasProducts: ProductType[] = [
     name: "GITO",
     description: "Uma harmonia perfeita de CreamCheese, chocolate branco e frutas vermelhas que proporcionam uma experiência inesquecível.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bagas-misturadas-close-up.webp",
-  },
-  {
-    id: 11,
-    name: "DIGUE",
-    description: "Sobremesa autoral composta por creme premium de amendoim artesanal, com textura cremosa e crocante na medida certa, intercalado com bolachas delicadas e finalizado com ganache de chocolate blend. Uma experiência intensa, afetiva e surpreendente.",
-    image: "/images/digue.webp",
   },
 ];
 
