@@ -63,8 +63,8 @@ export const tacasProducts: ProductType[] = [
   },
   {
     id: 8,
-    name: "LYCA",
-    description: "Uma sobremesa sofisticada com creme de creme brullè, macadâmia e ganache de chocolate para paladares exigentes.",
+    name: "LICA",
+    description: "Uma sobremesa sofisticada com creme de baunilha, macadâmias e ganache de chocolate para paladares exigentes.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/pilha-de-semente-crua-de-macadamia.webp",
     isPremium: true,
   },
