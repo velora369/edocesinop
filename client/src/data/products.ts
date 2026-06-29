@@ -80,6 +80,12 @@ export const tacasProducts: ProductType[] = [
     description: "Uma harmonia perfeita de CreamCheese, chocolate branco e frutas vermelhas que proporcionam uma experiência inesquecível.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/bagas-misturadas-close-up.webp",
   },
+  {
+    id: 11,
+    name: "DIGUE",
+    description: "Sobremesa autoral composta por creme premium de amendoim artesanal, com textura cremosa e crocante na medida certa, intercalado com bolachas delicadas e finalizado com ganache de chocolate blend. Uma experiência intensa, afetiva e surpreendente.",
+    image: "/images/digue.webp",
+  },
 ];
 
 // CASSATAS Category
