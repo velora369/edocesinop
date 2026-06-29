@@ -10,6 +10,7 @@ export type ProductType = {
   image: string;
   isLaCrema?: boolean;
   isPremium?: boolean;
+  isNew?: boolean;
   note?: string;
 };
 
@@ -21,6 +22,13 @@ export const tacasProducts: ProductType[] = [
     description: "Pavê de creme iogurtado com cobertura de ganache de chocolate belga, decorado com frutas secas.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/whatsapp-image-2025-05-24-at-21.00.30.webp",
     isLaCrema: true,
+  },
+  {
+    id: 11,
+    name: "DIGUE",
+    description: "Sobremesa autoral com creme premium de amendoim, bolachas delicadas e ganache de chocolate blend. Cremosa, crocante e surpreendente.",
+    image: "/images/digue.webp",
+    isNew: true,
   },
   {
     id: 2,
@@ -63,8 +71,8 @@ export const tacasProducts: ProductType[] = [
   },
   {
     id: 8,
-    name: "LYCA",
-    description: "Uma sobremesa sofisticada com creme de creme brullè, macadâmia e ganache de chocolate para paladares exigentes.",
+    name: "LICA",
+    description: "Uma sobremesa sofisticada com creme de baunilha, macadâmias e ganache de chocolate para paladares exigentes.",
     image: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/05/pilha-de-semente-crua-de-macadamia.webp",
     isPremium: true,
   },

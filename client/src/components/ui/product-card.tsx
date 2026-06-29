@@ -40,6 +40,10 @@ export default function ProductCard({ product, type }: ProductCardProps) {
         <span className="featured-badge">Especial</span>
       )}
 
+      {product.isNew && (
+        <span className="novidade-badge">Novidade</span>
+      )}
+
       <div className="relative overflow-hidden group">
         <motion.img
           src={product.image}
